@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K6 motorization: first fit tests</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;background:#faf8f2;color:#25302e;max-width:850px;margin:45px auto;padding:0 24px}h1{line-height:1.15;font-size:36px}h2{margin-top:36px;font-size:24px}a{color:#136c69}aside{background:#fff0d5;padding:18px 22px;border-left:4px solid #bf7e25}table{border-collapse:collapse;width:100%}th,td{padding:10px;text-align:left;border-bottom:1px solid #ddd}img{width:100%;border-radius:12px}code{background:#eae7dd;padding:2px 5px}li{margin:.55em 0}small{color:#606a66}.done{color:#236b50}</style>
+<h1>K6 + BaneBots 775<br>First fit tests</h1>
+<p>Motor selected: <strong>BaneBots M7-RS775-18</strong>. This package contains dimensional gauges and a small planetary gear set to turn by hand. It is the first physical prototype, not a complete motorized gearbox.</p>
+<aside><strong>Keep the motor disconnected for every test in this package.</strong> The thin gears, printed carrier pins, and slotted motor template are test pieces. They do not have a powered torque or speed rating.</aside>
+<h2>What is ready</h2>
+<ul>
+<li class="done">Motor identified from its label and manufacturer's specifications.</li>
+<li class="done">Editable geometry and individual STL/STEP files generated.</li>
+<li>CAD validity, mesh checks and sampled gear-interference results are recorded in <a href="validation.json">validation.json</a>. A missing report means generation did not finish.</li>
+<li>Pending: actual motor measurements and printed fit results.</li>
+<li>Pending: grinder torque measurement, motor pinion attachment, interstage carriers, bearings and retention, housing/mount, metal output connection, current limiting, heat and wear testing.</li>
+</ul>
+<img src="gear-mesh-preview.png" alt="CAD preview of the hand-turn planetary gear test">
+<h2>Print first: shaft gauges</h2>
+<p>Open one or more of these files in Bambu Studio or PrusaSlicer. Set units to millimeters and scale to <strong>100%</strong>. Lay their flat faces on the plate. PLA is fine for these unpowered fit checks; repeat critical clearances in the final material before making operating parts.</p>
+<ul>
+<li><a href="fit-tests/shaft-fit-5.0mm-NO-POWER.stl">5.0 mm bore</a></li>
+<li><a href="fit-tests/shaft-fit-5.1mm-NO-POWER.stl">5.1 mm bore</a></li>
+<li><a href="fit-tests/shaft-fit-5.2mm-NO-POWER.stl">5.2 mm bore</a></li>
+<li><a href="fit-tests/shaft-fit-5.3mm-NO-POWER.stl">5.3 mm bore</a></li>
+</ul>
+<p>Try the loosest one first. Report which slides on without force and which has obvious wobble. Do not hammer a gauge onto the shaft. These establish the printer/material's hole fit; they do not transmit motor torque.</p>
+<h2>Check the motor face</h2>
+<p><a href="fit-tests/motor-face-slotted-TEMPLATE-NO-POWER.stl">Print the motor-face template</a> and hold it against the front of the disconnected motor. The slots cover a range around an assumed 29 mm hole-center spacing. The large center opening is clearance, not a precision locating feature. Do not use this as an operating mount or put unknown-length screws into the motor.</p>
+<p>Record the actual hole-center spacing, raised collar diameter and height, shaft protrusion from the flat face and from the collar, and whether the shaft has a flat or a smooth round surface. The manufacturer publishes a 0.197 in (about 5 mm) shaft, 0.3 in (7.62 mm) shaft length, and two M4 mounting screws, but does not specify all locating dimensions on its current page.</p>
+<h2>Optional: turn one gear stage by hand</h2>
+<table><tr><th>Part</th><th>Quantity</th></tr>
+<tr><td><a href="fit-tests/sun-18T-HAND-TEST.stl">Sun gear, 18 teeth</a></td><td>1</td></tr>
+<tr><td><a href="fit-tests/planet-27T-HAND-TEST-print-three.stl">Planet gear, 27 teeth</a></td><td>3</td></tr>
+<tr><td><a href="fit-tests/ring-72T-HAND-TEST.stl">Ring gear, 72 teeth</a></td><td>1</td></tr>
+<tr><td><a href="fit-tests/carrier-HAND-TEST-ONLY.stl">Carrier with printed test pins</a></td><td>1</td></tr>
+<tr><td><a href="fit-tests/stand-HAND-TEST-ONLY.stl">Hand-test stand</a></td><td>1</td></tr></table>
+<p>Starting slicer settings for these coupons: 0.4 mm nozzle, 0.16 mm layers, four walls, solid thin gears, and the material manufacturer's filament profile. Check the tooth preview. The pieces print flat without supports. Do not scale individual gears to fix fit.</p>
+<ol>
+<li>Place the carrier on the stand's center post, pins pointing upward.</li>
+<li>Place the sun on the center post above the carrier. Seat one planet on each carrier pin.</li>
+<li>Lower the ring onto the stand's outer ledge, rotating the sun and planets gently until the teeth engage. Do not force teeth together.</li>
+<li>Hold the ring still and turn the sun by hand. Five sun turns should move the carrier one turn in the same direction.</li>
+<li>Report binding, rough spots or excessive looseness. A hand-turn success only confirms preliminary fit and meshing.</li>
+</ol>
+<p>The separate bearing-seat gauges are for trying an 11 mm outside-diameter bearing, if available. The final bearing arrangement is not selected. The hand-turn fixture uses printed pins and requires no bearings.</p>
+<h2>Proposed working design</h2>
+<p>One stage is <code>1 + 72/18 = 5:1</code>. Three stages would give <code>5 × 5 × 5 = 125:1</code>. Scaling the manufacturer's 19,500 RPM at 18 V to 12 V estimates 13,000 RPM before load, or roughly 104 RPM after that reduction. These are preliminary speed estimates, not a performance guarantee. The delivered files contain one thin test stage, not a completed three-stage gearbox.</p>
+<p>The earlier 3-5 Nm output discussion was a design assumption. Measure the K6's actual grinding force with a spring/luggage scale pulled tangentially at a known handle radius. Torque in Nm is scale reading in kgf × 9.81 × radius in meters. Use the intended beans and espresso setting. Keep startup peaks separate from running load. A static reading is only a first sizing input, not a complete dynamic test.</p>
+<p>The 775's high input speed and stall current make the first stage, pinion retention and electrical current limiting important. We have not established safe speed, torque, lubrication, fatigue life or temperature for a printed operating gearbox.</p>
+<h2>Source and editable files</h2>
+<p><a href="parameters.json">parameters.json</a> holds the adjustable dimensions. <a href="build.py">build.py</a> generates the CAD and verifies the exported meshes. <a href="cad/hand-test-assembly-REFERENCE.step">Assembly STEP</a> is a reference assembly, not a print-in-place model. Print the separate STL parts.</p>
+<p>This is an independent CAD prototype using <a href="https://github.com/meadiode/cq_gears">cq_gears</a>, an open-source involute gear generator. <a href="https://github.com/Omar-Salem/Nema-17-23-planetary-gear">Omar Salem's MIT-licensed gearbox</a> informed the reference search; its Fusion files were not modified or copied into this design. It is not evidence of this design's load rating.</p>
+<p>Motor data: <a href="https://banebots.com/m7-rs775-18/">BaneBots manufacturer page</a>. The hand-grinder proof of concept uses a different motor: <a href="https://www.reddit.com/r/functionalprint/comments/1mcap06/i_motorised_my_hand_coffee_grinder_for_espresso/">VykkuF's K6 build</a>.</p>
+<small>Prepared by Codex, October 21, 2026. Nothing has been sent to a printer. No physical fit or powered durability has been tested.</small>
+</html>

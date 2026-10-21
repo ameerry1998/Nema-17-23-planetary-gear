@@ -1,0 +1,23 @@
+{
+  "status": "Unpowered fit and gear-mesh prototype; not a working gearbox",
+  "motor": "BaneBots M7-RS775-18",
+  "shaft_diameter_mm_nominal": 5.0038,
+  "shaft_length_mm_published": 7.62,
+  "motor_hole_spacing_mm_assumed": 29.0,
+  "motor_register_diameter_mm_unverified": 17.5,
+  "module_mm": 0.8,
+  "sun_teeth": 18,
+  "planet_teeth": 27,
+  "planets": 3,
+  "pressure_angle_deg": 20,
+  "stages_proposed": 3,
+  "coupon_width_mm": 3.0,
+  "draft_gear_width_mm": 10.0,
+  "ring_rim_mm": 4.0,
+  "cq_gears_backlash_parameter": 0.15,
+  "tip_root_extra_clearance_mm": 0.1,
+  "sun_test_bore_mm": 5.2,
+  "planet_test_bore_mm": 3.3,
+  "printed_fixture_pin_mm": 3.0,
+  "source_motor": "https://banebots.com/m7-rs775-18/"
+}

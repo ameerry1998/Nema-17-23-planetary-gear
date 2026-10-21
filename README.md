@@ -1,5 +1,13 @@
 # Nema-17/23-planetary-gear
 
+## BaneBots 775 / KINGrinder K6 experiment
+
+This fork adds an [experimental K6 motorization variant](variants/banebots-775-k6/README.md): editable fit-test geometry, individual STL/STEP files, a print guide, and a development checklist. **The added files are for unpowered fit and hand-mesh tests. A complete, load-tested 775 gearbox is not yet available.**
+
+The original Fusion models and instructions by [Omar Salem](https://github.com/Omar-Salem/Nema-17-23-planetary-gear) follow below. The variant's initial fit geometry was generated independently with cq_gears; it is not a converted version of those Fusion models.
+
+## Original NEMA 17/23 design
+
 A fully parametric planetary gearbox designed for NEMA 17/23 motors.
 
 Gear ratio, backlash, and geometry can be adjusted through parameters.
@@ -292,5 +300,4 @@ Combine all as new component, export it to project as `SecondStage`
  _Bearing sizes will change depending on gear ratio_
 
 https://github.com/user-attachments/assets/527c2508-7acf-4f8b-a0d8-41f765740e9c
-
 

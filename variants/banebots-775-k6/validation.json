@@ -1,0 +1,150 @@
+{
+  "purpose": "Unpowered fit and gear-mesh prototype; not a working gearbox",
+  "parts": {
+    "shaft-fit-5.0mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 280.3132524909444,
+      "dimensions_mm": [
+        12.0,
+        11.997628211975098,
+        3.0
+      ]
+    },
+    "shaft-fit-5.1mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 277.93412251025575,
+      "dimensions_mm": [
+        12.0,
+        11.997628211975098,
+        3.0
+      ]
+    },
+    "shaft-fit-5.2mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 275.50788194189477,
+      "dimensions_mm": [
+        12.0,
+        11.997628211975098,
+        3.0
+      ]
+    },
+    "shaft-fit-5.3mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 273.03452968853315,
+      "dimensions_mm": [
+        12.0,
+        11.997628211975098,
+        3.0
+      ]
+    },
+    "motor-face-slotted-TEMPLATE-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 3119.8120232535925,
+      "dimensions_mm": [
+        50.0,
+        49.990116119384766,
+        2.0
+      ]
+    },
+    "bearing-seat-11.0mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 796.9690323505591,
+      "dimensions_mm": [
+        18.0,
+        17.996442794799805,
+        5.0
+      ]
+    },
+    "bearing-seat-11.1mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 788.292673615384,
+      "dimensions_mm": [
+        18.0,
+        17.996442794799805,
+        5.0
+      ]
+    },
+    "bearing-seat-11.2mm-NO-POWER": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 779.5377878660314,
+      "dimensions_mm": [
+        18.0,
+        17.996442794799805,
+        5.0
+      ]
+    },
+    "sun-18T-HAND-TEST": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 406.01101541430654,
+      "dimensions_mm": [
+        15.99990463256836,
+        15.835583686828613,
+        3.0
+      ]
+    },
+    "planet-27T-HAND-TEST-print-three": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 1049.2993111943274,
+      "dimensions_mm": [
+        23.149559020996094,
+        23.185699462890625,
+        3.0
+      ]
+    },
+    "ring-72T-HAND-TEST": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 2964.3116529605736,
+      "dimensions_mm": [
+        67.80000305175781,
+        67.7865982055664,
+        3.0
+      ]
+    },
+    "carrier-HAND-TEST-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 2801.891853589948,
+      "dimensions_mm": [
+        42.0,
+        41.99169921875,
+        5.5
+      ]
+    },
+    "stand-HAND-TEST-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "volume_mm3": 12585.514826413542,
+      "dimensions_mm": [
+        72.0,
+        71.98577117919922,
+        8.0
+      ]
+    }
+  },
+  "load_validation": "NOT PERFORMED",
+  "gearing": {
+    "sun_teeth": 18,
+    "planet_teeth": 27,
+    "ring_teeth": 72,
+    "ratio_per_stage": 5.0,
+    "proposed_total_ratio": 125.0,
+    "planet_center_radius_mm": 18.0,
+    "equally_spaced_planets_assembly_condition": true,
+    "motor_no_load_output_estimate_at_12V_rpm": 104.0,
+    "speed_note": "Voltage-scaled estimate only; not a measured loaded speed."
+  },
+  "initial_gear_intersection_max_mm3": 0.0,
+  "sampled_motion_intersection_max_mm3": 0.0,
+  "sampled_motion_note": "11 positions over one 5-degree carrier tooth-mesh cycle. Ideal CAD only; not physical running clearance or durability."
+}
