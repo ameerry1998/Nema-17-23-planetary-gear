@@ -25,6 +25,16 @@ The prototype has an 18-tooth sun, three 27-tooth planets and a fixed 72-tooth r
 
 At 12 V, a simple voltage scaling of the manufacturer's 19,500 RPM no-load speed at 18 V estimates 13,000 RPM at the motor and 104 RPM after 125:1 reduction. Actual loaded speed is unknown. This calculation is not a strength rating. The proposed ratio may change after measuring the grinder's load and the motor's behavior.
 
+## Modular output and replaceable grinder adapters
+
+The motor and gearbox should be reusable across compatible hand grinders. The grinder-specific attachment is a separate printed part, not part of the final carrier or ring gear.
+
+In this arrangement, the housing and all outer ring gears stay fixed. The final carrier drives a central output shaft through a bearing in a stationary end cover. The rotating adapter attaches to that shaft. It must not attach to the fixed ring or end cover as its drive connection.
+
+The proposed interface has a common keyed drive on the gearbox side and a grinder-specific socket on the other side. A square drive is one candidate; its size and retention have not been finalized. The printed adapter body can locate and retain metal drive/socket inserts. The shaft, hub, inserts and adapter retention need torque and fit checks before operation. Changing the attachment must not require disassembling the gearbox.
+
+A stationary stand must react the torque and keep the motor and grinder aligned. Its grinder cradle should be adjustable or separately replaceable because grinder bodies differ as well as their shafts. Compatibility also depends on the grinder's required torque, speed and direction. The current visualization is an illustrative packaging concept, not completed adapter or housing CAD.
+
 ## Development checklist
 
 - [x] Preserve the upstream source and MIT license in a fork.
