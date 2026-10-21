@@ -51,6 +51,28 @@ A stationary stand must react the torque and keep the motor and grinder aligned.
 
 The 775's high input speed makes the first-stage teeth, lubrication and heat important. The later stages carry greater torque. Stronger filament alone does not establish that either can survive operation.
 
+## Prove the drive before finalizing the arm
+
+The arm in the concept view is provisional. Its clearance is not established. Prioritize a working gearbox and adapter on a temporary rigid fixture, then design the final stand around the tested drive. The fixture must still support the gearbox, react torque and keep the shafts aligned.
+
+1. **Establish the load and duty.** Measure handle radius, approximate tangential running force and startup peaks using the intended beans and grind setting. Record normal hand-grinding speed, dose size, dose duration and the intended number of consecutive doses. A slowly pulled luggage/spring scale provides an initial torque estimate; it can miss dynamic peaks and does not by itself establish the operating load envelope. The earlier 3 to 5 Nm and proposed 125:1 ratio remain unverified assumptions.
+2. **Choose the exact material and calculate the working geometry.** Specify the filament grade, drying, printer/profile, orientation and conditioning. Use suitable printed-part data with conservative allowances for fatigue, temperature and uncertainty. Check tooth bending/contact, deflection, wear, pins, carrier, shaft, hub and bearings. PC Blend and nylon are candidates, not interchangeable material specifications. Datasheet tensile strength is not a repeated-load gear-tooth rating. The first-stage speed and final-stage torque may require different geometry or materials.
+3. **Test the demanding parts separately.** First verify fit and hand motion. After designing operating-strength parts, test the final stage at low speed against the specified torque using a supported, instrumented load fixture. Separately run the motor-end stage through the intended input-speed range with current limiting and a guard, recording speed, current, temperature and tooth condition. A low-speed torque pass does not establish high-speed durability. The existing thin hand-test parts must not be used for powered tests.
+4. **Test the complete drive on the fixture.** Establish target running torque, brief peak torque and peak duration, speed tolerance, current/torque limit, material-specific temperature cutoff and duty cycle before the test. Demonstrate those measured operating points, then representative grinding and start/stop cycles without stalls, tooth damage, loose hubs or an increasing loss of fit. An initial series of 10 representative doses is a prototype milestone, not a lifetime rating. Recheck wear and play after testing. A protection test belongs on a controlled load fixture, not a deliberately jammed grinder.
+5. **Release the interface to the arm design.** Record actual gearbox diameter/length, mounting-hole pattern and locating face, output centerline/protrusion, adapter engagement, mass/center of gravity and maximum permitted reaction torque. That maximum must reflect the tested torque limit, not only normal grinding torque. Also measure grinder/cup insertion and removal clearance. Build the arm around these dimensions and limits, with an adjustable or replaceable cradle.
+
+Keep the motor/gearbox mounting interface separate from the removable grinder adapter so that changing a stage does not force a redesign of every attachment. If a printed stage cannot meet the measured load and durability requirements in a practical size, evaluate a metal stage or commercial gearbox before investing in the final arm.
+
+### Sizing example, not an operating specification
+
+For reduction ratio `R`, output RPM is motor RPM divided by `R`. Output torque is approximately motor torque multiplied by `R` and by overall gearbox efficiency. These are the conversion relations in [maxon's gear guide](https://www.maxongroup.com/assets/public/caas/v1/media/56986/data/32bb5bfabd9ce7d852292f275410c997/knowledge-support-support-antriebswissen-kurz-erklaert-gear-download.pdf).
+
+An illustrative 5 Nm at 100 RPM is 52.4 W of mechanical output. At 125:1 and an assumed 70% overall gearbox efficiency, it requires approximately 0.057 Nm at 12,500 motor RPM, or 74.8 W of mechanical motor power. Electrical input is higher because the motor and controller also have losses. Neither the 70% efficiency nor this loaded motor operating point has been measured. Motor stall torque must not be used as continuous running torque.
+
+The current 18-tooth, module-0.8 sun has a 14.4 mm pitch diameter. At the provisional 13,000 motor RPM estimate, tooth pitch-line speed is about 9.8 m/s. This identifies the first stage as a heat/wear test priority; it is not a demonstrated allowable speed for the printed material.
+
+Material references: [Prusament PC Blend datasheet](https://prusament.com/wp-content/uploads/2022/10/PCBlend_Prusament_TDS_2022_16_EN.pdf), [Prusa nylon guidance](https://help.prusa3d.com/article/polyamide-nylon_167188), and [igus gear tests](https://www.igus.com/3d-printing/resources). The igus results concern their stated materials, processes and test geometry; they are not torque ratings for these FDM parts.
+
 ## Measurements still needed
 
 - Center-to-center distance between the two front motor screw holes.
