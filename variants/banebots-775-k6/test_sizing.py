@@ -5,6 +5,7 @@ import math
 from pathlib import Path
 import unittest
 from size_drive import evaluate, geometry
+from connection_review import flat_contact
 
 
 class SizingTests(unittest.TestCase):
@@ -69,6 +70,17 @@ class SizingTests(unittest.TestCase):
         self.c['geometry']['planet_spacer_id_mm'] = 5.64
         with self.assertRaises(AssertionError):
             evaluate(self.c)
+
+    def test_contact_moment_integration(self):
+        pressure = flat_contact(5, 15, 2, faces=3)
+        recovered_nmm = 3 * pressure * 15 * 2 ** 2 / 2
+        self.assertAlmostEqual(recovered_nmm, 5000)
+        self.assertAlmostEqual(flat_contact(5, 15, 2, faces=1), 3 * pressure)
+
+    def test_contact_engagement_scaling(self):
+        initial = flat_contact(5, 15, 2)
+        self.assertAlmostEqual(flat_contact(5, 30, 2), initial / 2)
+        self.assertAlmostEqual(flat_contact(5, 15, 4), initial / 4)
 
 
 if __name__ == '__main__':

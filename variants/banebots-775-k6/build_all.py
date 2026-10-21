@@ -10,10 +10,11 @@ import zipfile
 ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / 'drive-artifacts.json'
 REPORTS = [('drive-candidate', 'validation-all.json', 'DIGITAL STAGE CHECKS PASSED'),
-           ('drive-assembly', 'assembly-validation.json', 'MODELED FIXED/MOVING INTERFERENCE CHECK PASSED')]
+           ('drive-assembly', 'assembly-validation.json', 'MODELED FIXED/MOVING INTERFERENCE CHECK PASSED'),
+           ('socket-adapter', 'validation.json', 'DIGITAL SOCKET-CASE CLEARANCE CHECK PASSED')]
 SOURCES = ['drive.json', 'hardware.json', 'size_drive.py', 'test_sizing.py', 'build_drive.py',
            'assemble_drive.py', 'build_all.py', 'requirements-lock.txt', 'README.md', 'BUILD-GUIDE.md',
-           'test-results-template.csv']
+           'test-results-template.csv', 'connection_review.py', 'socket-adapter.json', 'build_socket_adapter.py']
 
 
 def digest(path):
@@ -21,7 +22,7 @@ def digest(path):
 
 
 def collect():
-    files = set(SOURCES + ['sizing-report.json'])
+    files = set(SOURCES + ['sizing-report.json', 'connection-review.json'])
     for folder, report_name, status in REPORTS:
         report_path = ROOT / folder / report_name
         r = json.loads(report_path.read_text())
@@ -41,6 +42,8 @@ def collect():
         files.add(f'drive-candidate/{stage}-cartridge-REFERENCE.step')
         files.add(f'drive-candidate/{stage}-internal-preview.png')
     files.add('drive-assembly/D1-gearbox-REFERENCE.step')
+    files.add('socket-adapter/SA1-REFERENCE.step')
+    files.add('socket-adapter/SA1-printed-and-bought.png')
     for stem in ['motor-face-slotted-TEMPLATE-NO-POWER', 'shaft-fit-5.2mm-NO-POWER', 'shaft-fit-5.3mm-NO-POWER']:
         for suffix in ['step', 'stl']:
             files.add(f'fit-tests/{stem}.{suffix}')
@@ -58,7 +61,7 @@ def main():
         assert collect() == recorded['sha256'], 'Artifact/source changed after recorded build'
     else:
         MANIFEST.write_text(json.dumps({'status': 'BUILDING; PREVIOUS PACKAGE MAY BE STALE'}, indent=2) + '\n')
-        for argv in [['-m', 'unittest', 'test_sizing'], ['size_drive.py'], ['build_drive.py'], ['assemble_drive.py']]:
+        for argv in [['-m', 'unittest', 'test_sizing'], ['size_drive.py'], ['connection_review.py'], ['build_drive.py'], ['assemble_drive.py'], ['build_socket_adapter.py']]:
             subprocess.run([sys.executable, *argv], cwd=ROOT, check=True)
         recorded = {'status': 'DIGITAL CHECKS ONLY; PHYSICAL VALIDATION PENDING',
                     'physical_tests': 0, 'sha256': collect()}

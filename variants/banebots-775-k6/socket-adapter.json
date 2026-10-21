@@ -1,0 +1,78 @@
+{
+  "revision": "SA1",
+  "status": "Separate retained-socket concept for physical fit/load trials; not a demonstrated working attachment",
+  "material": "Prusament PC Blend Carbon Fiber (PCCF)",
+  "body_od_mm": 36,
+  "length_mm": 65,
+  "split_gap_mm": 0.4,
+  "collar_od_mm": 26,
+  "collar_z_mm": 2,
+  "collar_length_mm": 10,
+  "collar_clearance_mm": 0.4,
+  "input_socket_z_mm": 14,
+  "input_socket_length_mm": 23,
+  "input_socket_max_od_mm": 16,
+  "input_socket_hex_mm": 11,
+  "input_socket_hex_depth_mm": 13,
+  "input_shaft_engagement_mm": 10,
+  "square_bridge_length_mm": 18,
+  "square_engagement_mm": 7.5,
+  "output_socket_z_mm": 40,
+  "output_socket_length_mm": 23,
+  "output_socket_max_od_mm": 13,
+  "output_socket_hex_mm": 6.35,
+  "output_socket_hex_depth_mm": 10,
+  "socket_diametral_clearance_mm": 0.4,
+  "square_bore_depth_assumed_mm": 8,
+  "case_z_on_D1_mm": 172,
+  "required_D1_collar_spacer_length_mm": 6.5,
+  "mount_note": "Reuses the 12 REX collar, captured in the two printed halves. Replaces the original 2.5 mm output collar spacer with a measured nominal 6.5 mm spacer. Requires a separate printed-fit test before assembly changes. D1 reference assembly still shows the older fit-only adapter.",
+  "hardware": [
+    {
+      "part": "Input socket",
+      "sku": "Wera 05003510001, 8790 HMA, 11 mm, 1/4 inch square drive",
+      "quantity": 1,
+      "source": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05003510001.pdf",
+      "evidence": "Published 23 mm length, 16 mm front OD, 15 mm rear OD, 13 mm tip height; internal chamfers and actual REX contact need checking."
+    },
+    {
+      "part": "Output socket",
+      "sku": "Wera 05003516001, 8790 HMA, 1/4 inch hex, 1/4 inch square drive",
+      "quantity": 1,
+      "source": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05003516001.pdf",
+      "evidence": "Published 23 mm length, 11 mm front OD, 13 mm rear OD, 10 mm tip height. Tip height is not proof of usable K6 engagement."
+    },
+    {
+      "part": "Square bridge",
+      "sku": "Bahco R6964A, 1/4 inch male-to-male square",
+      "quantity": 1,
+      "source": "https://www.bahco.com/int_en/productpdf/download/file/id/57004/name/14%22_square_drive_male_to_male_adaptor.pdf",
+      "evidence": "Published 18 mm length, two retaining balls, alloy steel, intended for R6980 ratchet. No explicit powered-rotation/torque rating located. Guarded fit, balance and load checks required; do not assume a rating."
+    },
+    {
+      "part": "Cassette screws",
+      "sku": "M3 x 20 socket head plus M3 nuts",
+      "quantity": 4,
+      "source": "",
+      "evidence": "Printed clamp retention needs physical pull/slip test."
+    },
+    {
+      "part": "Collar spacer",
+      "sku": "12.15 mm ID x 15 mm OD x nominal 6.5 mm precision metal spacer",
+      "quantity": 1,
+      "source": "",
+      "evidence": "Length adjusted from assembled endplay; replaces the original 2.5 mm spacer. Exported model is a fit sample only."
+    }
+  ],
+  "unverified": [
+    "Actual socket outer transitions and internal depths",
+    "Bridge ball positions and retention",
+    "Powered-use suitability of bridge",
+    "Grinder shaft protrusion and socket engagement",
+    "Clipped-hex shaft engagement in 11 mm socket",
+    "Case clamping and axial retention",
+    "Clearance from actual output retainer/collar",
+    "Balance and guard",
+    "5 Nm torque performance"
+  ]
+}

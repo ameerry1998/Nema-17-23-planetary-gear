@@ -43,7 +43,7 @@ Print **one [S3 planet](drive-candidate/S3-planet.stl)** in the intended PCCF an
 
 The motor model suggests 125:1 cannot reach the provisional 5 Nm at 100 RPM point from 12 V with the assumed losses. The selected 100:1 is therefore a candidate to test, not a final answer. See [sizing-report.json](sizing-report.json) for assumptions and calculated values. The 8 MPa tooth screen is engineering judgment, not a published printed-gear fatigue rating. S3 reaches roughly 7.85 MPa in that screen.
 
-The stationary outer ring does not drive the grinder. Each sun gear drives planets around the fixed ring; their carrier rotates more slowly and turns the next shaft. S2 and S3 use small bought metal hubs bolted onto printed carriers to grip the shafts. The final shaft turns the removable printed adapter. That adapter still requires its own torque test.
+The stationary outer ring does not drive the grinder. Each sun gear drives planets around the fixed ring; their carrier rotates more slowly and turns the next shaft. S2 and S3 use small bought metal hubs bolted onto printed carriers to grip the shafts. The final shaft turns the removable printed adapter. That adapter still requires its own torque test. A new connection review flags its small printed sockets as a weak point. The separate SA1 candidate uses a printed retaining case around bought steel sockets; it has not replaced the earlier adapter in the D1 assembly reference. See the build guide before selecting either version.
 
 ## Files and verification
 
@@ -53,6 +53,8 @@ The stationary outer ring does not drive the grinder. Each sun gear drives plane
 - `assemble_drive.py`: casing, retention, motor interface and separate attachment.
 - `drive-candidate/`: individual cartridge STEP/STL files and reference assemblies.
 - `drive-assembly/`: casing/interface STEP/STL files and complete reference assembly.
+- `socket-adapter/`, `socket-adapter.json`: separate SA1 printed cassette with bought steel sockets; fit/load trials pending.
+- `connection_review.py`, `connection-review.json`: shaft/socket contact and heating screens, including rejected compact-stage candidate.
 - `drive-artifacts.json`: hashes binding the current checked sources to artifacts.
 - `test-results-template.csv`: empty physical-test log; no fabricated results.
 - `evidence/`: preserved earlier failed checks where applicable.

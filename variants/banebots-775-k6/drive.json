@@ -149,7 +149,7 @@
     "adapter_grinder_hex_af_mm": 6.35,
     "adapter_hex_allowance_mm": 0.15,
     "adapter_hex_depth_mm": 15,
-    "adapter_material": "Prusament PC Blend",
+    "adapter_material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
     "status": "Fit and load-test candidate. Printed K6 socket has no established torque rating. A metal bit-holder version is preferable for grinder use after fit verification."
   },
   "grinder_envelope": {

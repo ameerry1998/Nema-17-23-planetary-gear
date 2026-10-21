@@ -90,6 +90,28 @@ The fixed outer ring and housing do not turn. The last carrier turns a 12 mm REX
 
 The candidate K6 end has a 6.50 mm across-flats printed socket, based on the published 6.35 mm nominal plus 0.15 mm fit allowance. Its 15 mm modeled depth is not a measured K6 engagement length. Both socket strength and retention require a bench test against a metal test hex before it is put on the grinder. A metal socket insert may be needed if the printed socket rounds out. The attachment is not yet torque-rated.
 
+## SA1 retained steel-socket attachment
+
+A connection-pressure review found approximately 37 MPa at the all-printed 12 REX socket and 66 MPa at the small printed K6 socket at the provisional 5 Nm peak. The model assumes uniform contact over three leading half-flats, so real corner pressure can be higher. These are not validated stresses or a failure prediction, and tensile strength is not a compressive-creep allowable. The result is a reason to develop a steel contact path before using the grinder. See `connection_review.py` and `connection-review.json` for the derivation.
+
+The separate `socket-adapter/` candidate provides two printable PCCF halves around three stock steel pieces:
+
+1. Wera 05003510001: 11 mm hex socket, 1/4-inch square drive. This receives the 12 REX shaft's 11 mm flats.
+2. Bahco R6964A: 18 mm long male-to-male 1/4-inch square bridge.
+3. Wera 05003516001: 1/4-inch hex socket, 1/4-inch square drive. This receives the K6 shaft.
+
+The manufacturer-published dimensions and remaining assumptions are in `socket-adapter.json`, together with links and the extra hardware list. The two Wera sockets are from its manual/non-impact power-tool socket family. No explicit powered-use rating was found for the Bahco bridge, so this assembly remains a guarded trial candidate. The actual bridge ball positions, socket depths and shaft engagement need checking. Nothing in this attachment requires metal printing or custom-machined sockets.
+
+![Printed halves and purchased hardware](socket-adapter/SA1-printed-and-bought.png)
+
+The printed halves capture the existing metal shaft collar and both sockets axially. Four M3 x 20 screws and nuts join the halves. Print each exported half in its supplied orientation, with the split face on the bed, using the PCCF trial profile. Keep clamp holes and internal pockets free of supports and burrs. Test hand assembly before tightening. Closing the nominal 0.4 mm split gap is not proof of grip or retention; check actual socket movement and axial pull resistance.
+
+SA1 changes the output collar spacer from nominal 2.5 mm to nominal **6.5 mm**, placing the cassette start 0.5 mm beyond the modeled output-retainer screw heads. Adjust the measured spacer to preserve endplay. The collar is installed inside the two halves, then the sockets and bridge are placed in their pockets before the other half is fastened. Do not rely only on the bridge's detent balls to keep the sockets assembled.
+
+SA1 is modeled at 65 mm case length and 36 mm body diameter, with clamp lugs wider than the body. Its placement allows 10 mm nominal engagement with the gearbox shaft. Actual K6 engagement is unknown. It extends the current drive to roughly 342 mm overall, so final compact packaging is still unfinished. The original D1 assembly STEP still displays the earlier all-printed fit adapter; SA1 has its own reference STEP. Do not combine their spacer stacks.
+
+After the bought parts fit together by hand, test the captive assembly on steel test shafts at low speed in a guarded fixture before attaching the grinder. Inspect for axial walk, socket rocking, clamp slip and heating. This version's all-steel contact path removes the two small printed drive sockets from the primary torque path, but does not establish its own torque rating or durability.
+
 ## Beginner wiring and speed control
 
 The brushed DC motor has two power terminals. The controller switches power rapidly to adjust average voltage. Its knob controls this fraction of time, called PWM duty. **A knob setting is not a guaranteed RPM.** Grinding load changes the speed; use a tachometer for the first tests. No Arduino or firmware is needed for this candidate.

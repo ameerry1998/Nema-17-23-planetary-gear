@@ -1,0 +1,76 @@
+{
+  "status": "DIGITAL SOCKET-CASE CLEARANCE CHECK PASSED; PHYSICAL FIT AND LOAD TESTS REQUIRED",
+  "parts": {
+    "SA1-cassette-left": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF)",
+      "note": "Print split face down. Contains ordinary steel sockets; do not power before fit/retention tests. The stored STEP/STL is in print orientation.",
+      "volume_mm3": 26635.424617213954,
+      "dimensions_mm": [
+        65.0,
+        44.0,
+        17.799999137060546
+      ],
+      "step_sha256": "c88892cce0a91560d79311454cfe3b3bbec654ffab4a0c1589200ddba4d74c15",
+      "stl_sha256": "4a6d846861d481b3972a29cc069073f7ca7ff33eeca8ca22013d3849d51ad119"
+    },
+    "SA1-cassette-right": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF)",
+      "note": "Print split face down. Contains ordinary steel sockets; do not power before fit/retention tests. The stored STEP/STL is in print orientation.",
+      "volume_mm3": 26406.68891552373,
+      "dimensions_mm": [
+        65.0,
+        44.0,
+        17.799999237060547
+      ],
+      "step_sha256": "842446e5ecbfb81559c3a3dd03f316889a0aad4a229e596f1a7224fb1e0f6a5e",
+      "stl_sha256": "11a1eb012bd576e9eb28cf09c18faef0101a4bfac5e9a96d6e701e84704573f8"
+    },
+    "SA1-output-collar-spacer-FIT-SAMPLE": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Precision metal spacer; STL is a fit sample only",
+      "note": "Engineering candidate",
+      "volume_mm3": 394.9148416504354,
+      "dimensions_mm": [
+        15.0,
+        14.997035026550293,
+        6.5
+      ],
+      "step_sha256": "6d126a61b099cd09338dbb5e68274b67445266e90a60ba744d61e970ffe0b9cb",
+      "stl_sha256": "79fed94a03bba415d290ebd14474dd028df3ca058180845ecb0f31dba850a447"
+    }
+  },
+  "physical_testing": "NOT PERFORMED",
+  "source_sha256": {
+    "socket-adapter.json": "e45ac885468dce5204ddc66b7a842eed5510b6146cdfb8b607c513d57d6850f7",
+    "build_socket_adapter.py": "9cb04dcd6bb143e920398de52d5a2d15d8235fd8e9bb5e509893e2bfb51e71ec",
+    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
+    "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
+    "drive-assembly/assembly-validation.json": "dbf3027cc5b116054302be73f58d2ca423363f15975b347faa72f02d12b820a0",
+    "drive-assembly/S3-output-cap-retainer-top.step": "36fd983bd53edc890b4ce5bc5c8b2d7566f97ca9ee787468bd97d9263f42b593"
+  },
+  "limitations": [
+    "Actual socket outer transitions and internal depths",
+    "Bridge ball positions and retention",
+    "Powered-use suitability of bridge",
+    "Grinder shaft protrusion and socket engagement",
+    "Clipped-hex shaft engagement in 11 mm socket",
+    "Case clamping and axial retention",
+    "Clearance from actual output retainer/collar",
+    "Balance and guard",
+    "5 Nm torque performance"
+  ],
+  "case_to_simplified_hardware_intersections": [],
+  "input_shaft_tip_local_mm": 24,
+  "retainer_with_screw_head_clearance_mm": 0.5,
+  "attachment_end_on_D1_mm": 237,
+  "torque_path": "12 REX shaft -> 11 mm steel socket -> steel male-square bridge -> 6.35 mm steel socket -> grinder hex. Printed split case locates and retains this chain; the socket bridge needs its own load verification.",
+  "physical_test_next": "Check actual socket/bridge dimensions and hand fit before printing both case halves. No metal parts need printing."
+}

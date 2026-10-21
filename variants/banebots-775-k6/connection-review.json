@@ -1,0 +1,99 @@
+{
+  "physical_tests": 0,
+  "method": "Idealized uniform pressure on the leading half of three flat faces: T = 3*p*L*a^2/2. This is not Hertz contact, an exact local stress solution, or a validated contact pattern. Clipped REX half-flat a is sqrt(R^2-(AF/2)^2). Real corner contact and uneven sharing can increase stress.",
+  "contacts": [
+    {
+      "part": "S1 sun / 8 REX shaft",
+      "engagement_mm": 12,
+      "torque_nm": 0.07262164124909223,
+      "idealized_average_contact_mpa": 1.0758761666532182
+    },
+    {
+      "part": "S2 sun / 8 REX shaft",
+      "engagement_mm": 12.5,
+      "torque_nm": 0.32679738562091504,
+      "idealized_average_contact_mpa": 4.647785039941902
+    },
+    {
+      "part": "S3 sun / 8 REX shaft",
+      "engagement_mm": 17.5,
+      "torque_nm": 1.4705882352941178,
+      "idealized_average_contact_mpa": 14.939309056956116
+    },
+    {
+      "part": "S1 printed carrier / 8 REX shaft",
+      "engagement_mm": 9,
+      "torque_nm": 0.32679738562091504,
+      "idealized_average_contact_mpa": 6.4552569999193095
+    },
+    {
+      "part": "Printed attachment / 12 REX shaft",
+      "engagement_mm": 15.5,
+      "torque_nm": 5,
+      "idealized_average_contact_mpa": 37.40065451145396
+    },
+    {
+      "part": "Printed attachment / K6 6.35 mm hex",
+      "engagement_mm": 15,
+      "torque_nm": 5,
+      "idealized_average_contact_mpa": 66.13346560026454
+    }
+  ],
+  "interpretation": "No PCCF compressive-creep/fatigue allowable is established. Do not compare these pressures directly with tensile yield as a pass/fail criterion. The roughly 66 MPa K6 socket estimate makes the all-printed socket a poor untested primary torque path. Develop a retained steel-socket cassette instead.",
+  "hub_bolt_screen": {
+    "final_torque_nm": 5,
+    "bolt_circle_radius_mm": 11.313708498984761,
+    "four_bolt_force_n": 110.48543456039805,
+    "factored_printed_hole_bearing_mpa": 17.263349150062194,
+    "note": "Four M4 bolts, 6 mm plate minus 2 mm countersink, assumed 2.5 load factor. Ignores preload, countersink wedging, local splitting, plate flexibility and actual sharing. No strength acceptance inferred."
+  },
+  "heating": [
+    {
+      "case": "running",
+      "stage_losses": [
+        {
+          "stage": "S1",
+          "loss_w": 4.562952292795632
+        },
+        {
+          "stage": "S2",
+          "loss_w": 4.106657063516069
+        },
+        {
+          "stage": "S3",
+          "loss_w": 5.543987035746696
+        }
+      ],
+      "total_gearbox_loss_w": 14.213596392058397,
+      "note": "Assumed efficiencies; not measured heating or a prediction of local tooth temperature."
+    },
+    {
+      "case": "peak",
+      "stage_losses": [
+        {
+          "stage": "S1",
+          "loss_w": 7.604920487992718
+        },
+        {
+          "stage": "S2",
+          "loss_w": 6.844428439193448
+        },
+        {
+          "stage": "S3",
+          "loss_w": 9.239978392911157
+        }
+      ],
+      "total_gearbox_loss_w": 23.68932732009732,
+      "note": "Assumed efficiencies; not measured heating or a prediction of local tooth temperature."
+    }
+  ],
+  "compact_candidate": {
+    "sun_teeth": 20,
+    "planet_teeth": 20,
+    "planets": 5,
+    "module_mm": 1.25,
+    "width_mm": 17,
+    "peak_tooth_screen_mpa": 8.129709515316883,
+    "result": "Not adopted: exceeds the existing 8 MPa screening assumption; posts also need relocation. Avoid shrinking a part solely to reduce package length."
+  }
+}
