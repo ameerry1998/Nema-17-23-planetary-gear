@@ -1,0 +1,406 @@
+{
+  "revision": "D1",
+  "status": "Experimental candidate BOM; quantities and fit must be checked against current reports. No purchases made.",
+  "items": [
+    {
+      "quantity": 1,
+      "part": "Motor",
+      "specification": "BaneBots M7-RS775-18",
+      "use": "Input",
+      "source": "https://banebots.com/m7-rs775-18/",
+      "note": "Existing user-selected motor. Verify actual face/shaft fit before assembly."
+    },
+    {
+      "quantity": 20,
+      "part": "Planet bearings",
+      "specification": "695ZZ, 5 x 13 x 4 mm, shielded steel",
+      "use": "Two per planet: S1 6, S2 6, S3 8",
+      "source": "",
+      "note": "Use a traceable bearing maker; no lot has been tested. Do not mix widths/seal variants without checking fit and drag."
+    },
+    {
+      "quantity": 6,
+      "part": "8 mm journal bearings",
+      "specification": "688ZZ, 8 x 16 x 5 mm",
+      "use": "3 lower carriers; input, S1 and S2 fixed caps",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 2,
+      "part": "Output bearings",
+      "specification": "6001ZZ, 12 x 28 x 8 mm",
+      "use": "S3 output cap",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 3,
+      "part": "Planet shoulder screws",
+      "specification": "5 mm precision shoulder x 25 mm; M4 thread; hardened alloy steel",
+      "use": "S1/S2/S3 respectively",
+      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
+      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+    },
+    {
+      "quantity": 3,
+      "part": "Planet shoulder screws",
+      "specification": "5 mm precision shoulder x 30 mm; M4 thread; hardened alloy steel",
+      "use": "S1/S2/S3 respectively",
+      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
+      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+    },
+    {
+      "quantity": 4,
+      "part": "Planet shoulder screws",
+      "specification": "5 mm precision shoulder x 35 mm; M4 thread; hardened alloy steel",
+      "use": "S1/S2/S3 respectively",
+      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
+      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+    },
+    {
+      "quantity": 10,
+      "part": "Planet pin nuts",
+      "specification": "M4 steel hex, <=7 mm AF x 4 mm high",
+      "use": "Shoulder-screw retention",
+      "source": "",
+      "note": "Use a supplier-applied locking patch or compatible metal-only thread retention. Avoid getting threadlocker on PC. Check retention after testing."
+    },
+    {
+      "quantity": 3,
+      "part": "Carrier-post screws",
+      "specification": "M3 x 30 socket head, head <=5.5 x 3 mm",
+      "use": "Join upper/lower carriers",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 3,
+      "part": "Carrier-post screws",
+      "specification": "M3 x 35 socket head, head <=5.5 x 3 mm",
+      "use": "Join upper/lower carriers",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 4,
+      "part": "Carrier-post screws",
+      "specification": "M3 x 40 socket head, head <=5.5 x 3 mm",
+      "use": "Join upper/lower carriers",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 11,
+      "part": "Captive nuts",
+      "specification": "M3 hex, 5.5 mm AF, nominal 2.4 mm thick",
+      "use": "10 carrier posts and S1 shaft retainer",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 1,
+      "part": "S1 axial set screw",
+      "specification": "M3 x 8 flat point",
+      "use": "Captive nut in S1 printed output boss",
+      "source": "",
+      "note": "This does not transmit torque. Witness-mark and pull-test shaft retention."
+    },
+    {
+      "quantity": 8,
+      "part": "Metal-hub mounting screws",
+      "specification": "M4 x 10 DIN 7991 countersunk, head <=8 mm diameter",
+      "use": "Four each for S2 and S3 hubs",
+      "source": "",
+      "note": "Not interchangeable with larger-head ISO 10642 without changing countersinks. Heads must sit flush/below carrier underside."
+    },
+    {
+      "quantity": 1,
+      "part": "S2 metal clamping hub",
+      "specification": "goBILDA 1309-0016-4008, 8 mm REX",
+      "use": "S2 carrier to shaft",
+      "source": "https://www.gobilda.com/1309-series-sonic-hub-8mm-rex-bore/",
+      "note": ""
+    },
+    {
+      "quantity": 1,
+      "part": "S3 metal clamping hub",
+      "specification": "goBILDA 1301-0016-4012, 12 mm REX",
+      "use": "S3 carrier to shaft",
+      "source": "https://www.gobilda.com/1301-series-clamping-hub-12mm-rex-bore/",
+      "note": ""
+    },
+    {
+      "quantity": 2,
+      "part": "8 mm REX steel shaft",
+      "specification": "goBILDA 2106-4008-0400, 40 mm",
+      "use": "Input and S1 output",
+      "source": "https://www.gobilda.com/8mm-rex-shaft-with-e-clip-stainless-steel-40mm-length/",
+      "note": "Remove E-clips for this layout; orient groove away from bearing running surfaces. Threaded ends required."
+    },
+    {
+      "quantity": 1,
+      "part": "8 mm REX steel shaft",
+      "specification": "goBILDA 2106-4008-0480, 48 mm",
+      "use": "S2 output",
+      "source": "https://www.gobilda.com/stainless-steel-rex-shafting/",
+      "note": "Threaded ends required; groove has not been modeled."
+    },
+    {
+      "quantity": 1,
+      "part": "12 mm REX steel shaft",
+      "specification": "goBILDA 2109-4012-0640, 64 mm, no groove required",
+      "use": "Final output",
+      "source": "https://www.gobilda.com/stainless-steel-rex-shafting/",
+      "note": "Some supplier page titles still say E-clip. Match SKU/profile/length; this design uses a separate collar and needs no output-shaft end thread."
+    },
+    {
+      "quantity": 1,
+      "part": "Output shaft collar",
+      "specification": "goBILDA 2910-1026-4012",
+      "use": "Final shaft retention",
+      "source": "https://www.gobilda.com/2910-series-aluminum-clamping-collar-12mm-rex-id-x-26mm-od-10mm-length/",
+      "note": "10 mm axial envelope allowed; actual vendor CAD body is shorter. Shim measured assembly."
+    },
+    {
+      "quantity": 1,
+      "part": "Motor coupler",
+      "specification": "ServoCity 625228, 5 mm round to 8 mm round, steel",
+      "use": "Motor to input shaft",
+      "source": "https://www.servocity.com/5mm-to-8mm-set-screw-shaft-coupler/",
+      "note": "Vendor STEP: 12.692 mm diameter, 19.05 mm long. Input REX round arcs fit 8 mm bore; verify retention physically. No published high-speed rating found."
+    },
+    {
+      "quantity": 3,
+      "part": "Sun retaining screw",
+      "specification": "M4 x 8 socket head",
+      "use": "Threaded 8 mm shaft ends",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 3,
+      "part": "Sun retaining washer",
+      "specification": "4.3 mm ID x 10 mm OD x 0.8 mm steel",
+      "use": "Retain sun gears",
+      "source": "",
+      "note": "Select shims and low endplay; avoid crushing printed sun between washer and shaft spacer."
+    },
+    {
+      "quantity": 2,
+      "part": "Motor face screws",
+      "specification": "M4 length selected for actual motor face",
+      "use": "Motor to printed plate",
+      "source": "",
+      "note": "CAD assumes 4 mm plate + 2.5 mm engagement, not verified. Do not choose screw length until motor thread depth is checked."
+    },
+    {
+      "quantity": 6,
+      "part": "Casing tie rods",
+      "specification": "M4 steel threaded rod, cut to 225 mm nominal",
+      "use": "Motor plate through output cap",
+      "source": "",
+      "note": "Trim only after actual washer/nut stack; deburr. Six holes on 90 mm pitch circle."
+    },
+    {
+      "quantity": 12,
+      "part": "Tie-rod washers",
+      "specification": "M4 steel, 9 mm OD",
+      "use": "End faces",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 12,
+      "part": "Tie-rod nuts",
+      "specification": "M4 lock nuts",
+      "use": "Both ends of tie rods",
+      "source": "",
+      "note": "Tighten evenly just enough to eliminate housing gaps; printed PC is not a metal spacer stack."
+    },
+    {
+      "quantity": 15,
+      "part": "Bearing-retainer inserts",
+      "specification": "ruthex RX-M2x4, OD3.6 x length4 mm",
+      "use": "Fixed bearing caps",
+      "source": "https://www.igo3d.com/mediafiles/Sonstiges/Ruthex/ruthex_Datenblatt_RX-Serie.pdf",
+      "note": "CAD pilot3.2 mm x5 mm deep. Heat-set using supplier method on coupon first."
+    },
+    {
+      "quantity": 15,
+      "part": "Bearing-retainer screws",
+      "specification": "M2 x 6 pan/socket head",
+      "use": "Three per retainer, five retainers",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 2,
+      "part": "Adapter clamp screws",
+      "specification": "M3 x25 socket head plus M3 nuts",
+      "use": "Separate printed fit/load-test adapter",
+      "source": "",
+      "note": "Printed 6.35 mm socket has no operating torque rating. Bench-test socket separately before using the grinder."
+    },
+    {
+      "quantity": 3,
+      "part": "Planet inner spacer",
+      "specification": "K&S 9824 brass tube, 6 mm OD, approximately 5.13 mm ID, cut to 4 mm",
+      "use": "Between 695 inner races",
+      "source": "https://ksmetals.com/products/br45mm-6",
+      "note": "Nominal tube dimensions need measurement. Square deburred ends; contact inner races only. Cut/finish to actual bearing spacing; do not clamp bearing balls through a short spacer. No metal printing required."
+    },
+    {
+      "quantity": 3,
+      "part": "Planet inner spacer",
+      "specification": "K&S 9824 brass tube, 6 mm OD, approximately 5.13 mm ID, cut to 9 mm",
+      "use": "Between 695 inner races",
+      "source": "https://ksmetals.com/products/br45mm-6",
+      "note": "Nominal tube dimensions need measurement. Square deburred ends; contact inner races only. Cut/finish to actual bearing spacing; do not clamp bearing balls through a short spacer. No metal printing required."
+    },
+    {
+      "quantity": 4,
+      "part": "Planet inner spacer",
+      "specification": "K&S 9824 brass tube, 6 mm OD, approximately 5.13 mm ID, cut to 14 mm",
+      "use": "Between 695 inner races",
+      "source": "https://ksmetals.com/products/br45mm-6",
+      "note": "Nominal tube dimensions need measurement. Square deburred ends; contact inner races only. Cut/finish to actual bearing spacing; do not clamp bearing balls through a short spacer. No metal printing required."
+    },
+    {
+      "quantity": 20,
+      "part": "Planet end shim",
+      "specification": "6 mm OD, approximately 5.13 mm ID, nominal 0.5 mm; K&S 9824 tube cut and finished to measured gap",
+      "use": "Between bearing inner races and carriers",
+      "source": "https://ksmetals.com/products/br45mm-6",
+      "note": "Thin rings need careful cutting/finishing with shop help or supplier custom cut service. Printed versions are fit samples only. Combined OD plus diametral pin clearance must remain below 6.6 mm for selected NSK bearing. No shield contact, side rub or ball preload."
+    },
+    {
+      "quantity": 1,
+      "part": "Shaft spacer stock",
+      "specification": "8.15 ID x10 OD precision metal tube",
+      "use": "Input and interstage inner-race stacks",
+      "source": "",
+      "note": "Nominal pieces: 7,6.5,9.5,0.5 x3,1.5 x2,2.5 mm. Recheck generated assembly and shim to measured endplay."
+    },
+    {
+      "quantity": 1,
+      "part": "Output spacer stock",
+      "specification": "12.15 ID x15 OD precision metal tube",
+      "use": "Output bearings/collar",
+      "source": "",
+      "note": "Nominal pieces:2.5 mm x2 and8 mm x1. Fit samples exported; use metal for powered tests."
+    },
+    {
+      "quantity": 1,
+      "part": "Adjustment shim assortment",
+      "specification": "8 and12 mm shaft IDs, 0.1/0.2/0.5 mm steel",
+      "use": "Endplay adjustment",
+      "source": "",
+      "note": "Keep shim OD clear of shields/outer races and printed holes."
+    },
+    {
+      "quantity": 1,
+      "part": "Gear filament",
+      "specification": "Prusament PC Blend Carbon Fiber (PCCF), provisional test grade",
+      "use": "All working gear/carrier/casing print candidates",
+      "source": "https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf",
+      "note": "See BUILD-GUIDE.md material comparison. Hardened nozzle required. CF does not validate repeated-load tooth strength. Unfilled PC and nylon remain comparison candidates, not drop-in equivalents."
+    },
+    {
+      "quantity": 1,
+      "part": "Gear lubricant",
+      "specification": "Super Lube multi-purpose synthetic grease 21030, thin film",
+      "use": "Gear teeth",
+      "source": "https://www.super-lube.com/wp-content/uploads/2025/09/Super-Lube-Compatability-Chart-for-both-Polymers-and-Elastomers.pdf",
+      "note": "Manufacturer rates PC compatibility good; PCCF blend still needs a stressed-coupon compatibility test. Keep lubricant and wear debris outside coffee path."
+    },
+    {
+      "quantity": 1,
+      "part": "Controller",
+      "specification": "Pololu SMC G2 18v15, #1362 connectors soldered",
+      "use": "Knob control and hardware current limit",
+      "source": "https://www.pololu.com/product/1362",
+      "note": "Windows configuration utility required for initial setup. Price seen $141.18 and backorder status on 2026-10-21; check before buying."
+    },
+    {
+      "quantity": 1,
+      "part": "Bench power source",
+      "specification": "Current-limited adjustable DC supply, 12 V nominal, >=12 A for final load stage",
+      "use": "Initial development",
+      "source": "",
+      "note": "Shop availability unverified. Low-current supplies are useful for low-speed/no-load tests, not full-load verification."
+    },
+    {
+      "quantity": 1,
+      "part": "Enclosed adapter, later",
+      "specification": "Mean Well GST220A12-R7B, 12 V 15 A",
+      "use": "After bench validation",
+      "source": "https://www.meanwell.com/Upload/PDF/GST220A/GST220A-SPEC.PDF",
+      "note": "Optional replacement for bench supply, not additional requirement. Buy a correctly rated R7B mate/harness; wiring polarity must be verified with a meter."
+    },
+    {
+      "quantity": 1,
+      "part": "Speed knob",
+      "specification": "10 kohm linear potentiometer, knob, three-wire cable",
+      "use": "Analog speed setting",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 1,
+      "part": "Stop button",
+      "specification": "Latching normally-closed low-voltage switch",
+      "use": "Controller kill input",
+      "source": "",
+      "note": "An electronics stop is not a safety-rated emergency-stop system. Unplug power before handling gears."
+    },
+    {
+      "quantity": 1,
+      "part": "DC disconnect",
+      "specification": "20 A or higher at >=24 VDC, enclosed",
+      "use": "Power isolation",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 1,
+      "part": "Fuse and holder",
+      "specification": "15 A automotive blade fuse, >=20 A holder",
+      "use": "Supply positive lead near source",
+      "source": "",
+      "note": "Fuse protects wiring; it does not limit gear torque."
+    },
+    {
+      "quantity": 1,
+      "part": "Wire/connectors",
+      "specification": "16 AWG copper for short power/motor runs; crimp ferrules, covered terminals; >=15 A connectors",
+      "use": "Power wiring",
+      "source": "",
+      "note": "Do not use a solderless breadboard or thin jumper leads for motor current."
+    },
+    {
+      "quantity": 1,
+      "part": "USB cable",
+      "specification": "USB-A/USB-C to Micro-B data cable",
+      "use": "Controller setup",
+      "source": "",
+      "note": ""
+    },
+    {
+      "quantity": 1,
+      "part": "Controller enclosure",
+      "specification": "Insulated ventilated enclosure with strain relief",
+      "use": "Keep wiring protected",
+      "source": "",
+      "note": "Do not enclose motor vents or place controller inside the warm gear chamber."
+    },
+    {
+      "quantity": 1,
+      "part": "Fixture/test equipment",
+      "specification": "Rigid bolted fixture, clear guard, digital caliper, torque wrench 0-6 Nm, 11 mm socket, optical tachometer, thermocouples, DC clamp meter",
+      "use": "Physical acceptance tests",
+      "source": "",
+      "note": "Borrow shop tools if available. Never hold the running motor/gearbox or react its torque by hand."
+    }
+  ]
+}

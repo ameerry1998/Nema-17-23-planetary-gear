@@ -1,119 +1,79 @@
 # BaneBots 775 / KINGrinder K6
 
-An experimental compact drive for a KINGrinder K6, using a BaneBots M7-RS775-18 brushed DC motor and a printed planetary reduction gearbox.
+Experimental, printable planetary drive using the BaneBots M7-RS775-18 motor. **No physical fit, load, heat or wear test has passed yet.** The current files are development candidates, not an operating-strength release.
 
-**Current status: unpowered fit tests only.** The files here do not form a working motorized gearbox. The 3 mm thick gears and printed carrier pins are for hand turning. Keep the motor disconnected during these tests.
+The gears, carriers and housing are printed in **Prusament PC Blend Carbon Fiber (PCCF)** for the next tests. Bearings, shafts, bolts and small connecting hubs are purchased metal hardware. No metal printer is required. Some spacer tube and tie-rod stock needs cutting/finishing. The material was changed from the earlier provisional unfilled PC baseline; the assumed tooth-load limit was not increased merely because CF was added.
 
-![Hand-test gear geometry](gear-mesh-preview.png)
+Read the [build guide](BUILD-GUIDE.md) for the material comparison, print settings, assembly, wiring and test procedure. [hardware.json](hardware.json) is the complete candidate hardware list with quantities and source links.
 
-## Start here
+## Smallest next physical step
 
-1. Print the [5.3 mm](fit-tests/shaft-fit-5.3mm-NO-POWER.stl) and [5.2 mm](fit-tests/shaft-fit-5.2mm-NO-POWER.stl) shaft gauges at 100% scale. Try the loosest first without forcing it onto the shaft.
-2. Print the [slotted motor-face template](fit-tests/motor-face-slotted-TEMPLATE-NO-POWER.stl). This checks approximate mounting-hole positions, not an operating mount.
-3. Record the actual motor dimensions listed below. The current 29 mm mounting-hole spacing is an assumption.
-4. Follow [the print and hand-assembly guide](START-HERE.html) for the optional gear mesh test. Download the repository and open that HTML file locally to see its formatted instructions.
+Print **one [S3 planet](drive-candidate/S3-planet.stl)** in the intended PCCF and check the two 5 x 13 x 4 mm bearing seats by pressing on the outer races. Report whether they seat with hand/light pressure and stay secure. Do not power it. The existing [motor-face template](fit-tests/motor-face-slotted-TEMPLATE-NO-POWER.stl) separately checks motor-hole spacing without power.
 
-The [fit-tests folder](fit-tests) contains individual printable STLs and editable STEP solids. The [cad folder](cad) contains reference assemblies, not print-in-place models.
+## One outcome checklist
 
-## How this extends the upstream project
+- [x] Preserve upstream source/license and original hand-turn fit parts.
+- [x] Implement a traceable motor, ratio, tooth, pin and shaft calculation with invalid-input tests.
+- [x] Generate three load-sized cartridge candidates, casing, bearing retention, motor interface and removable adapter source/STEP/STL.
+- [x] Define bought hardware, PCCF trial settings, beginner wiring and staged tests.
+- [x] Add a reproducible build and source/artifact hash verification command.
+- [ ] Validate actual printed bearing fits, motor face, shaft engagement and assembly access.
+- [ ] Measure representative K6 running torque and startup peaks.
+- [ ] Complete the controlled-load fixture and validate the printed output socket/shaft retention.
+- [ ] Pass low-speed load and high-speed/temperature tests, revise the drive from results.
+- [ ] Demonstrate repeatable grinding and wear behavior with recorded evidence.
+- [ ] Reduce package size and design the adjustable final stand around verified dimensions.
+- [ ] Generalize the proven sizing/build workflow into a reusable tool and release it with explicit limits.
 
-[Omar Salem's design](https://github.com/Omar-Salem/Nema-17-23-planetary-gear) supplies an editable Fusion reference for a two-stage planetary gearbox, including carriers, bearings, a housing and assembly instructions. Its calculation defaults use two 6:1 stages, giving 36:1 overall. The motor interface is for NEMA 17/23 motors.
+## Current candidate
 
-We are investigating that architecture for the faster BaneBots motor. The initial fit set in this folder was generated independently with [cq_gears](https://github.com/meadiode/cq_gears), not by modifying the upstream Fusion files. This keeps the experimental geometry reproducible while the motor interface and working-stage design are still being established. The upstream NEMA design remains available at the repository root.
+| Parameter | D1 value and evidence |
+| --- | --- |
+| Ratio | 100:1, from 5 x 5 x 4 stages; still provisional |
+| Target output | 3 Nm running; 5 Nm for one second; 100 RPM. Unmeasured K6 requirements. |
+| Motor supply | 12 V maximum for initial development |
+| Model at 3 Nm / 100 RPM | Approximately 7.4 A motor current and 9.9 V average motor voltage |
+| Model at 5 Nm / 100 RPM | Approximately 10.6 A and 10.3 V average; 52.4 W mechanical output |
+| Efficiencies | 90%, 90%, 85%, assumed, not measured |
+| Stage module / face width | S1 0.8 / 12 mm; S2 1.0 / 17 mm; S3 1.35 / 22 mm |
+| Material | Prusament PCCF, controlled-test candidate; no validated fatigue allowable |
+| Housing | 98 mm OD, 179.5 mm case; approximately 323 mm including motor/guard/adapter |
+| Output | 12 mm REX shaft, separate clamped attachment with 15.5 mm engagement |
+| K6 interface | Published nominal 6.35 mm hex; protrusion, socket clearance and actual fit unverified |
 
-The prototype has an 18-tooth sun, three 27-tooth planets and a fixed 72-tooth ring. The carrier turns once for every five sun turns. Three such stages would give 125:1, but only one thin hand-test stage is included here.
+The motor model suggests 125:1 cannot reach the provisional 5 Nm at 100 RPM point from 12 V with the assumed losses. The selected 100:1 is therefore a candidate to test, not a final answer. See [sizing-report.json](sizing-report.json) for assumptions and calculated values. The 8 MPa tooth screen is engineering judgment, not a published printed-gear fatigue rating. S3 reaches roughly 7.85 MPa in that screen.
 
-At 12 V, a simple voltage scaling of the manufacturer's 19,500 RPM no-load speed at 18 V estimates 13,000 RPM at the motor and 104 RPM after 125:1 reduction. Actual loaded speed is unknown. This calculation is not a strength rating. The proposed ratio may change after measuring the grinder's load and the motor's behavior.
+The stationary outer ring does not drive the grinder. Each sun gear drives planets around the fixed ring; their carrier rotates more slowly and turns the next shaft. S2 and S3 use small bought metal hubs bolted onto printed carriers to grip the shafts. The final shaft turns the removable printed adapter. That adapter still requires its own torque test.
 
-## Modular output and replaceable grinder adapters
+## Files and verification
 
-The motor and gearbox should be reusable across compatible hand grinders. The grinder-specific attachment is a separate printed part, not part of the final carrier or ring gear.
+- `drive.json`: editable design parameters, assumptions and sources.
+- `size_drive.py`, `test_sizing.py`: engineering screens and unit checks.
+- `build_drive.py`: gear and carrier generation using CadQuery and cq_gears.
+- `assemble_drive.py`: casing, retention, motor interface and separate attachment.
+- `drive-candidate/`: individual cartridge STEP/STL files and reference assemblies.
+- `drive-assembly/`: casing/interface STEP/STL files and complete reference assembly.
+- `drive-artifacts.json`: hashes binding the current checked sources to artifacts.
+- `test-results-template.csv`: empty physical-test log; no fabricated results.
+- `evidence/`: preserved earlier failed checks where applicable.
+- `fit-tests/`, `cad/`, `START-HERE.html`: original thin hand-turn/fit set, not powered parts.
 
-In this arrangement, the housing and all outer ring gears stay fixed. The final carrier drives a central output shaft through a bearing in a stationary end cover. The rotating adapter attaches to that shaft. It must not attach to the fixed ring or end cover as its drive connection.
+STLs representing metal spacers are explicitly labeled **fit samples** in their reports. Use specified metal pieces for powered tests. Reference assemblies are not print-in-place files. No sliced G-code has been generated or printer profile validated on the shop machines.
 
-The proposed interface has a common keyed drive on the gearbox side and a grinder-specific socket on the other side. A square drive is one candidate; its size and retention have not been finalized. The printed adapter body can locate and retain metal drive/socket inserts. The shaft, hub, inserts and adapter retention need torque and fit checks before operation. Changing the attachment must not require disassembling the gearbox.
-
-A stationary stand must react the torque and keep the motor and grinder aligned. Its grinder cradle should be adjustable or separately replaceable because grinder bodies differ as well as their shafts. Compatibility also depends on the grinder's required torque, speed and direction. The current visualization is an illustrative packaging concept, not completed adapter or housing CAD.
-
-## Development checklist
-
-- [x] Preserve the upstream source and MIT license in a fork.
-- [x] Add editable shaft, bearing-seat and motor-face fit coupons.
-- [x] Add one hand-turn gear stage, reference assemblies and print instructions.
-- [x] Record CAD validity, mesh and sampled gear-interference checks.
-- [ ] Measure the motor face, shaft and grinder connection; print and check fit.
-- [ ] Measure K6 running torque and startup peaks with the intended beans and grind setting.
-- [ ] Finalize the motor mount and pinion retention.
-- [ ] Size the operating teeth, shafts, carrier and housing. Investigate steel planet pins supported at both ends, bearings and stronger later stages.
-- [ ] Complete the interstage connections and retained K6 output coupling.
-- [ ] Select the power supply and DC controller with appropriate current limiting.
-- [ ] Check alignment and no-load operation, then controlled load, temperature and wear.
-
-The 775's high input speed makes the first-stage teeth, lubrication and heat important. The later stages carry greater torque. Stronger filament alone does not establish that either can survive operation.
-
-## Prove the drive before finalizing the arm
-
-The arm in the concept view is provisional. Its clearance is not established. Prioritize a working gearbox and adapter on a temporary rigid fixture, then design the final stand around the tested drive. The fixture must still support the gearbox, react torque and keep the shafts aligned.
-
-1. **Establish the load and duty.** Measure handle radius, approximate tangential running force and startup peaks using the intended beans and grind setting. Record normal hand-grinding speed, dose size, dose duration and the intended number of consecutive doses. A slowly pulled luggage/spring scale provides an initial torque estimate; it can miss dynamic peaks and does not by itself establish the operating load envelope. The earlier 3 to 5 Nm and proposed 125:1 ratio remain unverified assumptions.
-2. **Choose the exact material and calculate the working geometry.** Specify the filament grade, drying, printer/profile, orientation and conditioning. Use suitable printed-part data with conservative allowances for fatigue, temperature and uncertainty. Check tooth bending/contact, deflection, wear, pins, carrier, shaft, hub and bearings. PC Blend and nylon are candidates, not interchangeable material specifications. Datasheet tensile strength is not a repeated-load gear-tooth rating. The first-stage speed and final-stage torque may require different geometry or materials.
-3. **Test the demanding parts separately.** First verify fit and hand motion. After designing operating-strength parts, test the final stage at low speed against the specified torque using a supported, instrumented load fixture. Separately run the motor-end stage through the intended input-speed range with current limiting and a guard, recording speed, current, temperature and tooth condition. A low-speed torque pass does not establish high-speed durability. The existing thin hand-test parts must not be used for powered tests.
-4. **Test the complete drive on the fixture.** Establish target running torque, brief peak torque and peak duration, speed tolerance, current/torque limit, material-specific temperature cutoff and duty cycle before the test. Demonstrate those measured operating points, then representative grinding and start/stop cycles without stalls, tooth damage, loose hubs or an increasing loss of fit. An initial series of 10 representative doses is a prototype milestone, not a lifetime rating. Recheck wear and play after testing. A protection test belongs on a controlled load fixture, not a deliberately jammed grinder.
-5. **Release the interface to the arm design.** Record actual gearbox diameter/length, mounting-hole pattern and locating face, output centerline/protrusion, adapter engagement, mass/center of gravity and maximum permitted reaction torque. That maximum must reflect the tested torque limit, not only normal grinding torque. Also measure grinder/cup insertion and removal clearance. Build the arm around these dimensions and limits, with an adjustable or replaceable cradle.
-
-Keep the motor/gearbox mounting interface separate from the removable grinder adapter so that changing a stage does not force a redesign of every attachment. If a printed stage cannot meet the measured load and durability requirements in a practical size, evaluate a metal stage or commercial gearbox before investing in the final arm.
-
-### Sizing example, not an operating specification
-
-For reduction ratio `R`, output RPM is motor RPM divided by `R`. Output torque is approximately motor torque multiplied by `R` and by overall gearbox efficiency. These are the conversion relations in [maxon's gear guide](https://www.maxongroup.com/assets/public/caas/v1/media/56986/data/32bb5bfabd9ce7d852292f275410c997/knowledge-support-support-antriebswissen-kurz-erklaert-gear-download.pdf).
-
-An illustrative 5 Nm at 100 RPM is 52.4 W of mechanical output. At 125:1 and an assumed 70% overall gearbox efficiency, it requires approximately 0.057 Nm at 12,500 motor RPM, or 74.8 W of mechanical motor power. Electrical input is higher because the motor and controller also have losses. Neither the 70% efficiency nor this loaded motor operating point has been measured. Motor stall torque must not be used as continuous running torque.
-
-The current 18-tooth, module-0.8 sun has a 14.4 mm pitch diameter. At the provisional 13,000 motor RPM estimate, tooth pitch-line speed is about 9.8 m/s. This identifies the first stage as a heat/wear test priority; it is not a demonstrated allowable speed for the printed material.
-
-Material references: [Prusament PC Blend datasheet](https://prusament.com/wp-content/uploads/2022/10/PCBlend_Prusament_TDS_2022_16_EN.pdf), [Prusa nylon guidance](https://help.prusa3d.com/article/polyamide-nylon_167188), and [igus gear tests](https://www.igus.com/3d-printing/resources). The igus results concern their stated materials, processes and test geometry; they are not torque ratings for these FDM parts.
-
-## Measurements still needed
-
-- Center-to-center distance between the two front motor screw holes.
-- Raised locating collar diameter and height.
-- Shaft diameter, usable protrusion from the flat motor face and from the collar, and any shaft flat.
-- Permitted mounting-screw engagement depth.
-- Grinder hex width across opposite flats, usable engagement length and clearance around it.
-- Actual handle radius and tangential force while grinding. For a scale reading in kgf, torque in Nm is reading × 9.81 × radius in meters. Record startup peaks separately from running load.
-
-The earlier 3 to 5 Nm discussion was a sizing assumption, not a measured K6 specification.
-
-## Electronics and software
-
-The selected 775 is a brushed DC motor. A suitable DC motor controller with a knob can adjust its speed without an Arduino or custom firmware. Speed under load will vary unless feedback regulation is added. The controller and supply are not yet selected.
-
-The upstream Arduino files concern motor-control and measurement experiments. They are not required for the gears themselves to work. `build.py` here runs on a computer to generate CAD; it does not run on the motor.
-
-## Regenerate the current fit set
-
-The recorded build used Python 3.11. Create a separate environment in this folder:
+With Python 3.11:
 
 ```sh
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
-python build.py
+python build_all.py
+python build_all.py --verify-only
 ```
 
-The exact gear-library commit is pinned in `requirements-lock.txt`. `parameters.json` records the current dimensions and assumptions. The `draft_gear_width_mm` value does not generate working-width gears; this release exports only the 3 mm hand-test gears. Labels and fixtures target the current 18/27/72 configuration, so changing tooth counts requires reviewing the generator and assembly rather than treating it as a general gearbox configurator.
+Add `--package` to produce an experimental ZIP. The command executes the sizing tests, exports CAD and checks the recorded geometry. Individual stage reports include 13 representative tooth-phase samples, all planets at their initial phase and carrier clearance. The assembly checks modeled fixed-versus-moving intersections. These checks do not establish printed tolerances, deflection, fatigue, wear or physical performance.
 
-## Verification and limits
+## Relationship to upstream and sources
 
-The [recorded validation](validation.json) reports 13 valid single-solid CAD parts and 13 watertight STL meshes, with zero calculated intersection volume at the initial assembly and at 11 sampled positions over one tooth-mesh cycle. It does not establish printed fit, operation under load, wear life or a permitted speed. No physical testing is claimed.
+[Omar Salem’s upstream NEMA 17/23 project](https://github.com/Omar-Salem/Nema-17-23-planetary-gear) supplies the original editable Fusion files and planetary architecture reference. The D1 geometry in this variant is independently generated with [cq_gears](https://github.com/meadiode/cq_gears), pinned in `requirements-lock.txt`, rather than a direct edit of the upstream Fusion assembly. Its original motor interface and default ratio are not assumed suitable for the high-speed 775.
 
-`artifact-sha256.json` identifies the files associated with this recorded validation. Existing fit files were copied byte-for-byte from the initial prototype. Any later geometry change needs a new report and manifest. The build command overwrites generated files; an old report should not be used to validate a failed or modified build.
-
-## Sources and attribution
-
-- [Original NEMA 17/23 gearbox](https://github.com/Omar-Salem/Nema-17-23-planetary-gear), Omar Salem, MIT license.
-- [BaneBots M7-RS775-18 manufacturer data](https://banebots.com/m7-rs775-18/).
-- [cq_gears](https://github.com/meadiode/cq_gears), Apache-2.0 licensed dependency. Its library source is not bundled here.
-- [VykkuF's K6 motorization example](https://www.reddit.com/r/functionalprint/comments/1mcap06/i_motorised_my_hand_coffee_grinder_for_espresso/) uses a different motor and is supporting anecdotal evidence, not validation of these parts.
-
-Initial variant prepared with Codex on October 21, 2026. See [third-party attribution](THIRD-PARTY.md).
+Preserve the upstream MIT license and the Apache-2.0 attribution of the cq_gears dependency. Manufacturer data: [BaneBots motor](https://banebots.com/m7-rs775-18/), [PCCF datasheet](https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf), [KINGrinder K6 manual](https://uploads.strikinglycdn.com/files/ee51bf66-c9fe-40cf-85b0-a55bd71835ab/KINGrinder%20K6-EN.pdf). Additional bearing, hardware and controller sources are linked in the guide and BOM.

@@ -1,0 +1,237 @@
+{
+  "revision": "D1",
+  "status": "Engineering candidate; no physical validation or powered-use release",
+  "overall_ratio": 100.0,
+  "assumed_overall_efficiency": 0.6885,
+  "motor_stall_nm_at_18v": 1.1768076130244445,
+  "material": {
+    "name": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+    "tensile_yield_mpa": 64,
+    "screening_bending_mpa": 8,
+    "elastic_modulus_mpa": 2600,
+    "poisson_ratio": 0.38,
+    "surface_stop_c": 50,
+    "status": "PCCF selected for the next controlled print tests. 64 MPa horizontal tensile yield and 2600 MPa horizontal tensile modulus are manufacturer coupon data. The unchanged 8 MPa bending screen, Poisson ratio and 50 C stop are engineering assumptions, not gear fatigue/wear ratings. No material has passed physical validation."
+  },
+  "cases": {
+    "running": {
+      "output_nm": 3,
+      "output_rpm": 100,
+      "output_mechanical_w": 31.41592653589793,
+      "motor_nm": 0.04357298474945534,
+      "motor_rpm": 10000.0,
+      "estimated_motor_a": 7.413464543579942,
+      "estimated_average_motor_v": 9.897244971416825,
+      "estimated_pwm_duty": 0.8247704142847354,
+      "estimated_motor_electrical_w": 73.3728746747235,
+      "motor_model_note": "Linear interpolation from manufacturer no-load/stall data; ignores PWM ripple and temperature. No-load current at reduced voltage is unmeasured."
+    },
+    "peak": {
+      "output_nm": 5,
+      "output_rpm": 100,
+      "output_mechanical_w": 52.35987755982988,
+      "motor_nm": 0.07262164124909223,
+      "motor_rpm": 10000.0,
+      "estimated_motor_a": 10.555774239299904,
+      "estimated_average_motor_v": 10.341562131848558,
+      "estimated_pwm_duty": 0.8617968443207132,
+      "estimated_motor_electrical_w": 109.16319514548641,
+      "motor_model_note": "Linear interpolation from manufacturer no-load/stall data; ignores PWM ripple and temperature. No-load current at reduced voltage is unmeasured."
+    }
+  },
+  "stages": [
+    {
+      "name": "S1",
+      "ring_teeth": 72,
+      "ratio": 5.0,
+      "orbit_mm": 18.0,
+      "sun_pitch_mm": 14.4,
+      "planet_pitch_mm": 21.6,
+      "ring_pitch_mm": 57.6,
+      "planet_root_web_mm": 3.1500000000000012,
+      "planet_neighbor_gap_mm": 7.976914536239786,
+      "equally_spaced_assembly": true,
+      "minimum_ring_backing_at_tie_hole_mm": 12.899999999999995,
+      "ring_backing_over_whole_tooth_height": 6.789473684210523,
+      "module_mm": 0.8,
+      "width_mm": 12,
+      "planets": 3,
+      "input_rpm": 10000.0,
+      "carrier_rpm": 2000.0,
+      "pitch_speed_in_carrier_frame_m_s": 6.031857894892402,
+      "planet_bearing_relative_rpm": 5333.333333333333,
+      "cases": {
+        "running": {
+          "sun_input_nm": 0.04357298474945534,
+          "nominal_tangential_force_per_planet_n": 2.0172678124747843,
+          "factored_tangential_force_n": 5.043169531186961,
+          "sun_lewis_screen_mpa": 1.6186139799684272,
+          "planet_lewis_screen_mpa": 1.3908525501532973,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 12.099345789944223,
+          "pin_load_upper_screen_n": 10.086339062373922,
+          "pin_bending_screen_mpa": 3.9040670297697244,
+          "pin_deflection_screen_mm": 0.0002348946996244784,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.16810565103956537
+        },
+        "peak": {
+          "sun_input_nm": 0.07262164124909223,
+          "nominal_tangential_force_per_planet_n": 3.3621130207913072,
+          "factored_tangential_force_n": 8.405282551978267,
+          "sun_lewis_screen_mpa": 2.697689966614045,
+          "planet_lewis_screen_mpa": 2.3180875835888286,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 15.620188248152932,
+          "pin_load_upper_screen_n": 16.810565103956534,
+          "pin_bending_screen_mpa": 6.506778382949539,
+          "pin_deflection_screen_mm": 0.00039149116604079726,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.2801760850659422
+        }
+      },
+      "external_transverse_contact_ratio_standard_geometry": 1.5797147822261595,
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+    },
+    {
+      "name": "S2",
+      "ring_teeth": 72,
+      "ratio": 5.0,
+      "orbit_mm": 22.5,
+      "sun_pitch_mm": 18.0,
+      "planet_pitch_mm": 27.0,
+      "ring_pitch_mm": 72.0,
+      "planet_root_web_mm": 5.6000000000000005,
+      "planet_neighbor_gap_mm": 9.97114317029974,
+      "equally_spaced_assembly": true,
+      "minimum_ring_backing_at_tie_hole_mm": 5.449999999999996,
+      "ring_backing_over_whole_tooth_height": 2.319148936170211,
+      "module_mm": 1.0,
+      "width_mm": 17,
+      "planets": 3,
+      "input_rpm": 2000.0,
+      "carrier_rpm": 400.0,
+      "pitch_speed_in_carrier_frame_m_s": 1.5079644737231006,
+      "planet_bearing_relative_rpm": 1066.6666666666667,
+      "cases": {
+        "running": {
+          "sun_input_nm": 0.19607843137254902,
+          "nominal_tangential_force_per_planet_n": 7.262164124909223,
+          "factored_tangential_force_n": 18.155410312273055,
+          "sun_lewis_screen_mpa": 3.290547008688755,
+          "planet_lewis_screen_mpa": 2.827521419605762,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 17.251398007975354,
+          "pin_load_upper_screen_n": 36.31082062454611,
+          "pin_bending_screen_mpa": 17.753231124847584,
+          "pin_deflection_screen_mm": 0.001704310187985368,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.6051803437424351
+        },
+        "peak": {
+          "sun_input_nm": 0.32679738562091504,
+          "nominal_tangential_force_per_planet_n": 12.103606874848706,
+          "factored_tangential_force_n": 30.259017187121767,
+          "sun_lewis_screen_mpa": 5.48424501448126,
+          "planet_lewis_screen_mpa": 4.712535699342938,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 22.271459061228118,
+          "pin_load_upper_screen_n": 60.518034374243534,
+          "pin_bending_screen_mpa": 29.588718541412646,
+          "pin_deflection_screen_mm": 0.002840516979975614,
+          "carrier_pin_bearing_pressure_screen_mpa": 1.0086339062373921
+        }
+      },
+      "external_transverse_contact_ratio_standard_geometry": 1.57971478222616,
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+    },
+    {
+      "name": "S3",
+      "ring_teeth": 54,
+      "ratio": 4.0,
+      "orbit_mm": 24.3,
+      "sun_pitch_mm": 24.3,
+      "planet_pitch_mm": 24.3,
+      "ring_pitch_mm": 72.9,
+      "planet_root_web_mm": 3.812500000000001,
+      "planet_neighbor_gap_mm": 7.365389565666206,
+      "equally_spaced_assembly": true,
+      "minimum_ring_backing_at_tie_hole_mm": 4.562499999999993,
+      "ring_backing_over_whole_tooth_height": 1.4541832669322685,
+      "module_mm": 1.35,
+      "width_mm": 22,
+      "planets": 4,
+      "input_rpm": 400.0,
+      "carrier_rpm": 100.0,
+      "pitch_speed_in_carrier_frame_m_s": 0.3817035074111599,
+      "planet_bearing_relative_rpm": 300.0,
+      "cases": {
+        "running": {
+          "sun_input_nm": 0.8823529411764706,
+          "nominal_tangential_force_per_planet_n": 18.155410312273055,
+          "factored_tangential_force_n": 45.38852578068264,
+          "sun_lewis_screen_mpa": 4.708695214453606,
+          "planet_lewis_screen_mpa": 4.708695214453606,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 22.606387014040187,
+          "pin_load_upper_screen_n": 90.77705156136528,
+          "pin_bending_screen_mpa": 53.62955235631041,
+          "pin_deflection_screen_mm": 0.00751707558860951,
+          "carrier_pin_bearing_pressure_screen_mpa": 1.512950859356088
+        },
+        "peak": {
+          "sun_input_nm": 1.4705882352941178,
+          "nominal_tangential_force_per_planet_n": 30.259017187121763,
+          "factored_tangential_force_n": 75.64754296780441,
+          "sun_lewis_screen_mpa": 7.847825357422677,
+          "planet_lewis_screen_mpa": 7.847825357422677,
+          "below_assumed_bending_screen": true,
+          "external_mesh_hertz_pitch_point_screen_mpa": 29.184720141099092,
+          "pin_load_upper_screen_n": 151.29508593560882,
+          "pin_bending_screen_mpa": 89.38258726051737,
+          "pin_deflection_screen_mm": 0.012528459314349184,
+          "carrier_pin_bearing_pressure_screen_mpa": 2.5215847655934804
+        }
+      },
+      "external_transverse_contact_ratio_standard_geometry": 1.529765630830678,
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+    }
+  ],
+  "not_established": [
+    "Actual K6 torque and duty",
+    "Printed fatigue allowable",
+    "Dynamic factor at high input speed",
+    "Internal-ring root and rim stress",
+    "Contact fatigue and wear",
+    "Temperature equilibrium",
+    "Actual unequal planet load sharing",
+    "Physical fits and shaft alignment",
+    "Motor cooling and current-limit calibration"
+  ],
+  "output_shaft": {
+    "profile": "12 mm REX, conservatively screened as 11 mm solid round",
+    "peak_torsional_shear_mpa": 19.13207430105429,
+    "note": "No alloy-specific strength rating or stress-concentration factor yet. Avoid retaining-ring grooves in loaded spans."
+  },
+  "ratio_comparison_at_target_rpm": [
+    {
+      "ratio": 80,
+      "assumed_efficiency": 0.6885,
+      "estimated_required_motor_v_at_peak": 8.773106510964542,
+      "fits_average_voltage_model": true,
+      "note": "Same assumed efficiency for comparison only; alternative ratios need their own geometry/load analysis"
+    },
+    {
+      "ratio": 100,
+      "assumed_efficiency": 0.6885,
+      "estimated_required_motor_v_at_peak": 10.341562131848558,
+      "fits_average_voltage_model": true,
+      "note": "Same assumed efficiency for comparison only; alternative ratios need their own geometry/load analysis"
+    },
+    {
+      "ratio": 125,
+      "assumed_efficiency": 0.6885,
+      "estimated_required_motor_v_at_peak": 12.427095859325,
+      "fits_average_voltage_model": false,
+      "note": "Same assumed efficiency for comparison only; alternative ratios need their own geometry/load analysis"
+    }
+  ],
+  "calculation_limits": "Lewis approximation assumes a conventional 20-degree full-depth tooth. cq_gears uses an approximated root arc; local root FEA/testing remains necessary. Factors and 8 MPa threshold are judgments, not ISO/AGMA validation. Hertz is an elastic pitch-point estimate, not a polymer wear-life prediction. Planet pins use a conservative central point load with simply supported ends. Reverse bending of planet teeth is not separately life-rated."
+}

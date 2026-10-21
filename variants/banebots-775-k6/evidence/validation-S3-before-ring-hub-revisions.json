@@ -1,0 +1,120 @@
+{
+  "status": "FAILED",
+  "purpose": "Engineering candidate; no physical validation or powered-use release",
+  "parts": {
+    "S3-sun": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend",
+      "note": "8 mm REX bore; counterbore for M4 shaft-end retention; axial stack not yet finalized",
+      "volume_mm3": 6606.263161192933,
+      "dimensions_mm": [
+        24.743099212646484,
+        24.99985122680664,
+        20.0
+      ],
+      "step_sha256": "38b4f8ab6e9aa4aad9643c7c4ae9d1c8f1c5c6561586d872414564e176c9656b",
+      "stl_sha256": "ee3bf43f660af057b950264dd64b906db8b08e75a74f09de321c0eefec419760"
+    },
+    "S3-planet": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 4,
+      "material": "Prusament PC Blend",
+      "note": "Two 695ZZ 5 x 13 x 4 mm bearings per planet; outer-race pocket fit must be checked",
+      "volume_mm3": 5922.858852657674,
+      "dimensions_mm": [
+        24.743099212646484,
+        24.99985122680664,
+        20.0
+      ],
+      "step_sha256": "ab7f5cb7d022af5abb21b86ff96a9905dddcac50724198641d6477ff7fa1da7e",
+      "stl_sha256": "11ebf2a41eb64a03e1dd43245f17c11931498f606c648c9d79e4bdb09da48648"
+    },
+    "S3-fixed-ring": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend",
+      "note": "Fixed ring with six M4 clearance holes on 86 mm pitch circle; casing spacers still required",
+      "volume_mm3": 64861.048853067354,
+      "dimensions_mm": [
+        94.0,
+        93.9814224243164,
+        20.0
+      ],
+      "step_sha256": "bb59829d792212b1fddce9827c3286315d2dc7dc8462bd39720ed891f724ced1",
+      "stl_sha256": "92983d5a772774fe3367cf620e6feee65e5d75b11de8646665e435690cfb1f9c"
+    },
+    "S3-carrier-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend",
+      "note": "Lower plate, M3 spacer posts and 688ZZ carrier journal; use metal 5 mm shoulder pins",
+      "volume_mm3": 16550.520249135698,
+      "dimensions_mm": [
+        58.0,
+        57.9885368347168,
+        29.0
+      ],
+      "step_sha256": "0e470dfbc0e81704d7549bee9c5595d8282b999473650544259516b63ececa60",
+      "stl_sha256": "47b3434720905c9234643c728bf0e4e99c3eb6bb9dfb65677c5b4f56387ea640"
+    },
+    "S3-carrier-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend",
+      "note": "12 mm REX positive-drive bore; radial captive M3 nut/set screw for axial retention; needs hub slip/endplay test",
+      "volume_mm3": 17505.143040624334,
+      "dimensions_mm": [
+        58.0,
+        57.9885368347168,
+        14.0
+      ],
+      "step_sha256": "690291664bb6c0115d8e690b2a7bc7603dbbf6dedf444887bc5779aec43bac81",
+      "stl_sha256": "a0a82c160834b5d8f1b220f1d1c8ec1d4b69409fb6d21c2c73114457438e2858"
+    },
+    "S3-planet-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 4,
+      "material": "Prusament PC Blend",
+      "note": "Separates bearing inner races. Prefer equivalent accurately cut metal tube for load testing; printed part is an initial fit sample.",
+      "volume_mm3": 348.24798889726634,
+      "dimensions_mm": [
+        8.0,
+        7.998418807983398,
+        12.0
+      ],
+      "step_sha256": "4991a05a48978b601b7f849583228a790925b7dba3dbe57945ab6e96171f294f",
+      "stl_sha256": "28e36e94d5808023426f7ab51612263a02168d0fbec39f1edeeaa76b88a37b03"
+    },
+    "S3-planet-end-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 8,
+      "material": "Prusament PC Blend",
+      "note": "Nominal axial stack only; select shims after checking free rotation and actual bearing widths",
+      "volume_mm3": 25.86419743879225,
+      "dimensions_mm": [
+        7.0,
+        6.9986162185668945,
+        1.5
+      ],
+      "step_sha256": "d8e4b55c40adee6e187207cb879dcfb8cc934f5328b9f903750e24185f167021",
+      "stl_sha256": "a1aa1b3a13419cfa5618fc77eaf70dcb7a0d943be9c0c7d0c92ba9de889454e6"
+    }
+  },
+  "stages": {},
+  "physical_testing": "NOT PERFORMED",
+  "source_sha256": {
+    "drive.json": "5feb1232f215301451d9749502ea78b849e2fac4499f675e4995298e1e53e9ee",
+    "build_drive.py": "0213901d6caa4b36ac1a37e0f08e5b6df01cbe3adf38623a97c6633353aceb95",
+    "size_drive.py": "84f5953602bb2d4c7156ef45a55d8b7d98b6fec25e8f8b8c8a68980f614e5a6f"
+  },
+  "error": "S3",
+  "elapsed_seconds": 8.753623247146606
+}

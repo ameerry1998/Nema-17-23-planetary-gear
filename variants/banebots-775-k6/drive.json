@@ -1,0 +1,162 @@
+{
+  "revision": "D1",
+  "status": "Engineering candidate; no physical validation or powered-use release",
+  "motor": {
+    "name": "BaneBots M7-RS775-18",
+    "nominal_v": 18,
+    "no_load_rpm": 19500,
+    "no_load_a": 2.7,
+    "stall_a": 130,
+    "stall_oz_in": 166.65,
+    "supply_v": 12
+  },
+  "targets": {
+    "running_nm": 3,
+    "brief_peak_nm": 5,
+    "peak_duration_s": 1,
+    "output_rpm": 100,
+    "dose_g": 18,
+    "maximum_dose_s": 60,
+    "consecutive_doses": 3,
+    "rest_s": 120,
+    "status": "Provisional test targets, not measured K6 requirements"
+  },
+  "material": {
+    "name": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+    "tensile_yield_mpa": 64,
+    "screening_bending_mpa": 8,
+    "elastic_modulus_mpa": 2600,
+    "poisson_ratio": 0.38,
+    "surface_stop_c": 50,
+    "status": "PCCF selected for the next controlled print tests. 64 MPa horizontal tensile yield and 2600 MPa horizontal tensile modulus are manufacturer coupon data. The unchanged 8 MPa bending screen, Poisson ratio and 50 C stop are engineering assumptions, not gear fatigue/wear ratings. No material has passed physical validation."
+  },
+  "factors": {
+    "planet_load_sharing": 2.0,
+    "dynamic": 1.25
+  },
+  "geometry": {
+    "pressure_angle_deg": 20,
+    "backlash_parameter": 0.15,
+    "extra_root_clearance_mm": 0.1,
+    "housing_od_mm": 98,
+    "tie_rod_radius_mm": 45,
+    "tie_rod_hole_mm": 4.4,
+    "carrier_plate_mm": 6,
+    "bearing_fit_allowance_mm": 0.1,
+    "rex_fit_allowance_mm": 0.15,
+    "planet_bearing_id_mm": 5,
+    "planet_bearing_od_mm": 13,
+    "planet_bearing_width_mm": 4,
+    "pin_hole_mm": 5.1,
+    "carrier_journal_id_mm": 8,
+    "carrier_journal_od_mm": 16,
+    "carrier_journal_width_mm": 5,
+    "planet_spacer_id_mm": 5.13,
+    "planet_spacer_od_mm": 6.0,
+    "planet_shaft_abutment_max_mm": 6.6,
+    "planet_housing_abutment_max_mm": 11.2,
+    "planet_through_bore_mm": 11.0,
+    "carrier_journal_abutment_hole_mm": 14.0
+  },
+  "stages": [
+    {
+      "name": "S1",
+      "module_mm": 0.8,
+      "sun_teeth": 18,
+      "planet_teeth": 27,
+      "planets": 3,
+      "width_mm": 12,
+      "carrier_gap_mm": 13,
+      "shoulder_length_mm": 25,
+      "efficiency_assumed": 0.9,
+      "output_rex_mm": 8,
+      "sun_retention_counterbore_mm": 0
+    },
+    {
+      "name": "S2",
+      "module_mm": 1.0,
+      "sun_teeth": 18,
+      "planet_teeth": 27,
+      "planets": 3,
+      "width_mm": 17,
+      "carrier_gap_mm": 18,
+      "shoulder_length_mm": 30,
+      "efficiency_assumed": 0.9,
+      "output_rex_mm": 8,
+      "sun_retention_counterbore_mm": 4.5
+    },
+    {
+      "name": "S3",
+      "module_mm": 1.35,
+      "sun_teeth": 18,
+      "planet_teeth": 18,
+      "planets": 4,
+      "width_mm": 22,
+      "carrier_gap_mm": 23,
+      "shoulder_length_mm": 35,
+      "efficiency_assumed": 0.85,
+      "output_rex_mm": 12,
+      "sun_retention_counterbore_mm": 4.5
+    }
+  ],
+  "sources": {
+    "motor": "https://banebots.com/m7-rs775-18/",
+    "filament": "https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf",
+    "gear_strength_scope": "https://khkgears.net/pdf/spur-tech.pdf",
+    "root_stress": "https://www.drivetrainhub.com/notebooks/gears/strength/Chapter%202%20-%20Root%20Stress.html",
+    "rex_profile": "https://www.gobilda.com/stainless-steel-rex-shafting/",
+    "controller": "https://www.pololu.com/docs/0j77/all",
+    "planet_bearing": "https://www.oss.nsk.com/products/bearings/ball-bearings/deep-groove-ball-bearings/extra-small-ball-bearings-and-miniature-ball-bearings-metric-series/695zz1mc5p6-apn.html"
+  },
+  "assembly": {
+    "interstage_shaft_lengths_mm": [
+      40,
+      48
+    ],
+    "output_shaft_length_mm": 64,
+    "input_shaft_length_mm": 40,
+    "output_shaft_start_in_carrier_mm": 5,
+    "interstage_cap_mm": 6,
+    "output_cap_mm": 24,
+    "input_cap_z_mm": -12,
+    "housing_bore_mm": 82,
+    "journal_retainer_mm": 2,
+    "journal_insert_od_mm": 3.6,
+    "journal_insert_length_mm": 4,
+    "input_coupler_length_mm": 19.05,
+    "motor_hole_spacing_assumed_mm": 29,
+    "motor_shaft_protrusion_published_mm": 7.62,
+    "input_coupler_od_mm": 12.7,
+    "input_coupler_sku": "ServoCity 625228",
+    "motor_face_z_mm": -33.55,
+    "motor_plate_mm": 4,
+    "motor_collar_clearance_mm": 18.2,
+    "motor_body_length_mm": 71.374,
+    "motor_body_od_mm": 46.99,
+    "shaft_spacer_od_mm": 10,
+    "output_collar_od_mm": 26,
+    "output_collar_length_mm": 10,
+    "output_adapter_gap_mm": 0.5,
+    "journal_insert_sku": "ruthex RX-M2x4",
+    "output_hub_sku": "goBILDA 1301-0016-4012"
+  },
+  "interface": {
+    "output_profile": "12 mm REX: clipped 11 mm across-flats hex",
+    "shaft_engagement_mm": 15.5,
+    "adapter_rex_socket_depth_mm": 16,
+    "adapter_length_mm": 38,
+    "adapter_body_od_mm": 32,
+    "adapter_grinder_hex_af_mm": 6.35,
+    "adapter_hex_allowance_mm": 0.15,
+    "adapter_hex_depth_mm": 15,
+    "adapter_material": "Prusament PC Blend",
+    "status": "Fit and load-test candidate. Printed K6 socket has no established torque rating. A metal bit-holder version is preferable for grinder use after fit verification."
+  },
+  "grinder_envelope": {
+    "body_diameter_mm": 55,
+    "body_height_mm": 175,
+    "removal_clearance_mm": 35,
+    "status": "Adjustable layout assumptions from third-party measurements of an older K6; not verified fits for the user unit. No stand generated.",
+    "hex_source": "https://uploads.strikinglycdn.com/files/ee51bf66-c9fe-40cf-85b0-a55bd71835ab/KINGrinder%20K6-EN.pdf"
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "status": "DIGITAL STAGE CHECKS PASSED; NOT A COMPLETE OR PHYSICALLY VALIDATED DRIVE",
+  "purpose": "Engineering candidate; no physical validation or powered-use release",
+  "parts": {
+    "S1-sun": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "8 mm REX bore; M4 shaft-end washer retention. S1 has no counterbore to preserve its small root web; axial stack not yet finalized",
+      "volume_mm3": 1347.8923714123296,
+      "dimensions_mm": [
+        15.835583686828613,
+        15.99990463256836,
+        12.0
+      ],
+      "step_sha256": "9c19b4c7acbcb998de69e7db7c2e7ceb14947d5a0247a66928f12fa621aa326e",
+      "stl_sha256": "31f3749a7b2e8e670407897c95a51b73f4cbbc0056e2e25b268d877d6a025404"
+    },
+    "S1-planet": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 3,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Two 695ZZ 5 x 13 x 4 mm bearings per planet; outer-race pocket fit must be checked",
+      "volume_mm3": 2841.8024739816865,
+      "dimensions_mm": [
+        23.149559020996094,
+        23.185699462890625,
+        12.0
+      ],
+      "step_sha256": "2aabaa596a79df71d684dd1ebea7312f63387d1fb120c12c626aa33fa6377b16",
+      "stl_sha256": "dd1887cd5b0646e493ea27942371726ceed4d71aff35ad0f330f1f6c1a0d035c"
+    },
+    "S1-fixed-ring": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed ring with six M4 clearance holes on 90 mm pitch circle",
+      "volume_mm3": 57941.68722882566,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        12.0
+      ],
+      "step_sha256": "ab76129182a95c4c571c61920bff79d60e92e2403403e33ba62a0b96434ac0b4",
+      "stl_sha256": "69e68ac19e48477c776f7baf88c7a12da8d1a53ea4dc4f09c98ed6f726a68aad"
+    },
+    "S1-carrier-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Lower plate, M3 spacer posts and 688ZZ carrier journal; use metal 5 mm shoulder pins",
+      "volume_mm3": 10601.042087719861,
+      "dimensions_mm": [
+        49.0,
+        48.99031448364258,
+        19.0
+      ],
+      "step_sha256": "8425502a97e84fa7ec1c513ddcb1bf618e7ee9b78810af4b629bcd1fdc00fa45",
+      "stl_sha256": "e9684f45ac5deb785ea650acef6d3ad2cb6c6f5ba3a96e270c8177fc538b546b"
+    },
+    "S1-carrier-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "8 mm REX positive-drive bore; radial captive M3 nut/set screw for axial retention; needs hub slip/endplay test",
+      "volume_mm3": 11981.326608360172,
+      "dimensions_mm": [
+        49.0,
+        48.99031448364258,
+        14.0
+      ],
+      "step_sha256": "71680af718f3b508fff871653b27ae138490d872689b663184de6ae3833e6500",
+      "stl_sha256": "526e73a5bed78d81bc0c7ec5279a441e6442f8b12ef3036d907e0d0b1f90343f"
+    },
+    "S1-planet-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 3,
+      "material": "K&S 9824 brass tube; STL is a FIT SAMPLE ONLY",
+      "note": "6 mm OD clears selected NSK 695 inner-race abutment limit. Square ends and actual cut length need physical fit check.",
+      "volume_mm3": 30.412339715901805,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        4.0
+      ],
+      "step_sha256": "f81cdf2114e38e23eee9d15a0f22ee163fdac7a4d437b868955549fa5fd87034",
+      "stl_sha256": "7a9542554238651796acb504132b56f973bc20cfe602241ba284d626153f027a"
+    },
+    "S1-planet-end-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 6,
+      "material": "K&S 9824 brass tube or equivalent precision shim; STL is a FIT SAMPLE ONLY",
+      "note": "Nominal axial stack only; select shims after checking free rotation and actual bearing widths",
+      "volume_mm3": 3.8015424644877256,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        0.5
+      ],
+      "step_sha256": "5eaaf3f9a5b816ece77143c178f8dd5fb86abf9d15889c7419d8d5a51d726aab",
+      "stl_sha256": "6b2d022eeeceda32e362ba3f6f11833424bec11431e1a11c7f976bc9bc27bf00"
+    },
+    "S2-sun": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "8 mm REX bore; M4 shaft-end washer retention. S1 has no counterbore to preserve its small root web; axial stack not yet finalized",
+      "volume_mm3": 3227.41715506999,
+      "dimensions_mm": [
+        19.794479370117188,
+        19.999881744384766,
+        17.0
+      ],
+      "step_sha256": "9d792c07b07c650b29216a3de6cfe1bd62ad1c7d79114c83d5d952e76774d27c",
+      "stl_sha256": "c6a2fb072bd4bea883a969090f83a0888f7d2d7fdbee6d2654342b05d453d868"
+    },
+    "S2-planet": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 3,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Two 695ZZ 5 x 13 x 4 mm bearings per planet; outer-race pocket fit must be checked",
+      "volume_mm3": 7598.189616813416,
+      "dimensions_mm": [
+        28.936948776245117,
+        28.98212432861328,
+        17.0
+      ],
+      "step_sha256": "ed286b862eb6c30ac3cce67c4fb4f10c9aae382591c0b2d00d714667cfc33871",
+      "stl_sha256": "ceb4afeb3265fd3166b58616f906525ae37c6962a200a39343c1653a71383ad2"
+    },
+    "S2-fixed-ring": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed ring with six M4 clearance holes on 90 mm pitch circle",
+      "volume_mm3": 57033.878075964574,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        17.0
+      ],
+      "step_sha256": "08585f9048b8f4d2dd9019c24f2e025fa7339186b9f2c67a9a7d2cd066c29df3",
+      "stl_sha256": "5208a91f183bfa5c1e116914adc85a85bacf22b501017746f1217c6a9859e726"
+    },
+    "S2-carrier-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Lower plate, M3 spacer posts and 688ZZ carrier journal; use metal 5 mm shoulder pins",
+      "volume_mm3": 15578.839954085117,
+      "dimensions_mm": [
+        58.0,
+        57.9885368347168,
+        24.0
+      ],
+      "step_sha256": "8af2626ffc3ed0e2e9ce7439823f236a3f8de0ac178306340f08f3ceec122dc6",
+      "stl_sha256": "b841ccdb840d5a7338d8e2c5c74548ba17340cb3cfedd12fe35349fbd27c75d7"
+    },
+    "S2-carrier-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Four M4 x 10 countersunk bolts on 16 mm square and 14.2 mm through pilot for metal goBILDA 1309-0016-4008 hub",
+      "volume_mm3": 13858.613397889325,
+      "dimensions_mm": [
+        58.0,
+        57.9885368347168,
+        6.0
+      ],
+      "step_sha256": "7de12065a0fe5199e96c0f6167d8af39e994aec744c56a7b384fdc1b6f335048",
+      "stl_sha256": "99abc2c5968308fff8fe543f4235fe3312adf5781c629d29b0900be8a195f770"
+    },
+    "S2-planet-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 3,
+      "material": "K&S 9824 brass tube; STL is a FIT SAMPLE ONLY",
+      "note": "6 mm OD clears selected NSK 695 inner-race abutment limit. Square ends and actual cut length need physical fit check.",
+      "volume_mm3": 68.42776436077907,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        9.0
+      ],
+      "step_sha256": "b44363240aac0acf6f1a62abcafb25e59308e9d961eeebb74789a3d3fc6d316c",
+      "stl_sha256": "1bd3f8e70048f4a5cf7d5c7a365eedbd67a1ec278da9a1abdf627e7c30f396b0"
+    },
+    "S2-planet-end-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 6,
+      "material": "K&S 9824 brass tube or equivalent precision shim; STL is a FIT SAMPLE ONLY",
+      "note": "Nominal axial stack only; select shims after checking free rotation and actual bearing widths",
+      "volume_mm3": 3.8015424644877256,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        0.5
+      ],
+      "step_sha256": "30a4537531d7485d849fe2e16c1d0574d6b6496ef409d616f255354346857ff0",
+      "stl_sha256": "6b2d022eeeceda32e362ba3f6f11833424bec11431e1a11c7f976bc9bc27bf00"
+    },
+    "S3-sun": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "8 mm REX bore; M4 shaft-end washer retention. S1 has no counterbore to preserve its small root web; axial stack not yet finalized",
+      "volume_mm3": 8698.033650424166,
+      "dimensions_mm": [
+        26.72254753112793,
+        26.999839782714844,
+        22.0
+      ],
+      "step_sha256": "e7b6d4586158c8a3134fbf506af07db8909a0c664fbe4ac444c6b5836af70623",
+      "stl_sha256": "554bd49b4061a90cb1d780ea0e84abb6cea235a5aab54dc4ea26105190ebe8e8"
+    },
+    "S3-planet": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 4,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Two 695ZZ 5 x 13 x 4 mm bearings per planet; outer-race pocket fit must be checked",
+      "volume_mm3": 7453.7633618759355,
+      "dimensions_mm": [
+        26.999839782714844,
+        26.72254753112793,
+        22.0
+      ],
+      "step_sha256": "8f0f45ddcb15c0390ddccb506ebbabe75a11d245748475a512e10050c2118dab",
+      "stl_sha256": "0fefe38e937d9272815f626a4f3e83e8044f0b16873400327bfa4c08e6bbe19d"
+    },
+    "S3-fixed-ring": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed ring with six M4 clearance holes on 90 mm pitch circle",
+      "volume_mm3": 71428.11041901734,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        22.0
+      ],
+      "step_sha256": "fe0dbafb924633b67cf054069f9b381f04be02e73c9f96c4d1ee1fbb0b1497d8",
+      "stl_sha256": "6a4e5e890b5c3449bb8fc9bb80cba6d400996316e999e43d412f1ed91c1594d9"
+    },
+    "S3-carrier-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Lower plate, M3 spacer posts and 688ZZ carrier journal; use metal 5 mm shoulder pins",
+      "volume_mm3": 18495.918116793848,
+      "dimensions_mm": [
+        61.599998474121094,
+        61.58782196044922,
+        29.0
+      ],
+      "step_sha256": "9689a412e0ceb92d14077e5fb0d8fe0b46a14fcdebf1a8bfae67e739a089a355",
+      "stl_sha256": "2eb46ad128a03ffede3bc42a6c2aaa41f9e800271de03d3e3d1917f51480258b"
+    },
+    "S3-carrier-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Four M4 x 10 countersunk bolts on 16 mm square and 14.2 mm through pilot for metal goBILDA 1301-0016-4012 hub",
+      "volume_mm3": 15710.047289447162,
+      "dimensions_mm": [
+        61.599998474121094,
+        61.58782196044922,
+        6.0
+      ],
+      "step_sha256": "fdfc78b81c892c86b5fd23f9cffe37608be0579e7d6ee7792261594010e47410",
+      "stl_sha256": "c12937f80c11514929a041eda95e59cc2cc4254aa6bc3c9461a31f7a8a3b7ad9"
+    },
+    "S3-planet-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 4,
+      "material": "K&S 9824 brass tube; STL is a FIT SAMPLE ONLY",
+      "note": "6 mm OD clears selected NSK 695 inner-race abutment limit. Square ends and actual cut length need physical fit check.",
+      "volume_mm3": 106.4431890056563,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        14.0
+      ],
+      "step_sha256": "4292a41e198b176a16fa1461362d205741654759d44d20870b77e7036fe36cad",
+      "stl_sha256": "0b71cfa943d81adb59569f9a4d7e0b6e8ca1fb25594b6416e9c92988601b60d0"
+    },
+    "S3-planet-end-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 8,
+      "material": "K&S 9824 brass tube or equivalent precision shim; STL is a FIT SAMPLE ONLY",
+      "note": "Nominal axial stack only; select shims after checking free rotation and actual bearing widths",
+      "volume_mm3": 3.8015424644877256,
+      "dimensions_mm": [
+        6.0,
+        5.998814105987549,
+        0.5
+      ],
+      "step_sha256": "867a98d9ca0975eaea8fd082444613b52b1dac79c5a2c453c45392281fe8f967",
+      "stl_sha256": "6b2d022eeeceda32e362ba3f6f11833424bec11431e1a11c7f976bc9bc27bf00"
+    }
+  },
+  "stages": {
+    "S1": {
+      "module_mm": 0.8,
+      "gear_width_mm": 12,
+      "carrier_gap_mm": 13,
+      "shoulder_length_mm": 25,
+      "gear_z_mm": 6.5,
+      "upper_carrier_z_mm": 19,
+      "cartridge_height_excluding_fastener_heads_mm": 33,
+      "housing_od_mm": 98,
+      "gear_ratio": 5.0,
+      "planet_root_web_mm": 3.1500000000000012,
+      "interference_samples": [
+        {
+          "carrier_deg": 0.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 0.4166666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 0.8333333333333334,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.25,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.6666666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.0833333333333335,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.5,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.916666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.3333333333333335,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.75,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 4.166666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 4.583333333333334,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 5.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        }
+      ],
+      "checks": "13 phase samples for one representative sun/planet and ring/planet mesh, plus all planets at initial phase and carrier/gear clearances. Equal-spacing assembly condition also checked. Full assembly is checked separately."
+    },
+    "S2": {
+      "module_mm": 1.0,
+      "gear_width_mm": 17,
+      "carrier_gap_mm": 18,
+      "shoulder_length_mm": 30,
+      "gear_z_mm": 6.5,
+      "upper_carrier_z_mm": 24,
+      "cartridge_height_excluding_fastener_heads_mm": 38,
+      "housing_od_mm": 98,
+      "gear_ratio": 5.0,
+      "planet_root_web_mm": 5.6000000000000005,
+      "interference_samples": [
+        {
+          "carrier_deg": 0.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 0.4166666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 0.8333333333333334,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.25,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.6666666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.0833333333333335,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.5,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.916666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.3333333333333335,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.75,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 4.166666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 4.583333333333334,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 5.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        }
+      ],
+      "checks": "13 phase samples for one representative sun/planet and ring/planet mesh, plus all planets at initial phase and carrier/gear clearances. Equal-spacing assembly condition also checked. Full assembly is checked separately."
+    },
+    "S3": {
+      "module_mm": 1.35,
+      "gear_width_mm": 22,
+      "carrier_gap_mm": 23,
+      "shoulder_length_mm": 35,
+      "gear_z_mm": 6.5,
+      "upper_carrier_z_mm": 29,
+      "cartridge_height_excluding_fastener_heads_mm": 43,
+      "housing_od_mm": 98,
+      "gear_ratio": 4.0,
+      "planet_root_web_mm": 3.812500000000001,
+      "interference_samples": [
+        {
+          "carrier_deg": 0.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 0.5555555555555556,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.1111111111111112,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 1.6666666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.2222222222222223,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 2.7777777777777777,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.3333333333333335,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 3.8888888888888893,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 4.444444444444445,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 5.0,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 5.555555555555555,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 6.111111111111112,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        },
+        {
+          "carrier_deg": 6.666666666666667,
+          "sun_planet_mm3": 0.0,
+          "ring_planet_mm3": 0.0
+        }
+      ],
+      "checks": "13 phase samples for one representative sun/planet and ring/planet mesh, plus all planets at initial phase and carrier/gear clearances. Equal-spacing assembly condition also checked. Full assembly is checked separately."
+    }
+  },
+  "physical_testing": "NOT PERFORMED",
+  "source_sha256": {
+    "drive.json": "50cf997c02ba4ebb85d208791a646beb3fb1ebc52b2454167c51a7592de8f36b",
+    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
+    "size_drive.py": "7e2244cd9553e0aa0e9171dfa63301902a8f37afa89ea9f586212170f59c44fe"
+  },
+  "elapsed_seconds": 63.165271043777466
+}
