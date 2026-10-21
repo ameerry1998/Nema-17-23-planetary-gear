@@ -24,6 +24,11 @@ def geometry(stage, cfg):
 
 def evaluate(cfg):
     g = cfg['geometry']
+    pin = g['planet_pin']
+    assert 0 < pin['diameter_min_mm'] <= pin['diameter_max_mm'] <= g['planet_bearing_id_mm']
+    assert pin['washer_id_mm'] < pin['diameter_min_mm'], 'Washer must stop on the steel shoulder'
+    assert pin['washer_id_mm'] > pin['thread_diameter_mm']
+    assert pin['thread_length_mm'] - pin['washer_thickness_mm'] - pin['nut_height_mm'] >= pin['thread_pitch_mm'], 'Insufficient thread beyond nut'
     spacer_swept_d = g['planet_spacer_od_mm'] + g['planet_spacer_id_mm'] - g['planet_bearing_id_mm']
     assert g['planet_spacer_id_mm'] > g['planet_bearing_id_mm']
     assert spacer_swept_d < g['planet_shaft_abutment_max_mm'], 'Planet spacer can touch bearing shield'
@@ -55,6 +60,8 @@ def evaluate(cfg):
             estimated_motor_electrical_w=v_required * current,
             motor_model_note='Linear interpolation from manufacturer no-load/stall data; ignores PWM ripple and temperature. No-load current at reduced voltage is unmeasured.')
     for i, s in enumerate(cfg['stages']):
+        assert 0 <= s['pin_head_recess_mm'] <= cfg['geometry']['carrier_plate_mm'] - 4
+        assert abs(s['pin_head_recess_mm'] - s['pin_upper_shim_mm']) < 1e-9, 'External shim must compensate pin head recess'
         g = geometry(s, cfg)
         remaining = math.prod(ratios[i:]) * math.prod(x['efficiency_assumed'] for x in cfg['stages'][i:])
         sun_rpm = cfg['targets']['output_rpm'] * math.prod(ratios[i:])
@@ -84,21 +91,27 @@ def evaluate(cfg):
             equivalent_e = cfg['material']['elastic_modulus_mpa'] / (2 * (1 - cfg['material']['poisson_ratio'] ** 2))
             hertz = math.sqrt(normal * equivalent_e / (math.pi * s['width_mm'] * equivalent_r))
             pin_load = 2 * factored
-            pin_span = s['carrier_gap_mm'] + cfg['geometry']['carrier_plate_mm']
+            pin_span = s['carrier_gap_mm'] + cfg['geometry']['carrier_plate_mm'] - s['pin_head_recess_mm'] / 2
             pin_moment = pin_load * pin_span / 4
-            pin_stress = 32 * pin_moment / (math.pi * 5 ** 3)
+            pin_stress = 32 * pin_moment / (math.pi * pin['diameter_min_mm'] ** 3)
             row['cases'][label] = dict(sun_input_nm=ts, nominal_tangential_force_per_planet_n=ft,
                 factored_tangential_force_n=factored,
                 sun_lewis_screen_mpa=sigma_s, planet_lewis_screen_mpa=sigma_p,
                 below_assumed_bending_screen=max(sigma_s, sigma_p) <= cfg['material']['screening_bending_mpa'],
                 external_mesh_hertz_pitch_point_screen_mpa=hertz,
                 pin_load_upper_screen_n=pin_load, pin_bending_screen_mpa=pin_stress,
-                pin_deflection_screen_mm=pin_load * pin_span ** 3 / (48 * 200000 * math.pi * 5 ** 4 / 64),
-                carrier_pin_bearing_pressure_screen_mpa=pin_load / (2 * 5 * cfg['geometry']['carrier_plate_mm']))
+                pin_deflection_screen_mm=pin_load * pin_span ** 3 / (48 * 200000 * math.pi * pin['diameter_min_mm'] ** 4 / 64),
+                carrier_pin_bearing_pressure_screen_mpa=pin_load / (2 * pin['diameter_min_mm'] * (cfg['geometry']['carrier_plate_mm'] - s['pin_head_recess_mm'])))
         assert g['equally_spaced_assembly'] and g['planet_neighbor_gap_mm'] > 0
         assert g['planet_root_web_mm'] >= 2
         assert g['ring_backing_over_whole_tooth_height'] >= 1.2, 'Thin ring ligament at tie hole needs redesign/analysis'
         assert abs(s['shoulder_length_mm'] - (2 * cfg['geometry']['carrier_plate_mm'] + s['carrier_gap_mm'])) < 1e-9
+        row['pin_stack'] = dict(sku=s['planet_pin_sku'], head_recess_mm=s['pin_head_recess_mm'], external_upper_shim_mm=s['pin_upper_shim_mm'],
+            nominal_shoulder_end_mm=s['pin_head_recess_mm'] + s['shoulder_length_mm'],
+            nominal_thread_beyond_nut_mm=pin['thread_length_mm'] - pin['washer_thickness_mm'] - pin['nut_height_mm'],
+            calculated_pin_axial_clearance_from_nominal_stack_mm=[0, pin['shoulder_length_plus_mm']],
+            minimum_pin_diameter_used_mm=pin['diameter_min_mm'],
+            scope='Shoulder/washer stop is metal-to-metal. Printed heights, shim/washer tolerances, shoulder fillets and nut lead threads are unmeasured; shim/finish for a retained, nonbinding pin without bearing preload. No fatigue rating.')
         report['stages'].append(row)
     report['output_shaft'] = {'profile': '12 mm REX, conservatively screened as 11 mm solid round',
         'peak_torsional_shear_mpa': 16 * cfg['targets']['brief_peak_nm'] * 1000 / (math.pi * 11 ** 3),

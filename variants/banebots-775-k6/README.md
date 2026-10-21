@@ -19,6 +19,7 @@ Print **one [S3 planet](drive-candidate/S3-planet.stl)** in the intended PCCF an
 - [x] Generate three load-sized cartridge candidates, casing, bearing retention, motor interface and removable adapter source/STEP/STL.
 - [x] Define bought hardware, PCCF trial settings, beginner wiring and staged tests.
 - [x] Add a reproducible build and source/artifact hash verification command.
+- [x] Specify planet-pin head/thread/washer stacks and check full-turn fastener/hub clearance; preserve the two discovered collision failures.
 - [x] Export TF1 motor-removed static-test fixture and measurement procedure; digitally checked, not physically validated.
 - [ ] Validate actual printed bearing fits, motor face, shaft engagement and assembly access.
 - [ ] Measure representative K6 running torque and startup peaks.
@@ -77,7 +78,7 @@ python build_all.py
 python build_all.py --verify-only
 ```
 
-Add `--package` to produce an experimental ZIP. The command executes the sizing tests, exports CAD and checks the recorded geometry. Individual stage reports include 13 representative tooth-phase samples, all planets at their initial phase and carrier clearance. The assembly checks modeled fixed-versus-moving intersections. These checks do not establish printed tolerances, deflection, fatigue, wear or physical performance.
+Add `--package` to produce an experimental ZIP. The command executes the sizing tests, exports CAD and checks the recorded geometry. Individual stage reports include 13 representative tooth-phase samples, all planets at their initial phase and carrier clearance. The assembly checks modeled fixed-versus-moving intersections and conservative full-turn envelopes for the carrier fasteners, including bearing-retainer screw heads. A previous S1 pin-head rotation collision is preserved in `evidence/`; the revised carrier uses a shallow recess and specified smaller heads. The inward output-bearing retainer now uses three flush DIN965H screws, addressing a second saved collision. Both changes still require physical fit and retention checks. These checks do not establish printed tolerances, deflection, fatigue, wear or physical performance.
 
 ## Relationship to upstream and sources
 

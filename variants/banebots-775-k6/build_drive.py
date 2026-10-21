@@ -110,7 +110,9 @@ def make_stage(s):
         lower = lower.cut(hex_prism(5.7, 2.8, -0.1).translate((x, y, 0)))
     for x, y in planet_positions:
         lower = lower.cut(cylinder(G['pin_hole_mm'], plate + 2, -1, x, y))
-    lower = save(name + '-carrier-lower', lower.clean(), note='Lower plate, M3 spacer posts and 688ZZ carrier journal; use metal 5 mm shoulder pins')
+        if s['pin_head_recess_mm']:
+            lower = lower.cut(cylinder(G['planet_pin']['head_recess_diameter_mm'], s['pin_head_recess_mm'] + .1, -.1, x, y))
+    lower = save(name + '-carrier-lower', lower.clean(), note=f"Lower plate, M3 posts and 688ZZ journal; AMPG {s['planet_pin_sku']} pins. Head recess {s['pin_head_recess_mm']} mm, with matching external upper shim; verify endplay.")
     shaft_d = s['output_rex_mm']
     metal_hub = name in ('S2', 'S3')
     boss_d = 20 if shaft_d == 8 else 26
@@ -149,7 +151,7 @@ def make_stage(s):
         solids.append((f'inner-spacer-{i}', spacer.translate((x, y, gear_z + 4))))
         for z in (plate, gear_z + b):
             solids.append((f'end-spacer-{i}-{z}', end_spacer.translate((x, y, z))))
-        solids.append((f'pin-{i}', cylinder(5, s['shoulder_length_mm'], 0, x, y)))
+        solids.append((f'pin-{i}', cylinder(5, s['shoulder_length_mm'], s['pin_head_recess_mm'], x, y)))
     solids.append(('carrier-journal', bearing(8, 16, 5, plate - 5)))
     assembly = cq.Assembly(name=name)
     for label, solid in solids:

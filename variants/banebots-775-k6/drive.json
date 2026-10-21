@@ -56,7 +56,28 @@
     "planet_shaft_abutment_max_mm": 6.6,
     "planet_housing_abutment_max_mm": 11.2,
     "planet_through_bore_mm": 11.0,
-    "carrier_journal_abutment_hole_mm": 14.0
+    "carrier_journal_abutment_hole_mm": 14.0,
+    "planet_pin": {
+      "supplier": "AMPG smooth-head tight-fit metric alloy steel, catalog B-241/B-243",
+      "source": "https://newpim.ampg.com/public/assets/imgs/uploads/AMPG-Shoulder-Screws-catalog.pdf",
+      "diameter_min_mm": 4.97,
+      "diameter_max_mm": 5.0,
+      "shoulder_length_plus_mm": 0.05,
+      "head_diameter_mm": 8.0,
+      "head_height_mm": 4.0,
+      "head_recess_diameter_mm": 8.3,
+      "thread_diameter_mm": 4.0,
+      "thread_pitch_mm": 0.7,
+      "thread_length_mm": 5.0,
+      "washer_id_mm": 4.3,
+      "washer_od_mm": 9.0,
+      "washer_thickness_mm": 0.8,
+      "nut_af_mm": 7.0,
+      "nut_height_mm": 3.2,
+      "upper_shim_id_mm": 5.0,
+      "upper_shim_od_mm": 10.0,
+      "status": "Published dimensional candidate. Actual fit, runout, material certificate and retention require inspection; not a class12.9 or fatigue claim."
+    }
   },
   "stages": [
     {
@@ -70,7 +91,10 @@
       "shoulder_length_mm": 25,
       "efficiency_assumed": 0.9,
       "output_rex_mm": 8,
-      "sun_retention_counterbore_mm": 0
+      "sun_retention_counterbore_mm": 0,
+      "planet_pin_sku": "ZR1786-414H",
+      "pin_head_recess_mm": 0.5,
+      "pin_upper_shim_mm": 0.5
     },
     {
       "name": "S2",
@@ -83,7 +107,10 @@
       "shoulder_length_mm": 30,
       "efficiency_assumed": 0.9,
       "output_rex_mm": 8,
-      "sun_retention_counterbore_mm": 4.5
+      "sun_retention_counterbore_mm": 4.5,
+      "planet_pin_sku": "ZR1790-414H",
+      "pin_head_recess_mm": 0,
+      "pin_upper_shim_mm": 0
     },
     {
       "name": "S3",
@@ -96,7 +123,10 @@
       "shoulder_length_mm": 35,
       "efficiency_assumed": 0.85,
       "output_rex_mm": 12,
-      "sun_retention_counterbore_mm": 4.5
+      "sun_retention_counterbore_mm": 4.5,
+      "planet_pin_sku": "ZR1791-414H",
+      "pin_head_recess_mm": 0,
+      "pin_upper_shim_mm": 0
     }
   ],
   "sources": {

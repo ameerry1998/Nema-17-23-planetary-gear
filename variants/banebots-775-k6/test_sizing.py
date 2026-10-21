@@ -46,6 +46,21 @@ class SizingTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             evaluate(self.c)
 
+    def test_pin_washer_must_stop_on_shoulder(self):
+        self.c['geometry']['planet_pin']['washer_id_mm'] = 5.1
+        with self.assertRaises(AssertionError):
+            evaluate(self.c)
+
+    def test_pin_recess_requires_external_shim(self):
+        self.c['stages'][0]['pin_upper_shim_mm'] = 0
+        with self.assertRaises(AssertionError):
+            evaluate(self.c)
+
+    def test_pin_nut_cannot_use_longer_nyloc_unchecked(self):
+        self.c['geometry']['planet_pin']['nut_height_mm'] = 5
+        with self.assertRaises(AssertionError):
+            evaluate(self.c)
+
     def test_unsupported_pressure_angle_rejected(self):
         self.c['geometry']['pressure_angle_deg'] = 25
         with self.assertRaises(AssertionError):

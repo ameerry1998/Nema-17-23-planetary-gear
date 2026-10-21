@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-21",
+  "status": "DIGITAL FAILURE FOUND IN PREVIOUS GENERIC PIN ENVELOPE",
+  "scope": "One pin versus actual stationary input-bearing retainer; confirms initial-angle-only check missed rotation collision. Proposed fix not yet regenerated.",
+  "physical_testing": "NOT PERFORMED",
+  "observations": [
+    {
+      "model": "previous generic envelope",
+      "carrier_deg": 0,
+      "head_retainer_intersection_mm3": 0.0,
+      "head_bottom_z_mm": -5,
+      "retainer_top_z_mm": -4
+    },
+    {
+      "model": "previous generic envelope",
+      "carrier_deg": 60,
+      "head_retainer_intersection_mm3": 4.710996609234204,
+      "head_bottom_z_mm": -5,
+      "retainer_top_z_mm": -4
+    },
+    {
+      "model": "selected AMPG, no recess",
+      "carrier_deg": 0,
+      "head_retainer_intersection_mm3": 0.0,
+      "head_bottom_z_mm": -4,
+      "retainer_top_z_mm": -4
+    },
+    {
+      "model": "selected AMPG, no recess",
+      "carrier_deg": 60,
+      "head_retainer_intersection_mm3": 0.0,
+      "head_bottom_z_mm": -4,
+      "retainer_top_z_mm": -4
+    },
+    {
+      "model": "selected AMPG, proposed 0.5 mm recess",
+      "carrier_deg": 0,
+      "head_retainer_intersection_mm3": 0.0,
+      "head_bottom_z_mm": -3.5,
+      "retainer_top_z_mm": -4
+    },
+    {
+      "model": "selected AMPG, proposed 0.5 mm recess",
+      "carrier_deg": 60,
+      "head_retainer_intersection_mm3": 0.0,
+      "head_bottom_z_mm": -3.5,
+      "retainer_top_z_mm": -4
+    }
+  ]
+}

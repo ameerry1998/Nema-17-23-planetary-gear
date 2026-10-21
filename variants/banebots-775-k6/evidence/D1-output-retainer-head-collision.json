@@ -1,0 +1,534 @@
+{
+  "status": "FAILED",
+  "purpose": "Engineering candidate; no physical validation or powered-use release",
+  "parts": {
+    "input-bearing-cap": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Bearing shoulders and separate retainers capture outer races; nominal pockets need fit coupons",
+      "volume_mm3": 43406.45975663382,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        6.0
+      ],
+      "step_sha256": "bc2cf6e54ee1a60e28959d267d642585665bda0ed3127ea8ed67d7477f76e895",
+      "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
+    },
+    "input-bearing-cap-retainer-top": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "volume_mm3": 433.13941394273985,
+      "dimensions_mm": [
+        24.498141288757324,
+        26.918468475341797,
+        2.0
+      ],
+      "step_sha256": "c28b902646acad229f05e750b7f7cdfb6706436abfb66d7d7ab19da9d59cb4c2",
+      "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
+    },
+    "S1-case-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 27126.785600202245,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        12.5
+      ],
+      "step_sha256": "67cb6e226e76b3baf771a34a4971641b23d4865f5669f9b85e411bb09c20b23d",
+      "stl_sha256": "79202d164819111fe2b468a968191d21b0908e3ca8f7c6e7a3ebe6b168cd7594"
+    },
+    "S1-case-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 32552.142720242682,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        15.0
+      ],
+      "step_sha256": "5b66c3b5d652eab088df4bd0de75c5bac4430997b62f88d3acb765af6a0ee218",
+      "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
+    },
+    "S1-output-cap": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Bearing shoulders and separate retainers capture outer races; nominal pockets need fit coupons",
+      "volume_mm3": 43406.45975663382,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        6.0
+      ],
+      "step_sha256": "c0ea0c73d476826026624fa660cd6023ec79a01f5e4d0075c8861c1cac006248",
+      "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
+    },
+    "S1-output-cap-retainer-top": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "volume_mm3": 433.13941394273985,
+      "dimensions_mm": [
+        24.498141288757324,
+        26.918468475341797,
+        2.0
+      ],
+      "step_sha256": "f29e8acda1cf31b9be33ccdd14111c3322022e83955f95ad1c487927379678db",
+      "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
+    },
+    "S2-case-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 26041.71417619413,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        12.0
+      ],
+      "step_sha256": "298cf96f577d0aba68e52ee4bdf3daa128f49ce984a3759fdff54d0e7d4fc424",
+      "stl_sha256": "b87f2d439dd801d7c8516013f1c447b8d9c84680ca284878768ad9b5674ac36d"
+    },
+    "S2-case-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 32552.142720242682,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        15.0
+      ],
+      "step_sha256": "d5cc06912055523e227a4b712e67bcd6964e6260a4426eabbfccc9e0d25b2f92",
+      "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
+    },
+    "S2-output-cap": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Bearing shoulders and separate retainers capture outer races; nominal pockets need fit coupons",
+      "volume_mm3": 43406.45975663382,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        6.0
+      ],
+      "step_sha256": "42f138e895548364b99bd39e6db46b790196cbb01753249a235e95b2f6b6ce1f",
+      "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
+    },
+    "S2-output-cap-retainer-top": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "volume_mm3": 433.13941394273985,
+      "dimensions_mm": [
+        24.498141288757324,
+        26.918468475341797,
+        2.0
+      ],
+      "step_sha256": "9be2d66cf13abfdfee998e6f142c7bf17e16ad7437f895d8a2bd9eebc436d6b0",
+      "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
+    },
+    "S3-case-lower": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 32552.142720242682,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        15.0
+      ],
+      "step_sha256": "070adadafe1b5b333a8e87c14316b8c087d54483624a404433a16009411066d4",
+      "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
+    },
+    "S3-case-upper": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 36892.42841627501,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        17.0
+      ],
+      "step_sha256": "c381c466c40042fa79aa47cffe514e697f28bce9894e28dd59893c4191e35195",
+      "stl_sha256": "8f775401a755406770c4cee225c4ada280701b45c0e3fc46f384d92379b86a4e"
+    },
+    "S3-output-cap": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Bearing shoulders and separate retainers capture outer races; nominal pockets need fit coupons",
+      "volume_mm3": 164450.85897533572,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        24.0
+      ],
+      "step_sha256": "f93ef55099224c062dbad1e034060fcf0666b57bcbe3f029116854a6bc5c6c54",
+      "stl_sha256": "bad1203494515c8038bdaed044b0296e08fc8c1dc789af11cfad44f43aa513dd"
+    },
+    "S3-output-cap-retainer-top": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "volume_mm3": 663.1530000325148,
+      "dimensions_mm": [
+        37.49930381774902,
+        39.04218673706055,
+        2.0
+      ],
+      "step_sha256": "20c900328ad63a6e66c89c723a8dd83815a1f500762a82ce74468f5ab446aae9",
+      "stl_sha256": "af4ee3dc5c259e2fd58c8d8efabc8051816806d298e74266dbd7a2e91d1bde73"
+    },
+    "S3-output-cap-retainer-bottom": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "volume_mm3": 663.1530000325148,
+      "dimensions_mm": [
+        37.49930381774902,
+        39.04218673706055,
+        2.0
+      ],
+      "step_sha256": "0d6021e5485fbf1f5ae7138db9864d45e1791e65078f80febe854668a8bcee95",
+      "stl_sha256": "af4ee3dc5c259e2fd58c8d8efabc8051816806d298e74266dbd7a2e91d1bde73"
+    },
+    "S1-input-long-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 184.5532929972394,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        7.0
+      ],
+      "step_sha256": "b9f013fa71c548bdfc02eb7bdab63b4c7b5842dfd232da17fdab6d4ec6772767",
+      "stl_sha256": "ed5e1c220f017d81b33aea66270df467a890152efbae3ddf016ce43fd2e59425"
+    },
+    "S1-input-short-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 13.182378071231383,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        0.5
+      ],
+      "step_sha256": "55337a3ab87727772f83803c89b1632de97bcdaeb4829516a9716d880df3e8cf",
+      "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
+    },
+    "S1-output-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 39.54713421369414,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        1.5
+      ],
+      "step_sha256": "dd69087c79178be6e764a60f4d409d2d6d675599ae8a531a9fa46119e3de025f",
+      "stl_sha256": "037347c4b48b093c916b9bb22fd8fb56e7396cd4c8cedca5598f0c5697a6f665"
+    },
+    "S2-input-long-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 171.370914926008,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        6.5
+      ],
+      "step_sha256": "f62dda636edb41f1457d40a7964d480833c9a0b1944e75c47fbd87af778cc76a",
+      "stl_sha256": "62b1a3b135692e7813342240b9ae56d367b2fc42071e6307f88289ac32d02b83"
+    },
+    "S2-input-short-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 13.182378071231383,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        0.5
+      ],
+      "step_sha256": "bdd191192e04d4bcad4590767f87b295b45a61631eec1efec3db478e201857c5",
+      "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
+    },
+    "S2-output-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 39.54713421369414,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        1.5
+      ],
+      "step_sha256": "dd63769b26efbdcb4c9d5dbeada9a60f7710a7a7492151356c0a403bf562cc68",
+      "stl_sha256": "037347c4b48b093c916b9bb22fd8fb56e7396cd4c8cedca5598f0c5697a6f665"
+    },
+    "S3-input-long-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 250.46518335339638,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        9.5
+      ],
+      "step_sha256": "9492a2b8e0b007849c6a1f4efee735c8417812dcbf1c8d74f8ac6cbc655455a3",
+      "stl_sha256": "7858d1eb4b8db986e5f8c404b5f36757a3a6d3f35e5b1ba0fb1cd177f13a1087"
+    },
+    "S3-input-short-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 13.182378071231383,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        0.5
+      ],
+      "step_sha256": "7051bfcfa7e55aca9551fea381aca0134dfed2c3ea7ef97d36b515d77912e485",
+      "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
+    },
+    "S3-output-inner-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 151.89032371170592,
+      "dimensions_mm": [
+        15.0,
+        14.997035026550293,
+        2.5
+      ],
+      "step_sha256": "5151f4a714d676bd79e6c459b387e75ac855b865c7586d5cc9166854e8fe5d44",
+      "stl_sha256": "34c4f663a591fd333f981e974cc84c7ba40a4eb6d657ced8da5ff900eecc7e28"
+    },
+    "input-coupler-bearing-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 65.9118903561569,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        2.5
+      ],
+      "step_sha256": "28376ed49ee3bb68da0169a11d69a224571f381545b9794c4e9274ee4613f6a7",
+      "stl_sha256": "cf339c5dcba568fd0ddd3f761d356bcaf21ff1fafafbfb4b7d72b630430e990d"
+    },
+    "output-bearing-separator": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 486.04903587745895,
+      "dimensions_mm": [
+        15.0,
+        14.997035026550293,
+        8.0
+      ],
+      "step_sha256": "c573137783ae5476114269b9a424fa1c358baaf1e70cf625e074368e5fd28aa7",
+      "stl_sha256": "b157a89f0d65cada5809a7c9abe48e21589b2e2a9fdc6c0006b7fe635e7c6014"
+    },
+    "output-collar-spacer": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Steel or aluminum precision tube; STL is a FIT SAMPLE ONLY",
+      "note": "Deburr ends square. Select metal shims for 0.1 to 0.3 mm measured endplay; do not preload bearing balls through mis-sized spacers.",
+      "volume_mm3": 151.89032371170592,
+      "dimensions_mm": [
+        15.0,
+        14.997035026550293,
+        2.5
+      ],
+      "step_sha256": "1fc06464da80cff8a1e9ce634e83ea6e4cb1dfdfe568a820265484681b702655",
+      "stl_sha256": "34c4f663a591fd333f981e974cc84c7ba40a4eb6d657ced8da5ff900eecc7e28"
+    },
+    "motor-face-plate": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "M4 slots cover 26 to 32 mm pitch. 18.2 mm collar clearance and 2.5 mm modeled screw engagement are assumptions. Fit the unpowered motor before release.",
+      "volume_mm3": 28217.439294248703,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        4.0
+      ],
+      "step_sha256": "b0daa0f0669120f488bb3dea4992e22999aed27682701729bc2f8549820b4752",
+      "stl_sha256": "c4e3bd029d6de953bcfb6b8201cb9f0e9e88bd841a51cec8f2baca7c9d700a00"
+    },
+    "motor-coupler-guard": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Fixed casing spacer; six M4 tie rods clamp the complete stack",
+      "volume_mm3": 38086.00532699638,
+      "dimensions_mm": [
+        98.0,
+        97.98062896728516,
+        17.549999237060547
+      ],
+      "step_sha256": "ce854408f64cbd2607de5106335eb7a469683621b84d95fcc2c07ec1e7127031",
+      "stl_sha256": "606c1e27f5f89287b4b3359c02644d0b3ffa68dac6110fe3e2b60cee4c6f5856"
+    },
+    "adapter-12REX-to-quarter-inch-hex-FIT-AND-LOAD-TEST": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Separate split-clamp adapter, two M3 x 25 screws/nuts. K6 socket engagement and strength unverified; test against steel hex coupon before putting on grinder.",
+      "volume_mm3": 28767.727027687757,
+      "dimensions_mm": [
+        35.0,
+        31.994028091430664,
+        38.0
+      ],
+      "step_sha256": "130cb31ee531417e76210fc370d6ae4f2cddc30f3c67311ed1f14acc4b2b2184",
+      "stl_sha256": "38792f95cd822930e7fa73b27123b7839f863305a9c5ba12ed02a022716f00ae"
+    }
+  },
+  "placements": [
+    {
+      "stage": "S1",
+      "lower_carrier_z_mm": 0.0,
+      "gear_z_mm": 6.5,
+      "upper_carrier_z_mm": 19.0,
+      "boss_end_mm": 33.0,
+      "output_shaft_start_mm": 24.0,
+      "output_shaft_length_mm": 40,
+      "output_shaft_tip_mm": 64.0
+    },
+    {
+      "stage": "S2",
+      "lower_carrier_z_mm": 45.0,
+      "gear_z_mm": 51.5,
+      "upper_carrier_z_mm": 69.0,
+      "boss_end_mm": 83.0,
+      "output_shaft_start_mm": 74.0,
+      "output_shaft_length_mm": 48,
+      "output_shaft_tip_mm": 122.0
+    },
+    {
+      "stage": "S3",
+      "lower_carrier_z_mm": 98.0,
+      "gear_z_mm": 104.5,
+      "upper_carrier_z_mm": 127.0,
+      "boss_end_mm": 141.0,
+      "output_shaft_start_mm": 132.0,
+      "output_shaft_length_mm": 64,
+      "output_shaft_tip_mm": 196.0
+    }
+  ],
+  "interferences": [
+    {
+      "fixed": "S3-output-cap-retainer-bottom-M2-head-2",
+      "moving": "S3-metal-hub-REFERENCE",
+      "volume_mm3": 18.75711063985336
+    }
+  ],
+  "physical_testing": "NOT PERFORMED",
+  "limitations": [
+    "Motor face spacing remains assumed",
+    "Shaft endplay and clamp retention untested",
+    "Bearing/insert fits untested",
+    "Simplified purchased-part envelopes",
+    "No arm, grinder clamp or powered load fixture; TF1 motor-removed static fixture is exported separately"
+  ],
+  "source_sha256": {
+    "drive.json": "3336c9c0e86f63424647a4e4df687dc87b584817cd652ab1d0fffd7321c140b2",
+    "build_drive.py": "b0e62f08447b5c0840c6c10fc5d29bd63438747d89f0a098a32c606bdb881997",
+    "assemble_drive.py": "0faf72086745cb5e8ca0a99f671e29715eb30faf1d5d410cca7ddcd8af7454ea"
+  },
+  "cartridge_validation_sha256": "f64c8dbe36ac02d9debf2df7a2578d2cf209030a07e17da689e8b9f362f97a0c",
+  "envelope": {
+    "case_od_mm": 98,
+    "case_length_mm": 179.5,
+    "case_start_mm": -12,
+    "case_end_mm": 167.5,
+    "output_tip_mm": 196.0
+  },
+  "axial_retention": "S1 printed keyed hub with captive M3 radial retention screw; S2/S3 metal clamping hubs; steel end washers/screws, metal spacers and output collar. 0.1 to 0.3 mm endplay must be shimmed physically. Axial pull/slip tests pending.",
+  "motor_connection": {
+    "coupler": "ServoCity 625228, simplified envelope from manufacturer STEP",
+    "motor_shaft_overlap_mm": 6.62,
+    "input_shaft_overlap_mm": 8,
+    "face_pitch_status": "Assumed 29 mm; slotted 26 to 32 mm adjustment",
+    "shaft_protrusion_status": "7.62 mm published, reference face needs physical check",
+    "speed_rating": "Not published by supplier; guarded speed/vibration/retention test required"
+  },
+  "output_interface": {
+    "profile": "12 mm REX: clipped 11 mm across-flats hex",
+    "engagement_mm": 15.5,
+    "axial_socket_bottom_clearance_mm": 0.5,
+    "minimum_removal_travel_mm": 17.5,
+    "grinder_hex_status": "6.35 mm nominal published; protrusion and clearance unverified",
+    "adapter_test_status": "No physical torque or retention tests"
+  },
+  "error": "[{'fixed': 'S3-output-cap-retainer-bottom-M2-head-2', 'moving': 'S3-metal-hub-REFERENCE', 'volume_mm3': 18.75711063985336}]"
+}

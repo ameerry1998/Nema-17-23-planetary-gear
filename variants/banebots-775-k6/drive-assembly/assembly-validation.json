@@ -14,7 +14,7 @@
         97.98062896728516,
         6.0
       ],
-      "step_sha256": "58a5a4de84acffa9e67197e6a32b8cfdfe908d984ab6f99373e7607b1ecac60e",
+      "step_sha256": "f8530e69f0c3503226731e3ebd60ee27aa3144c04fd4d66cc90241f0230d873b",
       "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
     },
     "input-bearing-cap-retainer-top": {
@@ -22,14 +22,14 @@
       "mesh_watertight": true,
       "quantity": 1,
       "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
-      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "note": "Three M2 x6 DIN912 socket screws, head <=3.8 x2 mm; ruthex RX-M2x4 inserts; actual seating/retention untested",
       "volume_mm3": 433.13941394273985,
       "dimensions_mm": [
         24.498141288757324,
         26.918468475341797,
         2.0
       ],
-      "step_sha256": "66d4c5f754bb0d38225de1d756696a6747aae964488790c93ce91b796cd42f08",
+      "step_sha256": "c6502f8f0c5e6eb72d6e56da2af1b10c4c66903b91ff53f4dc1a3bd2ff061aee",
       "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
     },
     "S1-case-lower": {
@@ -44,7 +44,7 @@
         97.98062896728516,
         12.5
       ],
-      "step_sha256": "56b2a93e835443578c00bdb14ec75c3a4c212f8c24926acde746366c169affca",
+      "step_sha256": "89d78944eeda951646a60efc001378891153e8fbe789761dd40aae28dc94b08b",
       "stl_sha256": "79202d164819111fe2b468a968191d21b0908e3ca8f7c6e7a3ebe6b168cd7594"
     },
     "S1-case-upper": {
@@ -59,7 +59,7 @@
         97.98062896728516,
         15.0
       ],
-      "step_sha256": "a69ec41b7fa1ddc091d2dfdef7a15683213fe0757eb7226e83fd7db58c57cc26",
+      "step_sha256": "d3fafa4fb232948b40a28a4f42e3ec9d949bcde9476659c0e4b461d20d5ed4b1",
       "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
     },
     "S1-output-cap": {
@@ -74,7 +74,7 @@
         97.98062896728516,
         6.0
       ],
-      "step_sha256": "327b5be17961f76c2f1d975a2dcb64c3cd0cbe6ee37b9935750fbdf6a463b5bc",
+      "step_sha256": "22e3497f381a74bb84a68e0f1c3287769bf2774f8fbe79f86b3f89da244dd6cc",
       "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
     },
     "S1-output-cap-retainer-top": {
@@ -82,14 +82,14 @@
       "mesh_watertight": true,
       "quantity": 1,
       "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
-      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "note": "Three M2 x6 DIN912 socket screws, head <=3.8 x2 mm; ruthex RX-M2x4 inserts; actual seating/retention untested",
       "volume_mm3": 433.13941394273985,
       "dimensions_mm": [
         24.498141288757324,
         26.918468475341797,
         2.0
       ],
-      "step_sha256": "98ca465aab7515dc01597c730891e6b1246707caf642c30b3ce93440ad50cc66",
+      "step_sha256": "9027e2c17984f136a0445073e7dfca1499f5170a87b927f0f380e72624b4cea1",
       "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
     },
     "S2-case-lower": {
@@ -104,7 +104,7 @@
         97.98062896728516,
         12.0
       ],
-      "step_sha256": "0a811184c3863684ed3f3babae3d12847207009eea17d95eaf885c048e82e103",
+      "step_sha256": "abb0a26a006ba3dc297c8c7eca3a985232e7e4ac896fe210c4bfb65dea2041a0",
       "stl_sha256": "b87f2d439dd801d7c8516013f1c447b8d9c84680ca284878768ad9b5674ac36d"
     },
     "S2-case-upper": {
@@ -119,7 +119,7 @@
         97.98062896728516,
         15.0
       ],
-      "step_sha256": "77305884adacb7ff9e31d0e2439c63f6b50a89c036a1472173a27ca25e786495",
+      "step_sha256": "c1d891a518f5f5d6fd08df58aa592ffab90fdd5979facad79beec1de4dbeed59",
       "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
     },
     "S2-output-cap": {
@@ -134,7 +134,7 @@
         97.98062896728516,
         6.0
       ],
-      "step_sha256": "4f8d2208c261f98c92fb08a5f15f47992175d03fa52d555e54563f463f92f523",
+      "step_sha256": "44bc2d7dda89d842303e2da461315a471a7cba9145def0af3647aa7b6db2b0ff",
       "stl_sha256": "e69d58da1cac826286bb5d0249c80f44920de4b75b8b4eff6617f05a5c85eae0"
     },
     "S2-output-cap-retainer-top": {
@@ -142,14 +142,14 @@
       "mesh_watertight": true,
       "quantity": 1,
       "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
-      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "note": "Three M2 x6 DIN912 socket screws, head <=3.8 x2 mm; ruthex RX-M2x4 inserts; actual seating/retention untested",
       "volume_mm3": 433.13941394273985,
       "dimensions_mm": [
         24.498141288757324,
         26.918468475341797,
         2.0
       ],
-      "step_sha256": "64e66f83762a06b771eab7445b7f138acdaff296af9c7fbfed6348a589687063",
+      "step_sha256": "ed1a0c677e1334feca927134a71b592a3ed324d41a2a9428e3b824088ed81f6b",
       "stl_sha256": "236786c3aebab3c3f0088e3eab6a15d723bce7ae02f590b814a01d3ec80c3024"
     },
     "S3-case-lower": {
@@ -164,7 +164,7 @@
         97.98062896728516,
         15.0
       ],
-      "step_sha256": "57bc23e349283fc1ad31b2086c7d578837eca4579feea46656b461822bad3faf",
+      "step_sha256": "d57bd9a3985e80076329e640ef309850a795fb6cc651241bcae8b2d67218190d",
       "stl_sha256": "2f60c31cc3a7054e46b430c55cffbe0b172b1f014238fb7d0f60b1331638c9e8"
     },
     "S3-case-upper": {
@@ -179,7 +179,7 @@
         97.98062896728516,
         17.0
       ],
-      "step_sha256": "740b9af5b8fc7d897102015031f4122f8bd6343b3f99211b8f6072dc8bab6edc",
+      "step_sha256": "71d5df1c97e6ab255eb8d24474b404224a2a803e42a9b3d6b805cd013ca0f003",
       "stl_sha256": "8f775401a755406770c4cee225c4ada280701b45c0e3fc46f384d92379b86a4e"
     },
     "S3-output-cap": {
@@ -194,7 +194,7 @@
         97.98062896728516,
         24.0
       ],
-      "step_sha256": "ccaea46bff9e68b3f140bb6f25d61ae265c835e99822b997448954dd61db5cc0",
+      "step_sha256": "47310178190ce86cf2f10f8cdf171bbf4526cf2b943bd11074947a88b10a91c4",
       "stl_sha256": "bad1203494515c8038bdaed044b0296e08fc8c1dc789af11cfad44f43aa513dd"
     },
     "S3-output-cap-retainer-top": {
@@ -202,14 +202,14 @@
       "mesh_watertight": true,
       "quantity": 1,
       "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
-      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
+      "note": "Three M2 x6 DIN912 socket screws, head <=3.8 x2 mm; ruthex RX-M2x4 inserts; actual seating/retention untested",
       "volume_mm3": 663.1530000325148,
       "dimensions_mm": [
         37.49930381774902,
         39.04218673706055,
         2.0
       ],
-      "step_sha256": "544ce6d32d2f21a7c3618dcfbf88c96323c83dd3b5e80ddab480b4925a078793",
+      "step_sha256": "d448f94cf4827b5e34bccf75d77f48264c707be2bcb021d5495e4a4021d87e2f",
       "stl_sha256": "af4ee3dc5c259e2fd58c8d8efabc8051816806d298e74266dbd7a2e91d1bde73"
     },
     "S3-output-cap-retainer-bottom": {
@@ -217,15 +217,15 @@
       "mesh_watertight": true,
       "quantity": 1,
       "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
-      "note": "Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required",
-      "volume_mm3": 663.1530000325148,
+      "note": "Three flush M2 x6 DIN965H countersunk screws, head <=3.8 mm, PH0; no larger ISO10642 substitute; ruthex RX-M2x4 inserts; actual seating/retention untested",
+      "volume_mm3": 645.8387843744523,
       "dimensions_mm": [
         37.49930381774902,
         39.04218673706055,
         2.0
       ],
-      "step_sha256": "4c10586fb8c2016966d9443e4856f1cbe0dd981381033123bbc4f5a7d18ef872",
-      "stl_sha256": "af4ee3dc5c259e2fd58c8d8efabc8051816806d298e74266dbd7a2e91d1bde73"
+      "step_sha256": "72dbd34983e71d6ccb4478cf5cdb083ea19bc35ba120489878b5c48f37c6986c",
+      "stl_sha256": "c25993ba1b17063d7ac9d3364782ba2c08e8d50b5f6df161c1034913b775c07b"
     },
     "S1-input-long-spacer": {
       "cad_valid": true,
@@ -239,7 +239,7 @@
         9.99802303314209,
         7.0
       ],
-      "step_sha256": "a7a3910cdb41e0746a1b5d457dbfb6558e159a3660ac50994f4a815cea38c878",
+      "step_sha256": "f091655ffb17daa71decd4c25bb0e2bbc10c1a4cc49ae37c8968b48661907cf2",
       "stl_sha256": "ed5e1c220f017d81b33aea66270df467a890152efbae3ddf016ce43fd2e59425"
     },
     "S1-input-short-spacer": {
@@ -254,7 +254,7 @@
         9.99802303314209,
         0.5
       ],
-      "step_sha256": "c9f6be0185f4b3509c4a75c8d1cef1e81d32940b79b466deebb74187130ede7c",
+      "step_sha256": "083f1d378545190438004e1d77fa81863b88ad4bedaf0b40659cc9009ef6201f",
       "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
     },
     "S1-output-inner-spacer": {
@@ -269,7 +269,7 @@
         9.99802303314209,
         1.5
       ],
-      "step_sha256": "cf9d7940d271ef602e88dac40e131ae688cbd3cba204e52b8ec8cd04a74892ce",
+      "step_sha256": "5f495cf0b9b8bf124758d7b9b24b5c853eab060720bf8fc5744541ba7c463bd7",
       "stl_sha256": "037347c4b48b093c916b9bb22fd8fb56e7396cd4c8cedca5598f0c5697a6f665"
     },
     "S2-input-long-spacer": {
@@ -284,7 +284,7 @@
         9.99802303314209,
         6.5
       ],
-      "step_sha256": "3cdba45449c85d2bf27257ef1e43695b5a69a3cf79a6d7ff42ad945014473455",
+      "step_sha256": "4e08f6f8e8606ced1c508c575e4d3ad6a60eb925f56465798db53c224a1b8da1",
       "stl_sha256": "62b1a3b135692e7813342240b9ae56d367b2fc42071e6307f88289ac32d02b83"
     },
     "S2-input-short-spacer": {
@@ -299,7 +299,7 @@
         9.99802303314209,
         0.5
       ],
-      "step_sha256": "f1b14f6a9d9206fbb02d53e854252f74633f1601a7a14d2b983bb958dee8ea82",
+      "step_sha256": "201361f1056c5a0e96e042f115e9f3395cc72fa62c3a7306be2aa50b22cbbec5",
       "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
     },
     "S2-output-inner-spacer": {
@@ -314,7 +314,7 @@
         9.99802303314209,
         1.5
       ],
-      "step_sha256": "17fe2fdb95e49bb6bea17076f5b498bb8db9b2beb26db5ec85c931d4556ed85d",
+      "step_sha256": "9f3a8101036fdba3d39aee5b080da8d367e55cb8b69e8ed11ada6adca8f22d85",
       "stl_sha256": "037347c4b48b093c916b9bb22fd8fb56e7396cd4c8cedca5598f0c5697a6f665"
     },
     "S3-input-long-spacer": {
@@ -329,7 +329,7 @@
         9.99802303314209,
         9.5
       ],
-      "step_sha256": "b05e90aff4e694feb663cf86fa919ae9f625c65fe3611e565ef5c040659bb4a3",
+      "step_sha256": "88d4a54411ed36d0f21a046d218fe8dc463c5d5b72a01cd6df1391f4b760a693",
       "stl_sha256": "7858d1eb4b8db986e5f8c404b5f36757a3a6d3f35e5b1ba0fb1cd177f13a1087"
     },
     "S3-input-short-spacer": {
@@ -344,7 +344,7 @@
         9.99802303314209,
         0.5
       ],
-      "step_sha256": "a3789f3ca05066f6d0a7ce874f60a83bd23a32231bcc778547980f0bd770025f",
+      "step_sha256": "fe22d32127245a1bab34414993ee0ec5102e09268642a5266eaad90e73737130",
       "stl_sha256": "e9a8cc6f44b04456d343ae99c0484681301896c17a189e3dee75165047ef3b8e"
     },
     "S3-output-inner-spacer": {
@@ -359,7 +359,7 @@
         14.997035026550293,
         2.5
       ],
-      "step_sha256": "47697d7c51624a4ef2e1a44f5ad6035f56df95140358286e9f87a8389ecc71ad",
+      "step_sha256": "728643108e31e107c90ec31abf5b194d175df9e8ecbbb96c2b1a926204f09af5",
       "stl_sha256": "34c4f663a591fd333f981e974cc84c7ba40a4eb6d657ced8da5ff900eecc7e28"
     },
     "input-coupler-bearing-spacer": {
@@ -374,7 +374,7 @@
         9.99802303314209,
         2.5
       ],
-      "step_sha256": "f6153bb7d61b28a935a98b027d8d525b2b58a07ed8105293112c0095dc1e33f4",
+      "step_sha256": "93c1e84eaac3e619516164b934f8f85a62879abf64bbc8c5fcb9a1eb46164c21",
       "stl_sha256": "cf339c5dcba568fd0ddd3f761d356bcaf21ff1fafafbfb4b7d72b630430e990d"
     },
     "output-bearing-separator": {
@@ -389,7 +389,7 @@
         14.997035026550293,
         8.0
       ],
-      "step_sha256": "ef06bb5dee7d2090f09e0aaaf58926672843833a3cb01a5f7ae1591e419b4ebb",
+      "step_sha256": "f927ee42ca09c0d3aca80fb1f85ebaf48cb06303a98bdde6c018e49982dec1e3",
       "stl_sha256": "b157a89f0d65cada5809a7c9abe48e21589b2e2a9fdc6c0006b7fe635e7c6014"
     },
     "output-collar-spacer": {
@@ -404,7 +404,7 @@
         14.997035026550293,
         2.5
       ],
-      "step_sha256": "7416598849771996cb93f66fef28a26fd0bcadde220b3799365ae62215a7f36e",
+      "step_sha256": "3abac7adc3c1e9af75fc92475bbf3e6402e394cc158e4e20983ecb6579d7921c",
       "stl_sha256": "34c4f663a591fd333f981e974cc84c7ba40a4eb6d657ced8da5ff900eecc7e28"
     },
     "motor-face-plate": {
@@ -419,7 +419,7 @@
         97.98062896728516,
         4.0
       ],
-      "step_sha256": "9fbf6b2458eaba0b4a2edbb763d48ce554e134b58e9ebca186bceb03aaf271d5",
+      "step_sha256": "3ac69c9963d249fcf1ae8eb5c037ced7b2a22b1fa813eead5d25bf8f87f97a76",
       "stl_sha256": "c4e3bd029d6de953bcfb6b8201cb9f0e9e88bd841a51cec8f2baca7c9d700a00"
     },
     "motor-coupler-guard": {
@@ -434,7 +434,7 @@
         97.98062896728516,
         17.549999237060547
       ],
-      "step_sha256": "a6695a60cd25a37d8f40aaee9e84eadf3d1656b93ae47e8f092a38e383e9abaf",
+      "step_sha256": "4a8ee900b181b622c28189928065b00928e9f66e1b19a83b4b968041ff1c3d4f",
       "stl_sha256": "606c1e27f5f89287b4b3359c02644d0b3ffa68dac6110fe3e2b60cee4c6f5856"
     },
     "adapter-12REX-to-quarter-inch-hex-FIT-AND-LOAD-TEST": {
@@ -449,7 +449,7 @@
         31.994028091430664,
         38.0
       ],
-      "step_sha256": "3204d9907749c41324e1c0d8f58f05e7f2c2706e3331f9050d085592fe014363",
+      "step_sha256": "b9716c0b80670f535a5612fa2ad1c4895ea7c9f735ad8244238ed949a6b4e911",
       "stl_sha256": "38792f95cd822930e7fa73b27123b7839f863305a9c5ba12ed02a022716f00ae"
     }
   },
@@ -495,11 +495,11 @@
     "No arm, grinder clamp or powered load fixture; TF1 motor-removed static fixture is exported separately"
   ],
   "source_sha256": {
-    "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
-    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
-    "assemble_drive.py": "012c9ef7acc799c7410b627324ff43ef6eebcae0c92ef4bc62fc487927002ded"
+    "drive.json": "3336c9c0e86f63424647a4e4df687dc87b584817cd652ab1d0fffd7321c140b2",
+    "build_drive.py": "b0e62f08447b5c0840c6c10fc5d29bd63438747d89f0a098a32c606bdb881997",
+    "assemble_drive.py": "054dccd23abf67df6213e5cecba48d1ca84d9cb717e7f4121f835f623f132533"
   },
-  "cartridge_validation_sha256": "a65edd898a219d6d2e1ede2b7bdb00a99e80a55528518eadc247960e24a4f843",
+  "cartridge_validation_sha256": "f64c8dbe36ac02d9debf2df7a2578d2cf209030a07e17da689e8b9f362f97a0c",
   "envelope": {
     "case_od_mm": 98,
     "case_length_mm": 179.5,
@@ -523,5 +523,357 @@
     "minimum_removal_travel_mm": 17.5,
     "grinder_hex_status": "6.35 mm nominal published; protrusion and clearance unverified",
     "adapter_test_status": "No physical torque or retention tests"
-  }
+  },
+  "fastener_full_rotation_checks": [
+    {
+      "moving": "S1-pin-heads",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-0",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 0.4999999999999991
+    },
+    {
+      "moving": "S1-pin-heads",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-1",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 0.5
+    },
+    {
+      "moving": "S1-pin-heads",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-2",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 0.4999999999999982
+    },
+    {
+      "moving": "S1-pin-heads",
+      "fixed": "S1-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 19.0
+    },
+    {
+      "moving": "S1-pin-shoulders",
+      "fixed": "S1-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 7.499999996379381
+    },
+    {
+      "moving": "S1-pin-shoulders",
+      "fixed": "S1-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 20.499999999999996
+    },
+    {
+      "moving": "S1-pin-shoulders",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 20.5
+    },
+    {
+      "moving": "S1-pin-threads",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 20.999999999999993
+    },
+    {
+      "moving": "S1-pin-washers",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 18.499999999999996
+    },
+    {
+      "moving": "S1-pin-nuts",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 18.95854811567262
+    },
+    {
+      "moving": "S1-pin-upper-shims",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 18.0
+    },
+    {
+      "moving": "S1-post-screw-heads",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 20.249999999999996
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "input-bearing-cap-retainer-top",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 1.5
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-0",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 3.0
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-1",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 3.0
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "input-bearing-cap-retainer-top-M2-head-2",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 2.9999999999999982
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "S1-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 8.49999999637938
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "S1-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 21.499999999999996
+    },
+    {
+      "moving": "S1-post-screw-shanks",
+      "fixed": "S1-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 21.499999999999996
+    },
+    {
+      "moving": "S2-hub-screw-heads",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 25.686291501015234
+    },
+    {
+      "moving": "S2-hub-screw-shanks",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 27.686291501015234
+    },
+    {
+      "moving": "S2-metal-hub-envelope",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 24.999999999999996
+    },
+    {
+      "moving": "S2-pin-heads",
+      "fixed": "S1-output-cap-retainer-top",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 3.499999999999999
+    },
+    {
+      "moving": "S2-pin-heads",
+      "fixed": "S1-output-cap-retainer-top-M2-head-0",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 5.0
+    },
+    {
+      "moving": "S2-pin-heads",
+      "fixed": "S1-output-cap-retainer-top-M2-head-1",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 5.0
+    },
+    {
+      "moving": "S2-pin-heads",
+      "fixed": "S1-output-cap-retainer-top-M2-head-2",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 4.999999999999998
+    },
+    {
+      "moving": "S2-pin-heads",
+      "fixed": "S2-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 14.499999999999996
+    },
+    {
+      "moving": "S2-pin-shoulders",
+      "fixed": "S2-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 9.9999999954767
+    },
+    {
+      "moving": "S2-pin-shoulders",
+      "fixed": "S2-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 15.999999999999996
+    },
+    {
+      "moving": "S2-pin-shoulders",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 15.999999999999998
+    },
+    {
+      "moving": "S2-pin-threads",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 16.499999999999996
+    },
+    {
+      "moving": "S2-pin-washers",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 13.999999999999996
+    },
+    {
+      "moving": "S2-pin-nuts",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 14.458548115672615
+    },
+    {
+      "moving": "S2-post-screw-heads",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 15.749999999999996
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S1-output-cap-retainer-top",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 6.0
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S1-output-cap-retainer-top-M2-head-0",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 7.499999999999999
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S1-output-cap-retainer-top-M2-head-1",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 7.5
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S1-output-cap-retainer-top-M2-head-2",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 7.499999999999998
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S2-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 10.999999995476697
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S2-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 17.0
+    },
+    {
+      "moving": "S2-post-screw-shanks",
+      "fixed": "S2-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 16.999999999999996
+    },
+    {
+      "moving": "S3-hub-screw-heads",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 25.686291501015234
+    },
+    {
+      "moving": "S3-hub-screw-shanks",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 27.686291501015237
+    },
+    {
+      "moving": "S3-metal-hub-envelope",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 19.41658970412692
+    },
+    {
+      "moving": "S3-pin-heads",
+      "fixed": "S3-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 12.699999999999994
+    },
+    {
+      "moving": "S3-pin-shoulders",
+      "fixed": "S3-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 8.299999983324097
+    },
+    {
+      "moving": "S3-pin-shoulders",
+      "fixed": "S3-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 14.199999999999998
+    },
+    {
+      "moving": "S3-pin-shoulders",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 14.199999999999996
+    },
+    {
+      "moving": "S3-pin-threads",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 14.699999999999994
+    },
+    {
+      "moving": "S3-pin-washers",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 12.199999999999998
+    },
+    {
+      "moving": "S3-pin-nuts",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 12.658548115672614
+    },
+    {
+      "moving": "S3-post-screw-heads",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 13.949999999999998
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S2-output-cap-retainer-top-M2-head-0",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 9.3
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S2-output-cap-retainer-top-M2-head-1",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 9.3
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S2-output-cap-retainer-top-M2-head-2",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 9.299999999999999
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S3-ring",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 9.2999999833241
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S3-case-lower",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 15.199999999999994
+    },
+    {
+      "moving": "S3-post-screw-shanks",
+      "fixed": "S3-case-upper",
+      "swept_intersection_mm3": 0.0,
+      "minimum_distance_mm": 15.199999999999996
+    }
+  ],
+  "fastener_minimum_modeled_clearance_floor_mm": 0.25,
+  "fastener_rotation_scope": "Conservative 360-degree annular sweeps of carrier pin heads/shoulders/threads/washers/nuts/shims, post screws, S2/S3 hub screws and hub bodies against modeled stationary parts. Includes 4 x2 mm M2 heads and the flush bottom-output heads. Shoulder-length positive tolerance included. Tooth meshes retain their separate phase-sample checks. Not a deformation or physical clearance test."
 }

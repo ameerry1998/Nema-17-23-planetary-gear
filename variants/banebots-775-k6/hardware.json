@@ -37,34 +37,34 @@
     {
       "quantity": 3,
       "part": "Planet shoulder screws",
-      "specification": "5 mm precision shoulder x 25 mm; M4 thread; hardened alloy steel",
-      "use": "S1/S2/S3 respectively",
-      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
-      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+      "specification": "AMPG ZR1786-414H, 5 x25 mm smooth shoulder, M4 x0.7 x5 mm thread, alloy steel",
+      "use": "S1",
+      "source": "https://newpim.ampg.com/public/assets/imgs/uploads/AMPG-Shoulder-Screws-catalog.pdf",
+      "note": "Catalog B-241/B-243: shoulder 4.97-5.00 mm, length +0.05/-0 mm, head8 x4 mm. Do not substitute longer-thread/larger-head ISO bolts without new checks. Actual fit, material certification and availability unverified; not assumed class12.9. S1 needs0.5 mm head recess and external top shim."
     },
     {
       "quantity": 3,
       "part": "Planet shoulder screws",
-      "specification": "5 mm precision shoulder x 30 mm; M4 thread; hardened alloy steel",
-      "use": "S1/S2/S3 respectively",
-      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
-      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+      "specification": "AMPG ZR1790-414H, 5 x30 mm smooth shoulder, M4 x0.7 x5 mm thread, alloy steel",
+      "use": "S2",
+      "source": "https://newpim.ampg.com/public/assets/imgs/uploads/AMPG-Shoulder-Screws-catalog.pdf",
+      "note": "Catalog B-241/B-243: shoulder 4.97-5.00 mm, length +0.05/-0 mm, head8 x4 mm. Do not substitute longer-thread/larger-head ISO bolts without new checks. Actual fit, material certification and availability unverified; not assumed class12.9. S1 needs0.5 mm head recess and external top shim."
     },
     {
       "quantity": 4,
       "part": "Planet shoulder screws",
-      "specification": "5 mm precision shoulder x 35 mm; M4 thread; hardened alloy steel",
-      "use": "S1/S2/S3 respectively",
-      "source": "https://www.accu.co.uk/metric-socket-shoulder-screws",
-      "note": "Head envelope <=9 mm diameter x 5 mm; thread >=5 mm. Select 12.9 hardened steel version. Smooth shoulder must span both carrier plates and both bearings."
+      "specification": "AMPG ZR1791-414H, 5 x35 mm smooth shoulder, M4 x0.7 x5 mm thread, alloy steel",
+      "use": "S3",
+      "source": "https://newpim.ampg.com/public/assets/imgs/uploads/AMPG-Shoulder-Screws-catalog.pdf",
+      "note": "Catalog B-241/B-243: shoulder 4.97-5.00 mm, length +0.05/-0 mm, head8 x4 mm. Do not substitute longer-thread/larger-head ISO bolts without new checks. Actual fit, material certification and availability unverified; not assumed class12.9. S1 needs0.5 mm head recess and external top shim."
     },
     {
       "quantity": 10,
       "part": "Planet pin nuts",
-      "specification": "M4 steel hex, <=7 mm AF x 4 mm high",
+      "specification": "M4 ISO4032 steel hex, 7 mm AF x3.2 mm high, matched strength class",
       "use": "Shoulder-screw retention",
       "source": "",
-      "note": "Use a supplier-applied locking patch or compatible metal-only thread retention. Avoid getting threadlocker on PC. Check retention after testing."
+      "note": "Nut seats on a metal washer that stops against the shoulder. Do not use the nut to squeeze the bearing stack. Use supplier-applied locking patch or compatible metal-only retention, avoiding PC contact. Actual full-thread engagement and endplay require inspection."
     },
     {
       "quantity": 3,
@@ -227,12 +227,12 @@
       "note": "CAD pilot3.2 mm x5 mm deep. Heat-set using supplier method on coupon first."
     },
     {
-      "quantity": 15,
+      "quantity": 12,
       "part": "Bearing-retainer screws",
-      "specification": "M2 x 6 pan/socket head",
-      "use": "Three per retainer, five retainers",
+      "specification": "M2 x6 DIN912/ISO4762 socket head, head3.8 mm diameter x2 mm high",
+      "use": "Three each: input, S1 output, S2 output, S3 output top",
       "source": "",
-      "note": ""
+      "note": "Assembly checks conservative4 mm diameter x2 mm head. Larger pan/button heads require checking the full rotation clearance."
     },
     {
       "quantity": 2,
@@ -465,6 +465,30 @@
       "use": "Isolated attachment static test",
       "source": "",
       "note": "A long straight 1/4 inch screwdriver-bit shank can be checked for fit; exclude reduced necks, grooves and tapered ends from loaded contact. Do not use the grinder as the restraint."
+    },
+    {
+      "quantity": 10,
+      "part": "Planet pin shoulder-stop washers",
+      "specification": "M4 steel washer,4.3 mm ID x9 mm OD x0.8 mm thick",
+      "use": "Between shoulder end and M4 nut",
+      "source": "",
+      "note": "ID must be smaller than minimum4.97 mm shoulder so the nut stops metal-to-metal. Inspect fillet/chamfer seating and thread engagement."
+    },
+    {
+      "quantity": 3,
+      "part": "S1 external pin shim",
+      "specification": "DIN988 steel shim,5 mm ID x10 mm OD x0.5 mm nominal",
+      "use": "Outside upper S1 carrier, below the M4 shoulder-stop washer",
+      "source": "https://www.wdscomponents.com/en-us/5mm-id-x-0-5mm-x-10mm-stainless-steel-shim-washers-din-988",
+      "note": "Compensates0.5 mm head recess. This wide shim is OUTSIDE the carrier and must never replace the6 mm OD bearing end spacers. Match actual pin/carrier endplay; supplier stock unverified."
+    },
+    {
+      "quantity": 3,
+      "part": "Bottom-output bearing-retainer screws",
+      "specification": "M2 x6 DIN965H countersunk, head<=3.8 mm,90 degree,PH0; Accu SIK-M2-6-A2-BL or dimensionally matched",
+      "use": "S3 output-cap bottom retainer only",
+      "source": "https://www.accu.co.uk/phillips-countersunk-screws/175101-SIK-M2-6-A2-BL",
+      "note": "Heads must seat flush/below inward retainer face; about4 mm nominal insert engagement. Larger4.7 mm ISO10642 heads do not fit. Do not overtighten the printed countersink."
     }
   ]
 }

@@ -70,9 +70,9 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 12.099345789944223,
           "pin_load_upper_screen_n": 10.086339062373922,
-          "pin_bending_screen_mpa": 3.9040670297697244,
-          "pin_deflection_screen_mm": 0.0002348946996244784,
-          "carrier_pin_bearing_pressure_screen_mpa": 0.16810565103956537
+          "pin_bending_screen_mpa": 3.9228868658945877,
+          "pin_deflection_screen_mm": 0.00023124411700051406,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.1844949526682627
         },
         "peak": {
           "sun_input_nm": 0.07262164124909223,
@@ -83,13 +83,26 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 15.620188248152932,
           "pin_load_upper_screen_n": 16.810565103956534,
-          "pin_bending_screen_mpa": 6.506778382949539,
-          "pin_deflection_screen_mm": 0.00039149116604079726,
-          "carrier_pin_bearing_pressure_screen_mpa": 0.2801760850659422
+          "pin_bending_screen_mpa": 6.538144776490979,
+          "pin_deflection_screen_mm": 0.00038540686166752344,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.30749158778043784
         }
       },
       "external_transverse_contact_ratio_standard_geometry": 1.5797147822261595,
-      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606,
+      "pin_stack": {
+        "sku": "ZR1786-414H",
+        "head_recess_mm": 0.5,
+        "external_upper_shim_mm": 0.5,
+        "nominal_shoulder_end_mm": 25.5,
+        "nominal_thread_beyond_nut_mm": 1.0,
+        "calculated_pin_axial_clearance_from_nominal_stack_mm": [
+          0,
+          0.05
+        ],
+        "minimum_pin_diameter_used_mm": 4.97,
+        "scope": "Shoulder/washer stop is metal-to-metal. Printed heights, shim/washer tolerances, shoulder fillets and nut lead threads are unmeasured; shim/finish for a retained, nonbinding pin without bearing preload. No fatigue rating."
+      }
     },
     {
       "name": "S2",
@@ -121,9 +134,9 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 17.251398007975354,
           "pin_load_upper_screen_n": 36.31082062454611,
-          "pin_bending_screen_mpa": 17.753231124847584,
-          "pin_deflection_screen_mm": 0.001704310187985368,
-          "carrier_pin_bearing_pressure_screen_mpa": 0.6051803437424351
+          "pin_bending_screen_mpa": 18.076662678042254,
+          "pin_deflection_screen_mm": 0.0017458346248411033,
+          "carrier_pin_bearing_pressure_screen_mpa": 0.6088333438052668
         },
         "peak": {
           "sun_input_nm": 0.32679738562091504,
@@ -134,13 +147,26 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 22.271459061228118,
           "pin_load_upper_screen_n": 60.518034374243534,
-          "pin_bending_screen_mpa": 29.588718541412646,
-          "pin_deflection_screen_mm": 0.002840516979975614,
-          "carrier_pin_bearing_pressure_screen_mpa": 1.0086339062373921
+          "pin_bending_screen_mpa": 30.127771130070432,
+          "pin_deflection_screen_mm": 0.002909724374735173,
+          "carrier_pin_bearing_pressure_screen_mpa": 1.014722239675445
         }
       },
       "external_transverse_contact_ratio_standard_geometry": 1.57971478222616,
-      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606,
+      "pin_stack": {
+        "sku": "ZR1790-414H",
+        "head_recess_mm": 0,
+        "external_upper_shim_mm": 0,
+        "nominal_shoulder_end_mm": 30,
+        "nominal_thread_beyond_nut_mm": 1.0,
+        "calculated_pin_axial_clearance_from_nominal_stack_mm": [
+          0,
+          0.05
+        ],
+        "minimum_pin_diameter_used_mm": 4.97,
+        "scope": "Shoulder/washer stop is metal-to-metal. Printed heights, shim/washer tolerances, shoulder fillets and nut lead threads are unmeasured; shim/finish for a retained, nonbinding pin without bearing preload. No fatigue rating."
+      }
     },
     {
       "name": "S3",
@@ -172,9 +198,9 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 22.606387014040187,
           "pin_load_upper_screen_n": 90.77705156136528,
-          "pin_bending_screen_mpa": 53.62955235631041,
-          "pin_deflection_screen_mm": 0.00751707558860951,
-          "carrier_pin_bearing_pressure_screen_mpa": 1.512950859356088
+          "pin_bending_screen_mpa": 54.60658517325265,
+          "pin_deflection_screen_mm": 0.0077002243679922,
+          "carrier_pin_bearing_pressure_screen_mpa": 1.522083359513167
         },
         "peak": {
           "sun_input_nm": 1.4705882352941178,
@@ -185,13 +211,26 @@
           "below_assumed_bending_screen": true,
           "external_mesh_hertz_pitch_point_screen_mpa": 29.184720141099092,
           "pin_load_upper_screen_n": 151.29508593560882,
-          "pin_bending_screen_mpa": 89.38258726051737,
-          "pin_deflection_screen_mm": 0.012528459314349184,
-          "carrier_pin_bearing_pressure_screen_mpa": 2.5215847655934804
+          "pin_bending_screen_mpa": 91.01097528875444,
+          "pin_deflection_screen_mm": 0.012833707279987002,
+          "carrier_pin_bearing_pressure_screen_mpa": 2.5368055991886123
         }
       },
       "external_transverse_contact_ratio_standard_geometry": 1.529765630830678,
-      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606
+      "minimum_20deg_unshifted_sun_teeth_screen": 17.09726434082606,
+      "pin_stack": {
+        "sku": "ZR1791-414H",
+        "head_recess_mm": 0,
+        "external_upper_shim_mm": 0,
+        "nominal_shoulder_end_mm": 35,
+        "nominal_thread_beyond_nut_mm": 1.0,
+        "calculated_pin_axial_clearance_from_nominal_stack_mm": [
+          0,
+          0.05
+        ],
+        "minimum_pin_diameter_used_mm": 4.97,
+        "scope": "Shoulder/washer stop is metal-to-metal. Printed heights, shim/washer tolerances, shoulder fillets and nut lead threads are unmeasured; shim/finish for a retained, nonbinding pin without bearing preload. No fatigue rating."
+      }
     }
   ],
   "not_established": [

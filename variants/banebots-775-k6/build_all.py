@@ -27,6 +27,7 @@ def digest(path):
 
 def collect():
     files = set(SOURCES + ['sizing-report.json', 'connection-review.json', 'brake-load-report.json'])
+    files.update(str(p.relative_to(ROOT)) for p in (ROOT / 'evidence').glob('*.json'))
     assert json.loads((ROOT / 'brake-load-report.json').read_text()) == brake_report(
         json.loads((ROOT / 'brake-rotor.json').read_text())), 'Stale brake feasibility report'
     for folder, report_name, status in REPORTS:

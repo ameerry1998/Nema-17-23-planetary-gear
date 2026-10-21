@@ -23,12 +23,19 @@ B.REPORT = {'status': 'BUILDING', 'purpose': C['status'], 'parts': {}, 'placemen
             'source_sha256': {f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in ('drive.json', 'build_drive.py', 'assemble_drive.py')}}
 REPORT = B.REPORT
 ITEMS = []
+FASTENER_SWEEPS = []
 
 
 def add(name, shape, category, z=0, color=None):
     s = shape.translate((0, 0, z))
     ITEMS.append({'name': name, 'shape': s, 'category': category, 'color': color or '#9eaaaf'})
     return s
+
+
+def fastener_sweep(name, orbit, diameter, height, z):
+    """Codex (secondary agent, 2026-10-21): conservative full-turn envelope, including every carrier phase."""
+    shape = B.ring_solid(2 * orbit + diameter, max(0.01, 2 * orbit - diameter), height, z)
+    FASTENER_SWEEPS.append({'name': name, 'shape': shape})
 
 
 def tie_holes(shape, height):
@@ -51,8 +58,18 @@ def retainer(name, bearing_od, z, inverted=False):
     for x, y in B.polar(radius, 3, math.pi / 3):
         part = part.fuse(B.cylinder(7, 2, 0, x, y))
         part = part.cut(B.cylinder(2.3, 4, -1, x, y))
-    part = B.save(name, part.clean(), note='Three M2 x 6 screws into ruthex RX-M2x4 brass inserts; print-fit coupon required')
+        if inverted:
+            part = part.cut(B.cylinder(4, .4, -.1, x, y))
+            part = part.cut(cq.Solid.makeCone(2, 1.15, .85, cq.Vector(x, y, .3)))
+    note = 'Three flush M2 x6 DIN965H countersunk screws, head <=3.8 mm, PH0; no larger ISO10642 substitute' if inverted else 'Three M2 x6 DIN912 socket screws, head <=3.8 x2 mm'
+    part = B.save(name, part.clean(), note=note + '; ruthex RX-M2x4 inserts; actual seating/retention untested')
     add(name, part, 'fixed', z - 2 if inverted else z, '#84939c')
+    for i, (x, y) in enumerate(B.polar(radius, 3, math.pi / 3)):
+        if inverted:
+            head = B.cylinder(3.8, .3, 0, x, y).fuse(cq.Solid.makeCone(1.9, 1, .9, cq.Vector(x, y, .3)))
+            add(f'{name}-M2-flush-head-{i}', head, 'fixed', z - 2)
+        else:
+            add(f'{name}-M2-head-{i}', B.cylinder(4, 2, 0, x, y), 'fixed', z + 2)
 
 
 def cap(name, z, output=False):
@@ -106,7 +123,10 @@ def stage(s, base, index):
                 hub = hub.cut(B.cylinder(4, 10, -1, x, y))
                 screw = B.cylinder(4, 8, 2, x, y).fuse(cq.Solid.makeCone(4, 2, 2, cq.Vector(x, y, 0)))
                 add(f'{name}-metal-hub-bolt-{x}-{y}', screw, 'fastener', upper_z)
+        fastener_sweep(name + '-hub-screw-heads', math.sqrt(128), 8, 2, upper_z)
+        fastener_sweep(name + '-hub-screw-shanks', math.sqrt(128), 4, 8, upper_z + 2)
         add(name + '-metal-hub-REFERENCE', hub, 'rotating', upper_z + plate)
+        fastener_sweep(name + '-metal-hub-envelope', 0, 2 * math.hypot(12, 17.94) if name == 'S3' else 32, 8, upper_z + plate)
     add(name + '-ring', load_part(name, 'fixed-ring'), 'fixed', gear_z, '#84939c')
     add(name + '-sun', load_part(name, 'sun'), 'rotating', gear_z, '#dca749')
     add(name + '-carrier-journal', B.bearing(8, 16, 5), 'bearing', base + 1)
@@ -117,14 +137,34 @@ def stage(s, base, index):
         add(f'{name}-planet-{i}-inner-spacer', load_part(name, 'planet-inner-spacer').translate((x, y, 0)), 'rotating', gear_z + 4)
         for j, zz in enumerate([base + plate, gear_z + width]):
             add(f'{name}-planet-{i}-end-spacer-{j}', load_part(name, 'planet-end-spacer').translate((x, y, 0)), 'rotating', zz)
-        pin = B.cylinder(5, s['shoulder_length_mm']).fuse(B.cylinder(9, 5, -5)).fuse(B.cylinder(4, 6, s['shoulder_length_mm']))
-        add(f'{name}-pin-{i}', pin.translate((x, y, 0)), 'fastener', base)
-        nut = B.hex_prism(7, 4).cut(B.cylinder(4, 6, -1))
-        add(f'{name}-pin-nut-{i}', nut.translate((x, y, 0)), 'fastener', upper_z + plate)
+        hp = G['planet_pin']
+        pin_z = base + s['pin_head_recess_mm']
+        shoulder_end = pin_z + s['shoulder_length_mm']
+        pin = B.cylinder(5, s['shoulder_length_mm']).fuse(B.cylinder(hp['head_diameter_mm'], hp['head_height_mm'], -hp['head_height_mm'])).fuse(B.cylinder(4, hp['thread_length_mm'], s['shoulder_length_mm']))
+        add(f'{name}-pin-{i}', pin.translate((x, y, 0)), 'fastener', pin_z)
+        if s['pin_upper_shim_mm']:
+            shim = B.ring_solid(hp['upper_shim_od_mm'], hp['upper_shim_id_mm'], s['pin_upper_shim_mm'])
+            add(f'{name}-pin-upper-shim-{i}', shim.translate((x, y, 0)), 'fastener', upper_z + plate)
+        washer = B.ring_solid(hp['washer_od_mm'], hp['washer_id_mm'], hp['washer_thickness_mm'])
+        add(f'{name}-pin-washer-{i}', washer.translate((x, y, 0)), 'fastener', shoulder_end)
+        nut = B.hex_prism(hp['nut_af_mm'], hp['nut_height_mm']).cut(B.cylinder(4, hp['nut_height_mm'] + 2, -1))
+        add(f'{name}-pin-nut-{i}', nut.translate((x, y, 0)), 'fastener', shoulder_end + hp['washer_thickness_mm'])
+    hp = G['planet_pin']
+    pin_z = base + s['pin_head_recess_mm']
+    shoulder_end = pin_z + s['shoulder_length_mm']
+    fastener_sweep(name + '-pin-heads', geom['orbit_mm'], hp['head_diameter_mm'], hp['head_height_mm'], pin_z - hp['head_height_mm'])
+    fastener_sweep(name + '-pin-shoulders', geom['orbit_mm'], 5, s['shoulder_length_mm'] + hp['shoulder_length_plus_mm'], pin_z)
+    fastener_sweep(name + '-pin-threads', geom['orbit_mm'], 4, hp['thread_length_mm'] + hp['shoulder_length_plus_mm'], shoulder_end)
+    fastener_sweep(name + '-pin-washers', geom['orbit_mm'], hp['washer_od_mm'], hp['washer_thickness_mm'] + hp['shoulder_length_plus_mm'], shoulder_end)
+    fastener_sweep(name + '-pin-nuts', geom['orbit_mm'], hp['nut_af_mm'] / math.cos(math.pi / 6), hp['nut_height_mm'] + hp['shoulder_length_plus_mm'], shoulder_end + hp['washer_thickness_mm'])
+    if s['pin_upper_shim_mm']:
+        fastener_sweep(name + '-pin-upper-shims', geom['orbit_mm'], hp['upper_shim_od_mm'], s['pin_upper_shim_mm'], upper_z + plate)
     for i, (x, y) in enumerate(B.polar(geom['orbit_mm'], s['planets'], math.pi / s['planets'])):
         length = s['shoulder_length_mm'] + 5
         bolt = B.cylinder(3, length, -length).fuse(B.cylinder(5.5, 3))
         add(f'{name}-post-screw-{i}', bolt.translate((x, y, 0)), 'fastener', upper_z + plate)
+    fastener_sweep(name + '-post-screw-heads', geom['orbit_mm'], 5.5, 3, upper_z + plate)
+    fastener_sweep(name + '-post-screw-shanks', geom['orbit_mm'], 3, s['shoulder_length_mm'] + 5, base - 5)
     out_start = upper_z + A['output_shaft_start_in_carrier_mm']
     out_length = A['interstage_shaft_lengths_mm'][index] if index < 2 else A['output_shaft_length_mm']
     add(name + '-output-shaft-REFERENCE', B.rex_profile(s['output_rex_mm'], out_length), 'shaft', out_start)
@@ -229,6 +269,21 @@ def collision_checks():
             if v > 0.001:
                 REPORT['interferences'].append({'fixed': fixed['name'], 'moving': moving['name'], 'volume_mm3': v})
     assert not REPORT['interferences'], REPORT['interferences']
+    REPORT['fastener_full_rotation_checks'] = []
+    clearance_floor = .25
+    for sweep in FASTENER_SWEEPS:
+        sb = sweep['shape'].BoundingBox()
+        for fixed in [x for x in ITEMS if x['category'] == 'fixed']:
+            fb = fixed['shape'].BoundingBox()
+            if max(fb.zmin, sb.zmin) - min(fb.zmax, sb.zmax) >= clearance_floor:
+                continue
+            volume = sweep['shape'].intersect(fixed['shape']).Volume()
+            distance = sweep['shape'].distance(fixed['shape'])
+            REPORT['fastener_full_rotation_checks'].append(dict(moving=sweep['name'], fixed=fixed['name'], swept_intersection_mm3=volume, minimum_distance_mm=distance))
+            assert volume < .001, f"Full-rotation fastener collision: {sweep['name']} / {fixed['name']}: {volume}"
+            assert distance >= clearance_floor - 1e-6, f"Full-rotation fastener clearance below {clearance_floor} mm: {sweep['name']} / {fixed['name']}: {distance}"
+    REPORT['fastener_minimum_modeled_clearance_floor_mm'] = clearance_floor
+    REPORT['fastener_rotation_scope'] = 'Conservative 360-degree annular sweeps of carrier pin heads/shoulders/threads/washers/nuts/shims, post screws, S2/S3 hub screws and hub bodies against modeled stationary parts. Includes 4 x2 mm M2 heads and the flush bottom-output heads. Shoulder-length positive tolerance included. Tooth meshes retain their separate phase-sample checks. Not a deformation or physical clearance test.'
 
 
 def main():

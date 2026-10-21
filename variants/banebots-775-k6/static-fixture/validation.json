@@ -13,7 +13,7 @@
         122.99031066894531,
         12.0
       ],
-      "step_sha256": "797e4bfdc9570559bdf07fe58fb35f43e2b34662691c307554b7895552e68193",
+      "step_sha256": "96336cb380292d34092384069189f512f4a66dc5f634cbe9834fa488fccf0a1b",
       "stl_sha256": "dc4c3c2ce565cba53711aa279b32335d73100c7f900ba59164dfe77b8b38a02d"
     },
     "TF1-tie-rod-standoff-STATIC-ONLY": {
@@ -28,7 +28,7 @@
         9.99802303314209,
         9.699999809265137
       ],
-      "step_sha256": "e6eb8661b4ab1daf4ba9d05cf9bf121b8e13cf132fb5d984ecb2d8907f469449",
+      "step_sha256": "39603d6df4899a641754656e5ade013cd19fa281fd8fb957a9e3f70dbd827fce",
       "stl_sha256": "a6ffbaaf1e77cddc5485eef4d2683654788e55da15f7ab0c2e6c33933e564590"
     },
     "TF1-rear-cradle-STATIC-ONLY": {
@@ -43,7 +43,7 @@
         32.0,
         18.0
       ],
-      "step_sha256": "fd55d492f1bc2b34404eed4158b2e7b7762e7d069cf00d06664a4ddaa558af95",
+      "step_sha256": "0ca88047adb4afdf660d84b1149f951d65158524aeff8eed840df46ecb9cefee",
       "stl_sha256": "e392648922d0c58d448264ea22c9fbcf67a5827ed846666a11cebacace9eefc4"
     }
   },
@@ -52,11 +52,11 @@
     "static-fixture.json": "ccf90dab86984a1a103a399bb8e81937821304a25658d0c6c6289b40fe2b977a",
     "fixture_math.py": "0c5a7d6900376af22d72f9e42f31f9c7855d520e970316bbf27586d06d27eff5",
     "build_static_fixture.py": "068cccac096334fdee0c4fa4b780cb5764453a1cae43f7172881697837bc5ea4",
-    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
-    "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
-    "drive-assembly/assembly-validation.json": "b48c3fc4a85546edceaab97c39a8c40a59e6aa1fe4f91ddc7a8eda8ec22fbbcb",
-    "drive-assembly/input-bearing-cap.step": "58a5a4de84acffa9e67197e6a32b8cfdfe908d984ab6f99373e7607b1ecac60e",
-    "drive-assembly/S3-output-cap.step": "ccaea46bff9e68b3f140bb6f25d61ae265c835e99822b997448954dd61db5cc0"
+    "build_drive.py": "b0e62f08447b5c0840c6c10fc5d29bd63438747d89f0a098a32c606bdb881997",
+    "drive.json": "3336c9c0e86f63424647a4e4df687dc87b584817cd652ab1d0fffd7321c140b2",
+    "drive-assembly/assembly-validation.json": "b021da1a7336c82e081bf4ed4832ece3679f855d29cf6f5c8f28d3842eee9ffb",
+    "drive-assembly/input-bearing-cap.step": "f8530e69f0c3503226731e3ebd60ee27aa3144c04fd4d66cc90241f0230d873b",
+    "drive-assembly/S3-output-cap.step": "47310178190ce86cf2f10f8cdf171bbf4526cf2b943bd11074947a88b10a91c4"
   },
   "limitations": [
     "No motor may be installed or powered while the input is locked",
