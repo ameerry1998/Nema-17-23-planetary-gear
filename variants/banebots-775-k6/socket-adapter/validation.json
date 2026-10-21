@@ -13,7 +13,7 @@
         44.0,
         17.799999137060546
       ],
-      "step_sha256": "c88892cce0a91560d79311454cfe3b3bbec654ffab4a0c1589200ddba4d74c15",
+      "step_sha256": "08b5924a7871fd51abd80293320c33e4c2fa690aa08d8ec95f3972e485c66fb3",
       "stl_sha256": "4a6d846861d481b3972a29cc069073f7ca7ff33eeca8ca22013d3849d51ad119"
     },
     "SA1-cassette-right": {
@@ -28,7 +28,7 @@
         44.0,
         17.799999237060547
       ],
-      "step_sha256": "842446e5ecbfb81559c3a3dd03f316889a0aad4a229e596f1a7224fb1e0f6a5e",
+      "step_sha256": "0128ef97875e0d4dce6c3b492ed59a5c6229aee212dd6596f1b2fac6c0a14928",
       "stl_sha256": "11a1eb012bd576e9eb28cf09c18faef0101a4bfac5e9a96d6e701e84704573f8"
     },
     "SA1-output-collar-spacer-FIT-SAMPLE": {
@@ -43,7 +43,7 @@
         14.997035026550293,
         6.5
       ],
-      "step_sha256": "6d126a61b099cd09338dbb5e68274b67445266e90a60ba744d61e970ffe0b9cb",
+      "step_sha256": "1f59acce4d93f335a51654b49dfc3a7086a4832bcd8bf81a0c692317f0a4d97d",
       "stl_sha256": "79fed94a03bba415d290ebd14474dd028df3ca058180845ecb0f31dba850a447"
     }
   },
@@ -53,8 +53,8 @@
     "build_socket_adapter.py": "9cb04dcd6bb143e920398de52d5a2d15d8235fd8e9bb5e509893e2bfb51e71ec",
     "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
     "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
-    "drive-assembly/assembly-validation.json": "dbf3027cc5b116054302be73f58d2ca423363f15975b347faa72f02d12b820a0",
-    "drive-assembly/S3-output-cap-retainer-top.step": "36fd983bd53edc890b4ce5bc5c8b2d7566f97ca9ee787468bd97d9263f42b593"
+    "drive-assembly/assembly-validation.json": "b48c3fc4a85546edceaab97c39a8c40a59e6aa1fe4f91ddc7a8eda8ec22fbbcb",
+    "drive-assembly/S3-output-cap-retainer-top.step": "544ce6d32d2f21a7c3618dcfbf88c96323c83dd3b5e80ddab480b4925a078793"
   },
   "limitations": [
     "Actual socket outer transitions and internal depths",

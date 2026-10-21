@@ -19,7 +19,7 @@ OUT = ROOT / 'drive-assembly'
 OUT.mkdir(exist_ok=True)
 B.OUT = OUT
 B.REPORT = {'status': 'BUILDING', 'purpose': C['status'], 'parts': {}, 'placements': [], 'interferences': [],
-            'physical_testing': 'NOT PERFORMED', 'limitations': ['Motor face spacing remains assumed', 'Shaft endplay and clamp retention untested', 'Bearing/insert fits untested', 'Simplified purchased-part envelopes', 'No arm, grinder clamp or load fixture yet'],
+            'physical_testing': 'NOT PERFORMED', 'limitations': ['Motor face spacing remains assumed', 'Shaft endplay and clamp retention untested', 'Bearing/insert fits untested', 'Simplified purchased-part envelopes', 'No arm, grinder clamp or powered load fixture; TF1 motor-removed static fixture is exported separately'],
             'source_sha256': {f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in ('drive.json', 'build_drive.py', 'assemble_drive.py')}}
 REPORT = B.REPORT
 ITEMS = []

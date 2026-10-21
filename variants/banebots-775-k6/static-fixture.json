@@ -1,0 +1,88 @@
+{
+  "revision": "TF1",
+  "status": "Motor-removed static test fixture candidate, not a powered brake or tested fixture",
+  "material": "Prusament PC Blend Carbon Fiber (PCCF)",
+  "maximum_planned_output_torque_Nm": 5,
+  "plate_thickness_mm": 12,
+  "plate_front_z_mm": -21.7,
+  "foot_width_mm": 100,
+  "foot_bottom_y_mm": -74,
+  "foot_top_y_mm": -40,
+  "vise_jaw_top_y_max_mm": -54,
+  "hub_od_mm": 32,
+  "hub_length_mm": 8,
+  "hub_pilot_od_mm": 14,
+  "hub_pilot_length_mm": 2,
+  "hub_pilot_clearance_mm": 0.2,
+  "hub_mount_xy_mm": 8,
+  "hub_screw_length_mm": 12,
+  "hub_screw_head_recess_depth_mm": 6,
+  "hub_screw_head_recess_diameter_mm": 7.6,
+  "standoff_od_mm": 10,
+  "cradle_width_mm": 120,
+  "cradle_depth_mm": 18,
+  "cradle_top_y_mm": -42,
+  "cradle_diametral_clearance_mm": 0.6,
+  "cradle_z_mm": 143.5,
+  "cradle_bolt_x_mm": 52,
+  "cradle_bolt_diameter_mm": 6.5,
+  "additional_hardware": [
+    {
+      "quantity": 1,
+      "part": "Input-lock hub",
+      "specification": "goBILDA 1309-0016-4008, 8 mm REX",
+      "source": "https://www.gobilda.com/1309-series-sonic-hub-8mm-rex-bore/",
+      "note": "One additional hub; do not remove the S2 hub. This locks the input to the fixture when the motor/coupler are removed."
+    },
+    {
+      "quantity": 4,
+      "part": "Hub-to-fixture screws",
+      "specification": "M4 x 12 socket head",
+      "note": "6 mm nominal thread engagement after the 6 mm recess; verify actual hub thread and no protrusion."
+    },
+    {
+      "quantity": 1,
+      "part": "Bench vise with soft jaws",
+      "specification": "At least 100 mm usable jaw width and 20 mm foot engagement; securely bolted bench",
+      "note": "Grip only the rectangular foot; shim and clamp the rear cradle to carry gearbox weight and wrench side load."
+    },
+    {
+      "quantity": 1,
+      "part": "Indicating torque tool",
+      "specification": "Calibrated beam, dial or digital tool reading 1 to 5 Nm in the test direction, preferably 1/4 inch square drive",
+      "note": "A 20-200 Nm wrench cannot measure this test. A click-only tool cannot show sustained load or relaxation. Record accuracy and calibration, or borrow a suitable tool."
+    },
+    {
+      "quantity": 1,
+      "part": "11 mm six-point socket",
+      "specification": "Fits torque tool and 12 REX output; Wera 05003510001 from SA1 can be reused for the direct-shaft test",
+      "note": "At least 10 mm measured usable shaft engagement, no bottoming or contact with collar; socket not retained by the shaft for this hand test."
+    },
+    {
+      "quantity": 1,
+      "part": "Rear-cradle hold-down",
+      "specification": "Two suitable bench clamps and flat shims; optional two M6 through bolts with washers/nuts for a drilled base",
+      "note": "Height depends on the actual vise and bench. Do not let the gearbox cantilever from the printed fixture."
+    },
+    {
+      "quantity": 1,
+      "part": "Attachment test shaft",
+      "specification": "Spare goBILDA 2109-4012-0640, 12 mm REX steel shaft, 64 mm",
+      "source": "https://www.gobilda.com/stainless-steel-rex-shafting/",
+      "note": "For isolated SA1 static test. Reuse its collar; keep the assembled gearbox separate. Check 11 mm socket grip on the exposed test-shaft end."
+    },
+    {
+      "quantity": 1,
+      "part": "Attachment test hex",
+      "specification": "Straight steel 6.35 mm hex test piece with at least 10 mm usable socket engagement and enough vise grip",
+      "note": "A long straight 1/4 inch screwdriver-bit shank can be checked for fit; exclude reduced necks, grooves and tapered ends from loaded contact. Do not use the grinder as the restraint."
+    }
+  ],
+  "limits": [
+    "No motor may be installed or powered while the input is locked",
+    "Static output load does not establish operating efficiency, speed, impact, heat, wear or fatigue",
+    "Printed fixture strength and vise retention have not been tested",
+    "Physical hub, shaft, spacer and tool-access fits remain unverified",
+    "Test the adapter separately; direct-shaft loading bypasses it"
+  ]
+}

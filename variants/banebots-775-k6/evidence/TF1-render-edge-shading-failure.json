@@ -1,0 +1,70 @@
+{
+  "status": "FAILED DIGITAL FIXTURE CHECK",
+  "parts": {
+    "TF1-vise-plate-MOTOR-REMOVED-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Print broad back face on bed. Clamp only the bottom 20 mm rectangular foot in soft vise jaws; rear support required. No motor may be installed.",
+      "volume_mm3": 123697.72546695528,
+      "dimensions_mm": [
+        100.0,
+        122.99031066894531,
+        12.0
+      ],
+      "step_sha256": "710d8c6ffc191e16623e3f1cdd8973f859f9a655c018ecadfabe455ce580f9f6",
+      "stl_sha256": "dc4c3c2ce565cba53711aa279b32335d73100c7f900ba59164dfe77b8b38a02d"
+    },
+    "TF1-tie-rod-standoff-STATIC-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 6,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Six printed static-fixture spacers. Tighten tie rods evenly only enough to close gaps, without crushing plastic.",
+      "volume_mm3": 614.1827982649108,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        9.699999809265137
+      ],
+      "step_sha256": "b45aa17e9c5fcd3800b0c7bc81a7711b78c2c35713f2a589221d74631132a64c",
+      "stl_sha256": "a6ffbaaf1e77cddc5485eef4d2683654788e55da15f7ab0c2e6c33933e564590"
+    },
+    "TF1-rear-cradle-STATIC-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Print broad end face on bed; semicircular saddle opens upward in use. Shim to actual vise height, clamp to bench and support S3 output cap. No powered-brake rating.",
+      "volume_mm3": 62408.501613729175,
+      "dimensions_mm": [
+        120.0,
+        32.0,
+        18.0
+      ],
+      "step_sha256": "29da1ae34387fa586c6911bf133c9700a0584cc2d077996f3ae3ca2305320e11",
+      "stl_sha256": "e392648922d0c58d448264ea22c9fbcf67a5827ed846666a11cebacace9eefc4"
+    }
+  },
+  "physical_testing": "NOT PERFORMED",
+  "source_sha256": {
+    "static-fixture.json": "ccf90dab86984a1a103a399bb8e81937821304a25658d0c6c6289b40fe2b977a",
+    "fixture_math.py": "0c5a7d6900376af22d72f9e42f31f9c7855d520e970316bbf27586d06d27eff5",
+    "build_static_fixture.py": "d1a77dc27b4e67c0b2b5a98d0d71cef2c61705b1405a0644c5b50cc763d7d6d1",
+    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
+    "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
+    "drive-assembly/assembly-validation.json": "b48c3fc4a85546edceaab97c39a8c40a59e6aa1fe4f91ddc7a8eda8ec22fbbcb",
+    "drive-assembly/input-bearing-cap.step": "58a5a4de84acffa9e67197e6a32b8cfdfe908d984ab6f99373e7607b1ecac60e",
+    "drive-assembly/S3-output-cap.step": "ccaea46bff9e68b3f140bb6f25d61ae265c835e99822b997448954dd61db5cc0"
+  },
+  "limitations": [
+    "No motor may be installed or powered while the input is locked",
+    "Static output load does not establish operating efficiency, speed, impact, heat, wear or fatigue",
+    "Printed fixture strength and vise retention have not been tested",
+    "Physical hub, shaft, spacer and tool-access fits remain unverified",
+    "Test the adapter separately; direct-shaft loading bypasses it"
+  ],
+  "interferences": [],
+  "failure": "operands could not be broadcast together with shapes (10676,1) (0,4) "
+}

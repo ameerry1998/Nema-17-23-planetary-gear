@@ -17,9 +17,10 @@ Print **one [S3 planet](drive-candidate/S3-planet.stl)** in the intended PCCF an
 - [x] Generate three load-sized cartridge candidates, casing, bearing retention, motor interface and removable adapter source/STEP/STL.
 - [x] Define bought hardware, PCCF trial settings, beginner wiring and staged tests.
 - [x] Add a reproducible build and source/artifact hash verification command.
+- [x] Export TF1 motor-removed static-test fixture and measurement procedure; digitally checked, not physically validated.
 - [ ] Validate actual printed bearing fits, motor face, shaft engagement and assembly access.
 - [ ] Measure representative K6 running torque and startup peaks.
-- [ ] Complete the controlled-load fixture and validate the printed output socket/shaft retention.
+- [ ] Validate TF1 and shaft/adapter retention, then complete the powered controlled-load fixture.
 - [ ] Pass low-speed load and high-speed/temperature tests, revise the drive from results.
 - [ ] Demonstrate repeatable grinding and wear behavior with recorded evidence.
 - [ ] Reduce package size and design the adjustable final stand around verified dimensions.
@@ -55,6 +56,7 @@ The stationary outer ring does not drive the grinder. Each sun gear drives plane
 - `drive-assembly/`: casing/interface STEP/STL files and complete reference assembly.
 - `socket-adapter/`, `socket-adapter.json`: separate SA1 printed cassette with bought steel sockets; fit/load trials pending.
 - `connection_review.py`, `connection-review.json`: shaft/socket contact and heating screens, including rejected compact-stage candidate.
+- `static-fixture.json`, `build_static_fixture.py`, `static-fixture/`: TF1 printed vise plate, rear support and standoffs for hand-applied torque with the motor removed. Instructions are in the build guide; this is not a powered brake.
 - `drive-artifacts.json`: hashes binding the current checked sources to artifacts.
 - `test-results-template.csv`: empty physical-test log; no fabricated results.
 - `evidence/`: preserved earlier failed checks where applicable.

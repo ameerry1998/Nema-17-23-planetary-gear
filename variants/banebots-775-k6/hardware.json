@@ -397,10 +397,74 @@
     {
       "quantity": 1,
       "part": "Fixture/test equipment",
-      "specification": "Rigid bolted fixture, clear guard, digital caliper, torque wrench 0-6 Nm, 11 mm socket, optical tachometer, thermocouples, DC clamp meter",
+      "specification": "Rigid fixture, clear guard, digital caliper, calibrated indicating torque tool covering 1-5 Nm, 11 mm socket, optical tachometer, thermocouples, DC clamp meter",
       "use": "Physical acceptance tests",
       "source": "",
-      "note": "Borrow shop tools if available. Never hold the running motor/gearbox or react its torque by hand."
+      "note": "Borrow shop tools if available. TF1 details below refine the static-test equipment; overlapping items are not additional purchases. Never hold the running motor/gearbox or react its torque by hand."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Input-lock hub",
+      "specification": "goBILDA 1309-0016-4008, 8 mm REX",
+      "use": "Motor-removed static test fixture",
+      "source": "https://www.gobilda.com/1309-series-sonic-hub-8mm-rex-bore/",
+      "note": "One additional hub; do not remove the S2 hub. This locks the input to the fixture when the motor/coupler are removed."
+    },
+    {
+      "quantity": 4,
+      "part": "TF1 Hub-to-fixture screws",
+      "specification": "M4 x 12 socket head",
+      "use": "Motor-removed static test fixture",
+      "source": "",
+      "note": "6 mm nominal thread engagement after the 6 mm recess; verify actual hub thread and no protrusion."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Bench vise with soft jaws",
+      "specification": "At least 100 mm usable jaw width and 20 mm foot engagement; securely bolted bench",
+      "use": "Motor-removed static test fixture",
+      "source": "",
+      "note": "Grip only the rectangular foot; shim and clamp the rear cradle to carry gearbox weight and wrench side load."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Indicating torque tool",
+      "specification": "Calibrated beam, dial or digital tool reading 1 to 5 Nm in the test direction, preferably 1/4 inch square drive",
+      "use": "Motor-removed static test fixture",
+      "source": "",
+      "note": "A 20-200 Nm wrench cannot measure this test. A click-only tool cannot show sustained load or relaxation. Record accuracy and calibration, or borrow a suitable tool."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 11 mm six-point socket",
+      "specification": "Fits torque tool and 12 REX output; Wera 05003510001 from SA1 can be reused for the direct-shaft test",
+      "use": "Motor-removed static test fixture",
+      "source": "",
+      "note": "At least 10 mm measured usable shaft engagement, no bottoming or contact with collar; socket not retained by the shaft for this hand test."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Rear-cradle hold-down",
+      "specification": "Two suitable bench clamps and flat shims; optional two M6 through bolts with washers/nuts for a drilled base",
+      "use": "Motor-removed static test fixture",
+      "source": "",
+      "note": "Height depends on the actual vise and bench. Do not let the gearbox cantilever from the printed fixture."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Attachment test shaft",
+      "specification": "Spare goBILDA 2109-4012-0640, 12 mm REX steel shaft, 64 mm",
+      "use": "Isolated attachment static test",
+      "source": "https://www.gobilda.com/stainless-steel-rex-shafting/",
+      "note": "For isolated SA1 static test. Reuse its collar; keep the assembled gearbox separate. Check 11 mm socket grip on the exposed test-shaft end."
+    },
+    {
+      "quantity": 1,
+      "part": "TF1 Attachment test hex",
+      "specification": "Straight steel 6.35 mm hex test piece with at least 10 mm usable socket engagement and enough vise grip",
+      "use": "Isolated attachment static test",
+      "source": "",
+      "note": "A long straight 1/4 inch screwdriver-bit shank can be checked for fit; exclude reduced necks, grooves and tapered ends from loaded contact. Do not use the grinder as the restraint."
     }
   ]
 }

@@ -1,0 +1,92 @@
+{
+  "status": "DIGITAL STATIC-FIXTURE CLEARANCE CHECK PASSED; PHYSICAL VALIDATION REQUIRED",
+  "parts": {
+    "TF1-vise-plate-MOTOR-REMOVED-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Print broad back face on bed. Clamp only the bottom 20 mm rectangular foot in soft vise jaws; rear support required. No motor may be installed.",
+      "volume_mm3": 123697.72546695528,
+      "dimensions_mm": [
+        100.0,
+        122.99031066894531,
+        12.0
+      ],
+      "step_sha256": "797e4bfdc9570559bdf07fe58fb35f43e2b34662691c307554b7895552e68193",
+      "stl_sha256": "dc4c3c2ce565cba53711aa279b32335d73100c7f900ba59164dfe77b8b38a02d"
+    },
+    "TF1-tie-rod-standoff-STATIC-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 6,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Six printed static-fixture spacers. Tighten tie rods evenly only enough to close gaps, without crushing plastic.",
+      "volume_mm3": 614.1827982649108,
+      "dimensions_mm": [
+        10.0,
+        9.99802303314209,
+        9.699999809265137
+      ],
+      "step_sha256": "e6eb8661b4ab1daf4ba9d05cf9bf121b8e13cf132fb5d984ecb2d8907f469449",
+      "stl_sha256": "a6ffbaaf1e77cddc5485eef4d2683654788e55da15f7ab0c2e6c33933e564590"
+    },
+    "TF1-rear-cradle-STATIC-ONLY": {
+      "cad_valid": true,
+      "mesh_watertight": true,
+      "quantity": 1,
+      "material": "Prusament PC Blend Carbon Fiber (PCCF), test candidate",
+      "note": "Print broad end face on bed; semicircular saddle opens upward in use. Shim to actual vise height, clamp to bench and support S3 output cap. No powered-brake rating.",
+      "volume_mm3": 62408.501613729175,
+      "dimensions_mm": [
+        120.0,
+        32.0,
+        18.0
+      ],
+      "step_sha256": "fd55d492f1bc2b34404eed4158b2e7b7762e7d069cf00d06664a4ddaa558af95",
+      "stl_sha256": "e392648922d0c58d448264ea22c9fbcf67a5827ed846666a11cebacace9eefc4"
+    }
+  },
+  "physical_testing": "NOT PERFORMED",
+  "source_sha256": {
+    "static-fixture.json": "ccf90dab86984a1a103a399bb8e81937821304a25658d0c6c6289b40fe2b977a",
+    "fixture_math.py": "0c5a7d6900376af22d72f9e42f31f9c7855d520e970316bbf27586d06d27eff5",
+    "build_static_fixture.py": "068cccac096334fdee0c4fa4b780cb5764453a1cae43f7172881697837bc5ea4",
+    "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
+    "drive.json": "69290215f505f1c4602c1c1d0708a5bb6a2795003b51159db6dab6fd9106cabd",
+    "drive-assembly/assembly-validation.json": "b48c3fc4a85546edceaab97c39a8c40a59e6aa1fe4f91ddc7a8eda8ec22fbbcb",
+    "drive-assembly/input-bearing-cap.step": "58a5a4de84acffa9e67197e6a32b8cfdfe908d984ab6f99373e7607b1ecac60e",
+    "drive-assembly/S3-output-cap.step": "ccaea46bff9e68b3f140bb6f25d61ae265c835e99822b997448954dd61db5cc0"
+  },
+  "limitations": [
+    "No motor may be installed or powered while the input is locked",
+    "Static output load does not establish operating efficiency, speed, impact, heat, wear or fatigue",
+    "Printed fixture strength and vise retention have not been tested",
+    "Physical hub, shaft, spacer and tool-access fits remain unverified",
+    "Test the adapter separately; direct-shaft loading bypasses it"
+  ],
+  "interferences": [],
+  "dimensions": {
+    "input_shaft_start_mm": -21.5,
+    "hub_end_mm": -13.7,
+    "hub_shaft_overlap_mm": 7.800000000000001,
+    "nominal_input_endplay_mm": 0.1999999999999993,
+    "hub_screw_engagement_mm": 6,
+    "standoff_length_mm": 9.7
+  },
+  "static_screen": {
+    "assumed_peak_output_Nm": 5.0,
+    "ideal_input_reaction_Nm": 0.05,
+    "tie_rod_equal_share_tangential_force_N": 18.51851851851852,
+    "tie_rod_assumed_unequal_share_factor": 2,
+    "plate_hole_projected_bearing_pressure_MPa": 0.7716049382716049,
+    "scope": "Static equilibrium and projected pressure only; no measured friction, clamping, plate bending, printed allowable or fixture rating",
+    "example_5Nm_limit_with_4percent_reading_accuracy_Nm": 4.8076923076923075,
+    "example_2kgf_at_100mm_perpendicular_Nm": 1.96133
+  },
+  "material": "Prusament PC Blend Carbon Fiber (PCCF)",
+  "maximum_planned_load_Nm": 5,
+  "conditions": "Motor, motor coupler, guard and motor plate removed; original input spacer retained; additional hub fixes input to vise plate; rear cradle shimmed and clamped",
+  "fit_scope": "Valid single solids, watertight meshes, nominal printed/metal and actual cap clearance. Purchased hub shape is simplified; actual clamp-bolt access and vise/bench fit unverified.",
+  "direct_output_test": "Use an indicating torque tool with an 11 mm six-point socket directly on exposed output shaft. Load opposite the intended powered output direction, observed from the same end. The grinder attachment is tested separately."
+}
