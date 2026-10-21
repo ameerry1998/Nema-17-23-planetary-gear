@@ -2,10 +2,13 @@
   "status": "DIGITAL CHECKS ONLY; PHYSICAL VALIDATION PENDING",
   "physical_tests": 0,
   "sha256": {
-    "BUILD-GUIDE.md": "f7d714f11426e3f338c40538610871998949dc93558e7dfa69bc186bca0e3ae5",
-    "README.md": "1fb4bfea2cd3ac6ee9d0ac9d8c0d9d1980d6d7f0d04de106523e0d1289f1694a",
+    "BUILD-GUIDE.md": "ebad4952f1e56d4e153212024c9e37dd27da6e74a6748ae691c2e950283d14f2",
+    "README.md": "8e36a42aa3b6b4548e7c5e1495aa8e7ab8871d1f15bbbc0841b68fafc5f0ba1f",
     "assemble_drive.py": "012c9ef7acc799c7410b627324ff43ef6eebcae0c92ef4bc62fc487927002ded",
-    "build_all.py": "c1abcb819e7504db2b2a9b107669d6bd29e5798350b93ff778103cbc0c7fb38d",
+    "brake-load-report.json": "ec9705fa76ac97cdd7a85304645de5b795a00221ebbd7983e9344d4c86969be3",
+    "brake-rotor.json": "11e283f0684f7aeb728e2196e4339d9ab501381afc5871f744bb0c8705b27ede",
+    "brake_math.py": "d640248f647392e63ebe24b522f93809a16db4e78976d02de1d40c5a935e9a15",
+    "build_all.py": "ea8abbc82f8f47d446314c7086078ff98e7df367107d78e6b093f2d19d29240a",
     "build_drive.py": "519794e752d1536c10782a0d1d93d64a53a2e78c1b425c95ff067fcfd338dce1",
     "build_socket_adapter.py": "9cb04dcd6bb143e920398de52d5a2d15d8235fd8e9bb5e509893e2bfb51e71ec",
     "build_static_fixture.py": "068cccac096334fdee0c4fa4b780cb5764453a1cae43f7172881697837bc5ea4",
@@ -155,6 +158,7 @@
     "static-fixture/TF1-vise-plate-MOTOR-REMOVED-ONLY.stl": "dc4c3c2ce565cba53711aa279b32335d73100c7f900ba59164dfe77b8b38a02d",
     "static-fixture/validation.json": "b3a0c2f231d835d70f01e3f02d8dce24c035a93e3f25b514ba911746e6ef133f",
     "test-results-template.csv": "74e0aa741f377cb12f32dbf3d0cff1f239a1532a3070cde1819b8144d95bb67f",
+    "test_brake.py": "86badf74809d494ce1a662a1b4b2670969d2cc92e662df3b826218a51390d8bc",
     "test_fixture.py": "0c4e8360ce6c4971ce9776d1890c21336ce3044cda10c59ded627342eb1d048a",
     "test_sizing.py": "c0e0e2e9daebfb296745fb99017feb3ee2498d36aadd1252bcff78dc084c4245"
   }

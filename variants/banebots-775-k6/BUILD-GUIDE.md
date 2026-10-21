@@ -10,6 +10,8 @@ Bearings, shoulder bolts, shafts, shaft connectors, two clamping hubs and fasten
 
 Drive-shaft and bearing STLs named `spacer` are dimensional fit samples for the metal pieces. Their existence does not mean they should be printed for powered operation. The separately named TF1 static-fixture standoffs are plastic. `REFERENCE.step` files show an assembly and must not be printed as one object. The part material and quantity are recorded in each validation report.
 
+This is an **assemble-after-printing** design. Print the sun, planets, ring and carrier plates separately, remove any brim, check the fits, then install bearings and metal pins during the assembly sequence below. You can place several separate pieces on one print bed. Their nested positions in a CAD preview do not mean that they print in those positions. A print-in-place mechanism would need different bearing, pin, clearance and service-access arrangements; it is not what these files describe.
+
 ## Exact filament and why
 
 **Next-test candidate: Prusament PC Blend Carbon Fiber, PCCF.** This is polycarbonate blend containing chopped carbon fibers. It is a filament for an appropriately equipped FDM printer. No continuous-fiber or metal-printing equipment is required. This choice replaces the earlier provisional unfilled-PC baseline, not a successful physical material test.
@@ -140,6 +142,22 @@ Repeat at five different gear positions. To reposition, fully unload and remove 
 The nominal 5 Nm case torque corresponds to 18.5 N tangential force per tie rod if six rods share equally. Applying an assumed factor of two gives about 0.77 MPa projected bearing pressure at a 4 mm rod in the 12 mm plate. This is a preliminary load-path check, not a printed fixture strength rating; it omits clamp slip, local stress concentration, bending and defects. The ideal 100:1 input reaction is 0.05 Nm, but friction and real load sharing are unmeasured.
 
 TF1 loads the output shaft directly and therefore does **not** test SA1. Test that attachment separately with a spare straight steel 6.35 mm hex test piece held securely in a vise and a 12 REX test shaft held in its captured collar. Apply the indicating tool through an 11 mm socket on the free end of that test shaft. Verify full engagement and no bottoming first. Repeat the same slow load sequence and inspect axial motion, witness marks and cassette condition. Do not use the K6 as the test restraint. A subsequent powered retention/balance trial still needs a guarded, independently supported fixture.
+
+## BR1 running-brake feasibility, incomplete
+
+`brake_math.py` evaluates a proposed rope brake on a bought **Azusa 2541 steel 4-inch brake drum**, driven by a bought 12 REX goBILDA 1310 hub through a proposed printed flange. This drum belongs to a future test rig, not to the grinder gearbox. No metal printing is involved. BR1 currently contains calculations and proposed dimensions only. There are no BR1 printable files or completed powered-fixture instructions.
+
+The brake would measure the pull on both ends of a rope wrapped around the drum. At steady speed, torque is `tight-side force × its perpendicular moment arm − slack-side force × its perpendicular moment arm`. Use forces in newtons and distances in metres. Equal radii reduce this to tension difference times radius. Measure both loaded rope centreline distances; rope compression can change them. This arrangement measures steady load and does not establish startup peaks.
+
+The current 101.6 mm drum and assumed 8 mm rope give a nominal 54.8 mm arm. A 5 Nm load would require a 91.2 N tension difference. With an example 40 N slack side, the tight side is 131.2 N. Those values are a sizing example, not operating instructions. Independent force errors of ±0.5 N and arm errors of ±1 mm widen that nominal 5 Nm measurement to approximately 4.77–5.23 Nm. A later procedure must lower the indicated target so its upper uncertainty bound remains within the intended torque ceiling.
+
+The load is substantial even at low speed: 3 Nm at 100 RPM dissipates **31.4 W**, and 5 Nm dissipates **52.4 W**. That is why a plastic pulley was rejected as the friction surface. With an assumed 150 g steel drum and 450 J/kg/K heat capacity, 10 seconds at the running point gives a 4.65 C uniform adiabatic bulk rise; 60 seconds gives 27.9 C. These are not local contact-temperature bounds. The actual drum mass, surface temperature, heat transfer into the printed flange and cooling interval remain unmeasured.
+
+The provisional 250 N combined rope-tension screen produces approximately 708 N at the outer output bearing and 458 N opposing at the inner bearing. The simplified 11 mm solid-round shaft model gives approximately 65 MPa combined bending/torsion stress. Neither result qualifies the printed bearing cap or the shaft: actual material, stress concentrations, retention, stiffness, fatigue and shock are unresolved. The 250 N total and 180 N individual limits are analysis inputs, not established fixture ratings.
+
+Before BR1 can be exported or used, resolve the drum's axial depth, face/wall thickness and mass; check the actual hub/shaft engagement; finish positive fastener retention, casing mounts, rope anchors, guarding and released-load behavior; select suitable rope and terminations; and specify calibrated simultaneous force measurements, RPM measurement and temperature sensing. Reflective bare steel can give misleading infrared readings. No complete BR1 purchase list is being represented as ready to build.
+
+Sources and assumptions are recorded in `brake-rotor.json`: [Azusa drum dimensions](https://azusaeng.com/product/azusa-band-brakes/), [goBILDA hub](https://www.gobilda.com/1310-series-hyper-hub-12mm-rex-bore/), [NSK 6001 rating](https://www.nsk.com/engineering/6001-apn.html), [university rope-brake laboratory method](https://btech.mit.asia/wp-content/uploads/2022/05/TOM-LAB-MANUAL-2021-2022.pdf), and [Fluke on reflective surfaces](https://www.fluke.com/en-gb/learn/blog/thermal-imaging/fixing-thermography-reflectivity). The similarly sized BMI drum has a different published centre bore and is not an assumed substitute.
 
 ## Beginner wiring and speed control
 

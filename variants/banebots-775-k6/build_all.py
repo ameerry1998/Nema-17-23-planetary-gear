@@ -6,6 +6,7 @@ import json
 import subprocess
 import sys
 import zipfile
+from brake_math import report as brake_report
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / 'drive-artifacts.json'
@@ -16,7 +17,8 @@ REPORTS = [('drive-candidate', 'validation-all.json', 'DIGITAL STAGE CHECKS PASS
 SOURCES = ['drive.json', 'hardware.json', 'size_drive.py', 'test_sizing.py', 'build_drive.py',
            'assemble_drive.py', 'build_all.py', 'requirements-lock.txt', 'README.md', 'BUILD-GUIDE.md',
            'test-results-template.csv', 'connection_review.py', 'socket-adapter.json', 'build_socket_adapter.py',
-           'static-fixture.json', 'fixture_math.py', 'test_fixture.py', 'build_static_fixture.py']
+           'static-fixture.json', 'fixture_math.py', 'test_fixture.py', 'build_static_fixture.py',
+           'brake-rotor.json', 'brake_math.py', 'test_brake.py']
 
 
 def digest(path):
@@ -24,7 +26,9 @@ def digest(path):
 
 
 def collect():
-    files = set(SOURCES + ['sizing-report.json', 'connection-review.json'])
+    files = set(SOURCES + ['sizing-report.json', 'connection-review.json', 'brake-load-report.json'])
+    assert json.loads((ROOT / 'brake-load-report.json').read_text()) == brake_report(
+        json.loads((ROOT / 'brake-rotor.json').read_text())), 'Stale brake feasibility report'
     for folder, report_name, status in REPORTS:
         report_path = ROOT / folder / report_name
         r = json.loads(report_path.read_text())
@@ -65,7 +69,7 @@ def main():
         assert collect() == recorded['sha256'], 'Artifact/source changed after recorded build'
     else:
         MANIFEST.write_text(json.dumps({'status': 'BUILDING; PREVIOUS PACKAGE MAY BE STALE'}, indent=2) + '\n')
-        for argv in [['-m', 'unittest', 'test_sizing', 'test_fixture'], ['size_drive.py'], ['connection_review.py'], ['build_drive.py'], ['assemble_drive.py'], ['build_socket_adapter.py'], ['build_static_fixture.py']]:
+        for argv in [['-m', 'unittest', 'test_sizing', 'test_fixture', 'test_brake'], ['size_drive.py'], ['connection_review.py'], ['brake_math.py'], ['build_drive.py'], ['assemble_drive.py'], ['build_socket_adapter.py'], ['build_static_fixture.py']]:
             subprocess.run([sys.executable, *argv], cwd=ROOT, check=True)
         recorded = {'status': 'DIGITAL CHECKS ONLY; PHYSICAL VALIDATION PENDING',
                     'physical_tests': 0, 'sha256': collect()}

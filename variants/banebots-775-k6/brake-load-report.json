@@ -1,0 +1,49 @@
+{
+  "status": "CALCULATED CANDIDATE ONLY; NO MEASURED LOAD OR THERMAL DATA",
+  "positions": {
+    "hub_end_mm": 200.5,
+    "plate_back_mm": 206.5,
+    "drum_rear_rim_mm": 181.1,
+    "rear_guide_start_mm": 177.1,
+    "standoff_length_mm": 23.4,
+    "rope_plane_mm": 192.8
+  },
+  "effective_radius_assumed_mm": 54.8,
+  "running_brake_power_W": 31.41592653589793,
+  "peak_brake_power_W": 52.35987755982989,
+  "example_peak_tight_N": 131.24087591240877,
+  "example_peak_slack_N": 40,
+  "example_required_friction_coefficient_for_180deg_wrap": 0.37820145992698484,
+  "example_peak_measurement_bounds": {
+    "nominal_Nm": 5.0,
+    "lower_Nm": 4.7739591240875905,
+    "upper_Nm": 5.2260408759124095,
+    "scope": "Conservative independent force/arm error bounds; no gauge bandwidth or alignment validation"
+  },
+  "radial_screen": {
+    "total_rope_force_N": 250,
+    "outer_bearing_reaction_N": 707.8125000000002,
+    "inner_bearing_opposing_reaction_N": 457.8125000000002,
+    "bearing_static_catalog_rating_N": 2370,
+    "bearing_limit_scope": "Catalog rating only. Printed cap stiffness, fit, bearing load sharing, shock and fatigue are not established.",
+    "shaft_bending_MPa": 56.056977702089085,
+    "shaft_torsion_MPa": 19.13207430105429,
+    "shaft_von_mises_MPa": 65.11907209317174,
+    "shaft_limit_scope": "11 mm equivalent solid round; no groove, shoulder, concentration or material allowable"
+  },
+  "thermal_screen": {
+    "assumed_heat_capacity_J_K": 67.5,
+    "running_10s_bulk_rise_C": 4.654211338651545,
+    "running_60s_bulk_rise_C": 27.925268031909273,
+    "scope": "Uniform adiabatic bulk estimate with assumed mass/cp. Not a contact-temperature bound or permission to run; measure mass and temperatures."
+  },
+  "unfinished": [
+    "Actual drum dimensions/mass and hub fit",
+    "Powered casing mounts and rope anchors",
+    "Guard and released-load behavior",
+    "Rope grade/strength/termination",
+    "Calibrated force gauges and simultaneous capture",
+    "RPM and temperature sensing",
+    "Static rotor retention/load and subsequent powered validation"
+  ]
+}

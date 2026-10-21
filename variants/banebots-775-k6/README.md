@@ -4,6 +4,8 @@ Experimental, printable planetary drive using the BaneBots M7-RS775-18 motor. **
 
 The gears, carriers and housing are printed in **Prusament PC Blend Carbon Fiber (PCCF)** for the next tests. Bearings, shafts, bolts and small connecting hubs are purchased metal hardware. No metal printer is required. Some spacer tube and tie-rod stock needs cutting/finishing. The material was changed from the earlier provisional unfilled PC baseline; the assumed tooth-load limit was not increased merely because CF was added.
 
+**Print separate parts, then assemble them.** The preview shows the gears in their assembled positions. Each sun, planet, ring and carrier has an individual STL. Multiple parts can share a print bed, but the gears are not printed already trapped inside one another. Separate parts let us install the bearings and steel pins, adjust fits and replace a worn gear. The assembly STEP is a viewing reference, not a print-in-place model.
+
 Read the [build guide](BUILD-GUIDE.md) for the material comparison, print settings, assembly, wiring and test procedure. [hardware.json](hardware.json) is the complete candidate hardware list with quantities and source links.
 
 ## Smallest next physical step
@@ -57,6 +59,7 @@ The stationary outer ring does not drive the grinder. Each sun gear drives plane
 - `socket-adapter/`, `socket-adapter.json`: separate SA1 printed cassette with bought steel sockets; fit/load trials pending.
 - `connection_review.py`, `connection-review.json`: shaft/socket contact and heating screens, including rejected compact-stage candidate.
 - `static-fixture.json`, `build_static_fixture.py`, `static-fixture/`: TF1 printed vise plate, rear support and standoffs for hand-applied torque with the motor removed. Instructions are in the build guide; this is not a powered brake.
+- `brake-rotor.json`, `brake_math.py`, `brake-load-report.json`: BR1 powered-brake feasibility calculations and dimensional assumptions. No BR1 CAD or complete running fixture is delivered yet. See the guide for the unresolved load, heat and mounting requirements.
 - `drive-artifacts.json`: hashes binding the current checked sources to artifacts.
 - `test-results-template.csv`: empty physical-test log; no fabricated results.
 - `evidence/`: preserved earlier failed checks where applicable.
