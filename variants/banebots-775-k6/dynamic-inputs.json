@@ -1,0 +1,23 @@
+{
+  "revision": "DY1",
+  "status": "Analytical load screen only; no measured mass, vibration, acceleration or bearing suitability",
+  "pccf_density_g_cm3": 1.22,
+  "bearing_mass_g": 2.5,
+  "steel_density_assumed_g_cm3": 7.85,
+  "brass_density_assumed_g_cm3": 8.5,
+  "mass_multiplier_assumed": 1.25,
+  "gravity_m_s2": 9.80665,
+  "imbalance_example_g": 0.1,
+  "sources": {
+    "pccf": "https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf",
+    "bearing": "https://www.nsk.com/engineering/695zz1-esm-md.html",
+    "outer_ring_caution": "https://www.nsk.com/content/dam/nsk/common/catalogs/ctrgPdf/bearings/e1103c_partc.pdf"
+  },
+  "evidence": {
+    "density": "1.22 g/cm3 published PCCF density. CAD solid volume assumes solid printed material; real mass must be weighed.",
+    "bearing": "NSK695ZZ1 approximate total mass2.5 g. Each planet carries two. Supplier catalog asks for consultation when shielded bearings have rotating outer rings; generic limiting RPM is not application approval.",
+    "metal_density": "Steel7.85 and brass8.5 g/cm3 are engineering assumptions. Geometry-based hardware masses ignore some reliefs and socket holes.",
+    "mass_multiplier": "1.25 is an engineering sensitivity allowance, not a measured or certified upper bound.",
+    "no_load": "No-load motor RPM scales linearly with supply voltage for an illustrative case. Controller limits, back-driving, losses and actual maximum RPM are unverified."
+  }
+}

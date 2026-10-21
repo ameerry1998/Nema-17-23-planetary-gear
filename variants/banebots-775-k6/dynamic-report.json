@@ -1,0 +1,445 @@
+{
+  "status": "CALCULATED ORBITAL-LOAD SCREEN; PHYSICAL VALIDATION PENDING",
+  "physical_testing": "NOT PERFORMED",
+  "stages": [
+    {
+      "stage": "S1",
+      "components": [
+        {
+          "component": "printed planet",
+          "nominal_mass_g": 3.466999018257657,
+          "z_min_mm": 6.5,
+          "z_max_mm": 18.5,
+          "evidence": "Current validated STL solid volume times published filament density"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 6.5,
+          "z_max_mm": 10.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 14.5,
+          "z_max_mm": 18.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "planet-inner-spacer",
+          "nominal_mass_g": 0.2585048875851654,
+          "z_min_mm": 10.5,
+          "z_max_mm": 14.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 6,
+          "z_max_mm": 6.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 18.5,
+          "z_max_mm": 19,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "pin shoulder",
+          "nominal_mass_g": 3.861066458647068,
+          "z_min_mm": 0.5,
+          "z_max_mm": 25.55,
+          "evidence": "Solid cylindrical mass envelope"
+        },
+        {
+          "component": "pin head",
+          "nominal_mass_g": 1.578336149163512,
+          "z_min_mm": -3.5,
+          "z_max_mm": 0.5,
+          "evidence": "Socket/reliefs ignored in mass envelope"
+        },
+        {
+          "component": "pin threaded end",
+          "nominal_mass_g": 0.4932300466135975,
+          "z_min_mm": 25.5,
+          "z_max_mm": 30.55,
+          "evidence": "Full major-diameter cylinder; thread grooves ignored"
+        },
+        {
+          "component": "pin stop washer",
+          "nominal_mass_g": 0.3083181021381598,
+          "z_min_mm": 25.5,
+          "z_max_mm": 26.35,
+          "evidence": "Nominal annular envelope"
+        },
+        {
+          "component": "pin nut",
+          "nominal_mass_g": 1.0659733490101897,
+          "z_min_mm": 26.3,
+          "z_max_mm": 29.55,
+          "evidence": "Full hex prism; thread bore and chamfers ignored in mass envelope"
+        },
+        {
+          "component": "external S1 shim",
+          "nominal_mass_g": 0.2312015843501238,
+          "z_min_mm": 25,
+          "z_max_mm": 25.5,
+          "evidence": "Nominal steel annulus outside the carrier"
+        }
+      ],
+      "nominal_orbiting_mass_per_pin_g": 16.328255817661763,
+      "assumed_mass_multiplier": 1.25,
+      "support_centers_mm": [
+        3.25,
+        22.0
+      ],
+      "cases": {
+        "running": {
+          "output_rpm": 100,
+          "carrier_rpm": 2000.0,
+          "planet_bearing_relative_rpm": 5333.333333333333,
+          "mesh_normal_force_sum_bound_N": 10.73365783583386,
+          "centrifugal_force_allowance_N": 16.115342548010744,
+          "gravity_force_allowance_N": 0.20015686239284092,
+          "combined_transverse_force_sum_bound_N": 27.049157246237446,
+          "moment_bound_Nmm": 133.41698310759364,
+          "left_reaction_bound_N": 18.895465231570746,
+          "right_reaction_bound_N": 19.31983013807112,
+          "pin_bending_bound_MPa": 11.069858138135368,
+          "carrier_pin_pressure_bound_MPa": 0.6912553587551032,
+          "single_planet_imbalance_example_N": 0.07895683520871485,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "peak": {
+          "output_rpm": 100,
+          "carrier_rpm": 2000.0,
+          "planet_bearing_relative_rpm": 5333.333333333333,
+          "mesh_normal_force_sum_bound_N": 17.889429726389764,
+          "centrifugal_force_allowance_N": 16.115342548010744,
+          "gravity_force_allowance_N": 0.20015686239284092,
+          "combined_transverse_force_sum_bound_N": 34.204929136793346,
+          "moment_bound_Nmm": 166.95370070133234,
+          "left_reaction_bound_N": 22.521056322785736,
+          "right_reaction_bound_N": 22.85001093741203,
+          "pin_bending_bound_MPa": 13.852462702668246,
+          "carrier_pin_pressure_bound_MPa": 0.823890847733153,
+          "single_planet_imbalance_example_N": 0.07895683520871485,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "estimated_no_load": {
+          "output_rpm": 130.0,
+          "carrier_rpm": 2600.0,
+          "planet_bearing_relative_rpm": 6933.333333333333,
+          "mesh_normal_force_sum_bound_N": 0.0,
+          "centrifugal_force_allowance_N": 27.234928906138165,
+          "gravity_force_allowance_N": 0.20015686239284092,
+          "combined_transverse_force_sum_bound_N": 27.435085768531007,
+          "moment_bound_Nmm": 139.75559263069135,
+          "left_reaction_bound_N": 22.628550689987645,
+          "right_reaction_bound_N": 23.5827888365818,
+          "pin_bending_bound_MPa": 11.595784497578972,
+          "carrier_pin_pressure_bound_MPa": 0.8278233286990176,
+          "single_planet_imbalance_example_N": 0.13343705150272814,
+          "case_limit": "No-load case excludes unknown frictional torque; estimated speed is not a verified maximum"
+        }
+      }
+    },
+    {
+      "stage": "S2",
+      "components": [
+        {
+          "component": "printed planet",
+          "nominal_mass_g": 9.269791332512368,
+          "z_min_mm": 6.5,
+          "z_max_mm": 23.5,
+          "evidence": "Current validated STL solid volume times published filament density"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 6.5,
+          "z_max_mm": 10.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 19.5,
+          "z_max_mm": 23.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "planet-inner-spacer",
+          "nominal_mass_g": 0.5816359970666221,
+          "z_min_mm": 10.5,
+          "z_max_mm": 19.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 6,
+          "z_max_mm": 6.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 23.5,
+          "z_max_mm": 24,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "pin shoulder",
+          "nominal_mass_g": 4.631738406480815,
+          "z_min_mm": 0,
+          "z_max_mm": 30.05,
+          "evidence": "Solid cylindrical mass envelope"
+        },
+        {
+          "component": "pin head",
+          "nominal_mass_g": 1.578336149163512,
+          "z_min_mm": -4.0,
+          "z_max_mm": 0,
+          "evidence": "Socket/reliefs ignored in mass envelope"
+        },
+        {
+          "component": "pin threaded end",
+          "nominal_mass_g": 0.4932300466135975,
+          "z_min_mm": 30,
+          "z_max_mm": 35.05,
+          "evidence": "Full major-diameter cylinder; thread grooves ignored"
+        },
+        {
+          "component": "pin stop washer",
+          "nominal_mass_g": 0.3083181021381598,
+          "z_min_mm": 30,
+          "z_max_mm": 30.85,
+          "evidence": "Nominal annular envelope"
+        },
+        {
+          "component": "pin nut",
+          "nominal_mass_g": 1.0659733490101897,
+          "z_min_mm": 30.8,
+          "z_max_mm": 34.05,
+          "evidence": "Full hex prism; thread bore and chamfers ignored in mass envelope"
+        }
+      ],
+      "nominal_orbiting_mass_per_pin_g": 22.99364960488155,
+      "assumed_mass_multiplier": 1.25,
+      "support_centers_mm": [
+        3.0,
+        27.0
+      ],
+      "cases": {
+        "running": {
+          "output_rpm": 100,
+          "carrier_rpm": 400.0,
+          "planet_bearing_relative_rpm": 1066.6666666666667,
+          "mesh_normal_force_sum_bound_N": 38.64116820900189,
+          "centrifugal_force_allowance_N": 1.1346911266872282,
+          "gravity_force_allowance_N": 0.2818633423721396,
+          "combined_transverse_force_sum_bound_N": 40.05772267806126,
+          "moment_bound_Nmm": 240.26209211575278,
+          "left_reaction_bound_N": 20.493870029461885,
+          "right_reaction_bound_N": 20.51228014633508,
+          "pin_bending_bound_MPa": 19.934997882152054,
+          "carrier_pin_pressure_bound_MPa": 0.6878698908898417,
+          "single_planet_imbalance_example_N": 0.0039478417604357436,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "peak": {
+          "output_rpm": 100,
+          "carrier_rpm": 400.0,
+          "planet_bearing_relative_rpm": 1066.6666666666667,
+          "mesh_normal_force_sum_bound_N": 64.40194701500316,
+          "centrifugal_force_allowance_N": 1.1346911266872282,
+          "gravity_force_allowance_N": 0.2818633423721396,
+          "combined_transverse_force_sum_bound_N": 65.81850148406252,
+          "moment_bound_Nmm": 394.8267649517605,
+          "left_reaction_bound_N": 33.37425943246252,
+          "right_reaction_bound_N": 33.392669549335714,
+          "pin_bending_bound_MPa": 32.75951963049704,
+          "carrier_pin_pressure_bound_MPa": 1.1198078319696751,
+          "single_planet_imbalance_example_N": 0.0039478417604357436,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "estimated_no_load": {
+          "output_rpm": 130.0,
+          "carrier_rpm": 520.0,
+          "planet_bearing_relative_rpm": 1386.6666666666667,
+          "mesh_normal_force_sum_bound_N": 0.0,
+          "centrifugal_force_allowance_N": 1.9176280041014149,
+          "gravity_force_allowance_N": 0.2818633423721396,
+          "combined_transverse_force_sum_bound_N": 2.1994913464735544,
+          "moment_bound_Nmm": 13.066142064094919,
+          "left_reaction_bound_N": 1.8217670377365927,
+          "right_reaction_bound_N": 1.8503525200703774,
+          "pin_bending_bound_MPa": 1.084122393515744,
+          "carrier_pin_pressure_bound_MPa": 0.062050721665673284,
+          "single_planet_imbalance_example_N": 0.006671852575136405,
+          "case_limit": "No-load case excludes unknown frictional torque; estimated speed is not a verified maximum"
+        }
+      }
+    },
+    {
+      "stage": "S3",
+      "components": [
+        {
+          "component": "printed planet",
+          "nominal_mass_g": 9.093591301488642,
+          "z_min_mm": 6.5,
+          "z_max_mm": 28.5,
+          "evidence": "Current validated STL solid volume times published filament density"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 6.5,
+          "z_max_mm": 10.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "695ZZ1 bearing",
+          "nominal_mass_g": 2.5,
+          "z_min_mm": 24.5,
+          "z_max_mm": 28.5,
+          "evidence": "Manufacturer approximate mass"
+        },
+        {
+          "component": "planet-inner-spacer",
+          "nominal_mass_g": 0.9047671065480786,
+          "z_min_mm": 10.5,
+          "z_max_mm": 24.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 6,
+          "z_max_mm": 6.5,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "planet-end-spacer",
+          "nominal_mass_g": 0.03231311094814567,
+          "z_min_mm": 28.5,
+          "z_max_mm": 29,
+          "evidence": "Current spacer CAD volume times assumed brass density"
+        },
+        {
+          "component": "pin shoulder",
+          "nominal_mass_g": 5.40241035431456,
+          "z_min_mm": 0,
+          "z_max_mm": 35.05,
+          "evidence": "Solid cylindrical mass envelope"
+        },
+        {
+          "component": "pin head",
+          "nominal_mass_g": 1.578336149163512,
+          "z_min_mm": -4.0,
+          "z_max_mm": 0,
+          "evidence": "Socket/reliefs ignored in mass envelope"
+        },
+        {
+          "component": "pin threaded end",
+          "nominal_mass_g": 0.4932300466135975,
+          "z_min_mm": 35,
+          "z_max_mm": 40.05,
+          "evidence": "Full major-diameter cylinder; thread grooves ignored"
+        },
+        {
+          "component": "pin stop washer",
+          "nominal_mass_g": 0.3083181021381598,
+          "z_min_mm": 35,
+          "z_max_mm": 35.849999999999994,
+          "evidence": "Nominal annular envelope"
+        },
+        {
+          "component": "pin nut",
+          "nominal_mass_g": 1.0659733490101897,
+          "z_min_mm": 35.8,
+          "z_max_mm": 39.05,
+          "evidence": "Full hex prism; thread bore and chamfers ignored in mass envelope"
+        }
+      ],
+      "nominal_orbiting_mass_per_pin_g": 23.911252631173028,
+      "assumed_mass_multiplier": 1.25,
+      "support_centers_mm": [
+        3.0,
+        32.0
+      ],
+      "cases": {
+        "running": {
+          "output_rpm": 100,
+          "carrier_rpm": 100.0,
+          "planet_bearing_relative_rpm": 300.0,
+          "mesh_normal_force_sum_bound_N": 96.60292052250472,
+          "centrifugal_force_allowance_N": 0.07964817891891239,
+          "gravity_force_allowance_N": 0.2931116070193663,
+          "combined_transverse_force_sum_bound_N": 96.975680308443,
+          "moment_bound_Nmm": 702.9181103450812,
+          "left_reaction_bound_N": 48.61172083571615,
+          "right_reaction_bound_N": 48.616374240605055,
+          "pin_bending_bound_MPa": 58.32243829086668,
+          "carrier_pin_pressure_bound_MPa": 1.6303277746681775,
+          "single_planet_imbalance_example_N": 0.00026647931882941276,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "peak": {
+          "output_rpm": 100,
+          "carrier_rpm": 100.0,
+          "planet_bearing_relative_rpm": 300.0,
+          "mesh_normal_force_sum_bound_N": 161.0048675375079,
+          "centrifugal_force_allowance_N": 0.07964817891891239,
+          "gravity_force_allowance_N": 0.2931116070193663,
+          "combined_transverse_force_sum_bound_N": 161.37762732344618,
+          "moment_bound_Nmm": 1169.832226203854,
+          "left_reaction_bound_N": 80.81269434321774,
+          "right_reaction_bound_N": 80.81734774810664,
+          "pin_bending_bound_MPa": 97.06318107232545,
+          "carrier_pin_pressure_bound_MPa": 2.7101726273677613,
+          "single_planet_imbalance_example_N": 0.00026647931882941276,
+          "case_limit": "Mesh load already includes assumed unequal-sharing and dynamic factors; this adds conservative normal-force, mass and gravity bounds"
+        },
+        "estimated_no_load": {
+          "output_rpm": 130.0,
+          "carrier_rpm": 130.0,
+          "planet_bearing_relative_rpm": 390.0,
+          "mesh_normal_force_sum_bound_N": 0.0,
+          "centrifugal_force_allowance_N": 0.1346054223729619,
+          "gravity_force_allowance_N": 0.2931116070193663,
+          "combined_transverse_force_sum_bound_N": 0.4277170293923282,
+          "moment_bound_Nmm": 2.922440078763473,
+          "left_reaction_bound_N": 0.35600334653368637,
+          "right_reaction_bound_N": 0.3613428187373057,
+          "pin_bending_bound_MPa": 0.24248035246774735,
+          "carrier_pin_pressure_bound_MPa": 0.012117465417079334,
+          "single_planet_imbalance_example_N": 0.0004503500488217074,
+          "case_limit": "No-load case excludes unknown frictional torque; estimated speed is not a verified maximum"
+        }
+      }
+    }
+  ],
+  "method": "Mass from current CAD volumes and manufacturer/assumed densities. Bound two mesh normal forces by tangential-force sum/cos(pressure angle), without assuming radial cancellation. Add centrifugal and gravity magnitudes conservatively. For each component, bound simply supported beam moments/reactions over its entire axial extent, including overhanging head/nut. Sum independent bounds; these extrema need not occur together.",
+  "limits": [
+    "Mass multiplier and support locations are assumptions, not proven worst cases",
+    "No bearing life, fit, rotating-outer-ring suitability or fatigue qualification",
+    "No input-coupler balance or high-speed rating",
+    "No motor rotor inertia, acceleration-ramp or jam-shock model",
+    "No printed carrier flexure, notch stresses, pin fatigue, internal-ring load or thermal validation",
+    "Assembly matching and bearing/pin clearances must be measured; mass matching is not a substitute for vibration testing",
+    "This supplements the tangential-only pin screen in sizing-report.json; it does not revise tooth-strength evidence"
+  ],
+  "source_sha256": {
+    "drive.json": "3336c9c0e86f63424647a4e4df687dc87b584817cd652ab1d0fffd7321c140b2",
+    "dynamic-inputs.json": "3ae353f23a0dcd08c4f02576a5d68be8a68ee8989fe4ea15bc443c1efcc9c916",
+    "sizing-report.json": "6807f7e282a37c1f2c1d42af083c91f9d5425ca37608e95143443b14abf5d65e",
+    "drive-candidate/validation-all.json": "f64c8dbe36ac02d9debf2df7a2578d2cf209030a07e17da689e8b9f362f97a0c",
+    "size_drive.py": "38c14157ffe3a70eaf666b0bd8965c98874ba1f68528a39ac6d0cba89ee91974",
+    "dynamic_review.py": "62383840a59ef7346c9128dbd64295a7b08daf351500bcdc2e2d6b314f7d4b74"
+  }
+}

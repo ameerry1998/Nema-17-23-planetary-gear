@@ -53,6 +53,7 @@ The stationary outer ring does not drive the grinder. Each sun gear drives plane
 
 - `drive.json`: editable design parameters, assumptions and sources.
 - `size_drive.py`, `test_sizing.py`: engineering screens and unit checks.
+- `dynamic_review.py`, `dynamic-inputs.json`, `dynamic-report.json`: current CAD mass, centrifugal/gravity and full mesh-normal-force bounds for steel planet pins; includes overhanging fastener mass. Supplements the simpler mesh-only pin values in `sizing-report.json`; no fatigue or bearing-use approval.
 - `build_drive.py`: gear and carrier generation using CadQuery and cq_gears.
 - `assemble_drive.py`: casing, retention, motor interface and separate attachment.
 - `drive-candidate/`: individual cartridge STEP/STL files and reference assemblies.

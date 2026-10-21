@@ -98,6 +98,26 @@ Keep electrical power disconnected through all fit and hand-turn steps.
 
 These instructions are a proposed sequence checked against CAD, not an observed successful assembly. Physical insertion/tool-access trials may require revisions.
 
+## Speed-related pin loads and bearing limits
+
+`dynamic-report.json` supplements the earlier mesh-only pin calculation. It uses current planet/spacer CAD volumes, [Prusa's published PCCF density](https://prusament.com/wp-content/uploads/2023/04/TDS_Prusament-PCCF_2023_EN.pdf) of 1.22 g/cm3 and [NSK's approximate 695ZZ1 mass](https://www.nsk.com/engineering/695zz1-esm-md.html) of 2.5 g per bearing. It also includes the steel pin, head, threaded end, washer, nut and S1 external shim using geometric mass envelopes. Steel/brass densities and the 1.25 mass multiplier are engineering assumptions. These are estimates, not weighed parts or certified worst cases.
+
+At 100 RPM output, S1's carrier orbits at 2,000 RPM, S2 at 400 and S3 at 100. Centrifugal force is `mass × orbit radius × angular speed squared`. The supplemental calculation bounds the sum of both mesh normal forces without assuming their radial components cancel, then adds centrifugal and gravity magnitudes. It includes the extra bending caused by hardware extending past the pin supports. Independent worst-case contributions are summed, so they need not peak together.
+
+| Stage | Modeled mass per complete planet/pin assembly | Centrifugal force with assumed 1.25 mass factor | Steel-pin peak bending bound at 5 Nm output | Printed carrier-hole pressure bound |
+| --- | ---: | ---: | ---: | ---: |
+| S1 | 16.33 g | 16.12 N | 13.85 MPa | 0.824 MPa |
+| S2 | 22.99 g | 1.13 N | 32.76 MPa | 1.120 MPa |
+| S3 | 23.91 g | 0.08 N | 97.06 MPa | 2.710 MPa |
+
+These stresses are screening outputs, not allowable strengths. Pin alloy/heat-treatment certification, notch effects, repeated loading, carrier stiffness and physical retention are unresolved. The printed-tooth bending calculation is unchanged; the larger numbers in the table refer to the **bought steel pins**, not the plastic teeth.
+
+The illustrative 12 V no-load model reaches 13,000 motor RPM, 2,600 S1 carrier RPM and 130 output RPM. At that speed, S1's centrifugal allowance rises to 27.23 N, even with no coffee load. This case omits unknown frictional torque and is not a verified speed ceiling. Set the knob while measuring actual RPM and increase speed only within the staged guarded test procedure. Do not assume a PWM percentage means a fixed RPM under changing load.
+
+NSK's catalog requests consultation for sealed/shielded bearings with rotating outer rings. Our planet bearings have rotating outer rings, so their generic catalog limiting-speed number does not approve this use. The calculated S1 relative bearing speeds are approximately 5,333 RPM at the target and 6,933 RPM in the illustrative no-load case. Confirm suitable bearing construction, fit, lubrication and outer-ring operation with the bearing supplier before treating a high-speed trial as qualified. No supplier confirmation has been obtained and no message has been sent.
+
+Before a running trial, weigh each printed planet and its matching bearing/spacer set, record differences and check that each assembly turns freely. A 0.1 g mismatch at the S1 orbit corresponds to about 0.079 N of rotating force at 2,000 RPM, or 0.133 N at 2,600 RPM. This is a sensitivity example, not a balancing acceptance threshold. Mass matching cannot reveal eccentric bores, runout, coupler imbalance or structural resonance. The actual assembly still needs vibration and temperature observations at progressively increased speeds. Motor-rotor inertia, acceleration-ramp loads and jam impacts remain outside this calculation.
+
 ## Removable output interface
 
 The fixed outer ring and housing do not turn. The last carrier turns a 12 mm REX shaft. REX here is an 11 mm across-flats hex clipped to a 12 mm circular envelope. The removable attachment grips that shaft, with 15.5 mm engagement and 0.5 mm socket-bottom clearance. Two M3 screws clamp the separate printed attachment. Allow at least 17.5 mm axial travel to remove it from the gearbox shaft, plus clearance to disengage the grinder.
